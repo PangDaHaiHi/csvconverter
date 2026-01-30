@@ -1,0 +1,606 @@
+{
+  "home": {
+    "hero": {
+      "title": "Convertitore HEIC: Strumento Online Gratuito",
+      "subtitle": "Converti istantaneamente HEIC in PNG, JPG o PDF. Nessun limite di upload. 100% basato su browser."
+    },
+    "features": {
+      "noLimits": "Nessun limite di upload",
+      "free": "100% Gratuito",
+      "secure": "Sicuro lato client"
+    },
+    "tools": {
+      "heicToPng": {
+        "title": "HEIC in PNG",
+        "desc": "Converti .heic in PNG con supporto trasparenza"
+      },
+      "heicToWebp": {
+        "title": "HEIC in WebP",
+        "desc": "Converti HEIC in WebP per migliori prestazioni web"
+      },
+      "heicToJpg": {
+        "title": "HEIC in JPG",
+        "desc": "Converti foto HEIC nel formato standard JPG"
+      },
+      "heicToPdf": {
+        "title": "HEIC in PDF",
+        "desc": "Trasforma più immagini HEIC in un documento PDF"
+      }
+    },
+    "guides": {
+      "title": "Guide alla Conversione HEIC",
+      "subtitle": "Tutto ciò che devi sapere sui file HEIC e come gestirli su Windows, Mac e Android.",
+      "whatIsHeic": {
+        "title": "Cos'è un file HEIC?",
+        "description": "Capisci perché gli iPhone usano HEIC e i suoi pro/contro rispetto a JPG."
+      },
+      "openHeicOnWindows": {
+        "title": "Come aprire file HEIC su Windows?",
+        "description": "Windows non supporta HEIC di default. Impara come aprire file HEIC su Windows senza installare software extra."
+      },
+      "heicToPng": {
+        "title": "Come convertire HEIC in PNG",
+        "description": "Come convertire immagini HEIC in formato PNG di alta qualità."
+      },
+      "heicToJpg": {
+        "title": "Come convertire HEIC in JPG",
+        "description": "Guida passo-passo per cambiare le foto HEIC in formato JPG."
+      },
+      "heicToPdf": {
+        "title": "Come convertire HEIC in PDF",
+        "description": "Come salvare più immagini HEIC come un singolo documento PDF."
+      },
+      "heicToWebp": {
+        "title": "Come convertire HEIC in WebP",
+        "description": "Guida alla conversione di HEIC in WebP per l'ottimizzazione web."
+      }
+    }
+  },
+  "brand": {
+    "title": "HeicTools",
+    "description": "Convertitore HEIC online gratuito: HEIC in JPG, HEIC in PNG e HEIC in PDF. Elaborazione sicura lato client.",
+    "logoAlt": "Logo HeicTools"
+  },
+  "nav": {
+    "home": "Home",
+    "heicToJpg": "HEIC in JPG",
+    "heicToPng": "HEIC in PNG",
+    "heicToWebp": "HEIC in WebP",
+    "heicToPdf": "HEIC in PDF",
+    "whatIsHeic": "Cos'è HEIC?"
+  },
+  "tools": {
+    "common": {
+      "errors": {
+        "fileLimitExceeded": "Massimo {max} file consentiti."
+      },
+      "actions": {
+        "downloadAll": "Scarica Tutto",
+        "downloadZip": "Scarica Zip",
+        "downloadPdf": "Scarica PDF",
+        "clearAll": "Cancella Tutto",
+        "download": "Scarica",
+        "remove": "Rimuovi",
+        "addMore": "Aggiungi Altro",
+        "limitReached": "Limite Raggiunto"
+      },
+      "status": {
+        "converting": "Conversione in corso...",
+        "ready": "Pronto",
+        "failed": "Fallito",
+        "waiting": "In attesa..."
+      },
+      "whatIsHeicLink": {
+        "text": "Vuoi imparare cos'è HEIC? Leggi:",
+        "linkText": "Cos'è un file HEIC?"
+      }
+    },
+    "heicToJpg": {
+      "title": "Convertitore HEIC/HEIF in JPG",
+      "description": "Converti HEIC o HEIF in JPG/JPEG online gratuitamente.",
+      "metaTitle": "Convertitore HEIC/HEIF in JPG (Converti in JPEG) — Online Gratuito | HeicTools",
+      "metaDescription": "Converti HEIC o HEIF (.heic/.heif) in JPG online istantaneamente. Gratuito, sicuro e senza limiti di upload. Funziona su Windows, Mac e iPhone.",
+      "h1": "Convertitore HEIC/HEIF in JPG (Converti in JPEG)",
+      "subtitle": "Converti foto HEIC/HEIF (.heic/.heif) nel formato JPG ampiamente supportato. Perfetto per la condivisione e la compatibilità Windows.",
+      "converting": "Conversione in corso...",
+      "download": "Scarica JPG",
+      "convertAnother": "Converti un altro file",
+      "errors": {
+        "invalidFormat": "Formato file non valido. Carica un file .heic o .heif.",
+        "conversionFailed": "Conversione fallita. Riprova con un file diverso."
+      },
+      "seo": {
+        "section1": {
+          "title": "Converti HEIC/HEIF in JPG",
+          "content": "Molti utenti faticano ad aprire le foto iPhone su Windows. Il nostro strumento ti permette di cambiare HEIC in JPG istantaneamente senza installare software o plugin."
+        },
+        "section2": {
+          "title": "Perché scegliere JPG?",
+          "content": "JPG è il formato immagine più universale al mondo. Si apre su qualsiasi dispositivo, sito web o software, e di solito ha dimensioni file inferiori rispetto al PNG, rendendolo perfetto per l'archiviazione e la condivisione di foto."
+        },
+        "section3": {
+          "title": "Come Convertire",
+          "steps": [
+            "Seleziona o trascina i tuoi file HEIC nell'area sopra",
+            "Attendi il completamento della conversione (di solito istantaneo)",
+            "Clicca il pulsante di download per salvare le tue immagini JPG"
+          ]
+        },
+        "guideLink": {
+          "text": "Hai bisogno di una guida più dettagliata? Leggi il nostro tutorial completo su",
+          "linkText": "Come convertire HEIC in JPG"
+        }
+      },
+      "upload": {
+        "dropText": "Trascina i file qui",
+        "browse": "Sfoglia File",
+        "support": "Supporta HEIC (.heic), compatibile con HEIF (.heif)"
+      }
+    },
+    "heicToPng": {
+      "title": "Convertitore HEIC in PNG",
+      "description": "Converti file .heic in immagini PNG di alta qualità.",
+      "metaTitle": "Convertitore HEIC/HEIF in PNG — Strumento Online Gratuito | HeicTools",
+      "metaDescription": "Converti HEIC o HEIF (.heic/.heif) in PNG online. Output lossless per l'editing. Privacy 100% lato client.",
+      "h1": "Convertitore HEIC in PNG",
+      "subtitle": "Converti HEIC/HEIF (.heic/.heif) in PNG nel tuo browser — privato, veloce e gratuito.",
+      "trust": {
+        "summary": "Conversione locale nel tuo browser — privato, veloce e gratuito.",
+        "items": [
+          {
+            "desc": "Elaborazione locale. Nessun upload."
+          },
+          {
+            "desc": "Conversione veloce nel tuo browser."
+          },
+          {
+            "desc": "Gratuito da usare. Nessuna registrazione."
+          }
+        ]
+      },
+      "converting": "Conversione in corso...",
+      "download": "Scarica PNG",
+      "convertAnother": "Converti un altro file",
+      "errors": {
+        "invalidFormat": "Formato file non valido. Carica un file .heic o .heif.",
+        "conversionFailed": "Conversione fallita. Riprova con un file diverso."
+      },
+      "seo": {
+        "section1": {
+          "title": "Converti HEIC/HEIF in PNG",
+          "content": "Hai una foto .heic o .heif che devi modificare? Convertila in PNG per preservare la qualità e supportare la trasparenza."
+        },
+        "section2": {
+          "title": "Perché scegliere PNG?",
+          "content": "PNG è un formato lossless, perfetto per immagini di alta qualità. A differenza di JPG, PNG supporta la trasparenza e non perde qualità quando salvato più volte."
+        },
+        "section3": {
+          "title": "Come Convertire",
+          "steps": [
+            "Seleziona o trascina i tuoi file HEIC/HEIF",
+            "Attendi il completamento della conversione (di solito istantaneo)",
+            "Clicca il pulsante di download per salvare il tuo PNG"
+          ]
+        },
+        "guideLink": {
+          "text": "Hai bisogno di una guida più dettagliata? Leggi il nostro tutorial completo su",
+          "linkText": "Come convertire HEIC/HEIF in PNG"
+        }
+      },
+      "upload": {
+        "dropText": "Trascina i file qui",
+        "browse": "Sfoglia File",
+        "support": "Supporta HEIC (.heic), compatibile con HEIF (.heif)"
+      }
+    },
+    "heicToWebp": {
+      "title": "Convertitore HEIC/HEIF in WebP",
+      "description": "Converti foto HEIC o HEIF in formato WebP.",
+      "metaTitle": "Convertitore HEIC/HEIF in WebP — Strumento Online Gratuito | HeicTools",
+      "metaDescription": "Converti HEIC o HEIF (.heic/.heif) in WebP online. Riduci la dimensione del file mantenendo la qualità. Privacy 100% lato client.",
+      "h1": "Convertitore HEIC/HEIF in WebP",
+      "subtitle": "Converti HEIC/HEIF (.heic/.heif) in WebP per dimensioni file più piccole e caricamento web più veloce. Sicuro e gratuito.",
+      "converting": "Conversione in corso...",
+      "download": "Scarica WebP",
+      "convertAnother": "Converti un altro file",
+      "errors": {
+        "invalidFormat": "Formato file non valido. Carica un file .heic o .heif.",
+        "conversionFailed": "Conversione fallita. Riprova con un file diverso."
+      },
+      "seo": {
+        "section1": {
+          "title": "Converti HEIC/HEIF in WebP",
+          "content": "WebP è lo standard moderno per le immagini web. Convertire HEIC in WebP assicura che le tue immagini si carichino velocemente su tutti i browser moderni mantenendo dimensioni file ridotte."
+        },
+        "section2": {
+          "title": "Perché scegliere WebP?",
+          "content": "WebP offre una compressione superiore rispetto a JPG e PNG. Supporta sia la compressione lossy che lossless, così come la trasparenza, rendendolo il formato più versatile per il web."
+        },
+        "section3": {
+          "title": "Come Convertire",
+          "steps": [
+            "Seleziona o trascina i tuoi file HEIC",
+            "Attendi il completamento della conversione",
+            "Clicca scarica per ottenere i tuoi file WebP"
+          ]
+        },
+        "guideLink": {
+          "text": "Hai bisogno di una guida più dettagliata? Leggi il nostro tutorial completo su",
+          "linkText": "Come convertire HEIC in WebP"
+        }
+      },
+      "upload": {
+        "dropText": "Trascina i file qui",
+        "browse": "Sfoglia File",
+        "support": "Supporta HEIC (.heic), compatibile con HEIF (.heif)"
+      }
+    },
+    "heicToPdf": {
+      "title": "Convertitore HEIC/HEIF in PDF",
+      "description": "Trasforma le tue foto HEIC o HEIF in documenti PDF.",
+      "metaTitle": "Convertitore HEIC/HEIF in PDF — Strumento Online Gratuito | HeicTools",
+      "metaDescription": "Converti HEIC o HEIF (.heic/.heif) in un documento PDF. Convertitore online veloce, gratuito e sicuro con elaborazione lato client.",
+      "h1": "Convertitore HEIC/HEIF in PDF",
+      "subtitle": "Trasforma le tue immagini HEIC/HEIF (.heic/.heif) in un documento PDF facilmente. Ottimo per condividere come singolo file.",
+      "converting": "Conversione in corso...",
+      "download": "Scarica PDF",
+      "convertAnother": "Converti un altro file",
+      "errors": {
+        "invalidFormat": "Formato file non valido. Carica un file .heic o .heif.",
+        "conversionFailed": "Conversione fallita. Riprova con un file diverso."
+      },
+      "seo": {
+        "section1": {
+          "title": "Converti HEIC/HEIF in PDF",
+          "content": "Trasforma le tue foto .heic o .heif in un singolo documento PDF per una facile condivisione e stampa."
+        },
+        "section2": {
+          "title": "Perché scegliere PDF?",
+          "content": "PDF è lo standard globale per i documenti. Assicura che le tue immagini appaiano esattamente uguali su ogni dispositivo e stampante. A differenza delle immagini, i PDF possono contenere più pagine in un unico file."
+        },
+        "section3": {
+          "title": "Come Convertire",
+          "steps": [
+            "Seleziona o trascina i tuoi file HEIC",
+            "Riordina le immagini se necessario",
+            "Clicca 'Converti' per scaricare il tuo PDF"
+          ]
+        },
+        "guideLink": {
+          "text": "Hai bisogno di una guida più dettagliata? Leggi il nostro tutorial completo su",
+          "linkText": "Come convertire HEIC in PDF"
+        }
+      },
+      "upload": {
+        "dropText": "Trascina i file qui",
+        "browse": "Sfoglia File",
+        "support": "Supporta HEIC (.heic), compatibile con HEIF (.heif)"
+      }
+    }
+  },
+  "footer": {
+    "rightsReserved": "Tutti i diritti riservati."
+  },
+  "cookie": {
+    "title": "Teniamo alla tua privacy",
+    "description": "Usiamo i cookie per migliorare la tua esperienza e analizzare il nostro traffico. Cliccando \"Accetta\", acconsenti al nostro uso dei cookie. Scopri di più nella nostra",
+    "policyLink": "Informativa sulla Privacy",
+    "decline": "Rifiuta",
+    "accept": "Accetta"
+  },
+  "privacyPolicy": {
+    "metaTitle": "Informativa sulla Privacy - HeicTools",
+    "metaDescription": "Informativa sulla Privacy per HeicTools. Scopri come proteggiamo la tua privacy con l'elaborazione lato client.",
+    "title": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento:",
+    "sections": {
+      "intro": {
+        "title": "1. Introduzione",
+        "content": "Benvenuto su HeicTools. Rispettiamo la tua privacy e ci impegniamo a proteggere i tuoi dati personali. Questa informativa sulla privacy ti informerà su come gestiamo i tuoi dati personali quando visiti il nostro sito web e ti parlerà dei tuoi diritti sulla privacy e di come la legge ti protegge."
+      },
+      "clientSide": {
+        "title": "2. Elaborazione Lato Client",
+        "content": "HeicTools è progettato con la privacy come priorità. <strong>Non carichiamo i tuoi file sui nostri server.</strong> Tutte le conversioni di file (HEIC in JPG, PNG, PDF) avvengono interamente all'interno del tuo browser web (Lato Client). Le tue foto non lasciano mai il tuo dispositivo, garantendo completa privacy e sicurezza per i tuoi dati personali."
+      },
+      "dataCollection": {
+        "title": "3. Raccolta Dati",
+        "content": "Poiché non elaboriamo file sui nostri server, non raccogliamo, archiviamo o condividiamo nessuno dei contenuti che converti. Tuttavia, potremmo raccogliere informazioni non personali sulla tua visita per aiutarci a migliorare il nostro servizio:",
+        "items": [
+          "Dati di utilizzo (pagine visitate, tempo trascorso, ecc.) tramite Google Analytics",
+          "Informazioni su dispositivo e browser (per garantire la compatibilità)",
+          "Preferenze di lingua"
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookie",
+        "content": "Usiamo i cookie per migliorare la tua esperienza di navigazione e analizzare il nostro traffico. Puoi scegliere di accettare o rifiutare i cookie attraverso il nostro banner di consenso ai cookie. Usiamo principalmente cookie di Google Analytics per capire come gli utenti interagiscono con il nostro sito web."
+      },
+      "contact": {
+        "title": "5. Contattaci",
+        "content": "Se hai domande su questa informativa sulla privacy o sulle nostre pratiche sulla privacy, contattaci a:"
+      }
+    }
+  },
+  "pages": {
+    "guides": {
+      "common": {
+        "readyTitle": "Pronto a convertire?",
+        "convertNow": "Converti HEIC in {format}",
+        "method": "Metodo {number}: {title}",
+        "steps": "Guida Passo-Passo",
+        "whyChoose": "Perché scegliere {format}?",
+        "howToConvert": "Come Convertire Online"
+      },
+      "heicToPng": {
+        "seoTitle": "Come Convertire HEIC in PNG (Alta Qualità)",
+        "seoDesc": "Guida alla conversione di immagini HEIC in formato PNG. Ideale per preservare la qualità dell'immagine e gli sfondi trasparenti.",
+        "title": "Come Convertire HEIC in PNG",
+        "intro": "HEIC è ottimo per le foto, ma a volte hai bisogno di PNG per la sua qualità lossless o la compatibilità con strumenti di web design.",
+        "learnMore": "Prima di modificarli, se vuoi saperne di più sul formato sorgente, leggi la nostra guida: {link}.",
+        "whyChoose": {
+          "title": "Perché scegliere PNG rispetto a JPG?",
+          "reasons": {
+            "lossless": "<strong>Compressione Lossless:</strong> Nessuna perdita di qualità durante il salvataggio.",
+            "transparency": "<strong>Trasparenza:</strong> Supporta sfondi trasparenti (se la tua fonte li ha).",
+            "standard": "<strong>Standard Web:</strong> Ampiamente supportato su tutti i browser ed editor."
+          }
+        },
+        "method1": {
+          "title": "Convertitore Online (Consigliato)",
+          "desc": "Il modo più veloce per convertire HEIC in PNG senza installare software.",
+          "step1": "Vai al {link}.",
+          "step2": "Carica i tuoi file HEIC.",
+          "step3": "Attendi il completamento della conversione.",
+          "step4": "Scarica i tuoi file PNG di alta qualità.",
+          "cta": "Converti i tuoi file ora:",
+          "buttonJpg": "Converti in JPG",
+          "buttonPng": "Converti HEIC in PNG",
+          "buttonWebp": "Converti in WebP",
+          "buttonPdf": "Converti in PDF"
+        },
+        "cta": {
+          "title": "Pronto a iniziare?",
+          "desc": "Ottieni PNG di alta qualità dalle tue foto HEIC in pochi secondi.",
+          "button": "Converti HEIC in PNG"
+        }
+      },
+      "heicToJpg": {
+        "seoTitle": "Come Convertire HEIC in JPG su Windows e Mac (Gratis)",
+        "seoDesc": "Guida passo-passo per convertire HEIC in JPG. Impara come cambiare i file HEIC in JPG usando strumenti online gratuiti o app di sistema integrate.",
+        "title": "Come Convertire HEIC in JPG",
+        "intro": "I file HEIC sono ottimi per risparmiare spazio sul tuo iPhone, ma possono essere una seccatura da condividere o aprire su altri dispositivi. Ecco come cambiare HEIC in JPG facilmente.",
+        "learnMore": "Prima di visualizzarli, se vuoi capire perché Apple usa questo formato, dai un'occhiata alla nostra guida: {link}.",
+        "whyChoose": {
+          "title": "Perché Convertire HEIC in JPG?",
+          "reasons": {
+            "compatibility": "<strong>Compatibilità Universale:</strong> JPG si apre su ogni dispositivo, dai vecchi PC Windows ai telefoni Android.",
+            "sharing": "<strong>Condivisione Facile:</strong> Le app di social media e i siti web accettano sempre file JPG.",
+            "software": "<strong>Supporto Software:</strong> Nessuna necessità di plugin speciali o estensioni a pagamento."
+          }
+        },
+        "method1": {
+          "title": "Usa Convertitore Online Gratuito (Consigliato)",
+          "desc": "Il modo più veloce per convertire HEIC in JPG senza installare alcun software è usare uno strumento basato su browser.",
+          "step1": "Vai al {link}.",
+          "step2": "Trascina i tuoi file .heic nell'area di upload.",
+          "step3": "Attendi il completamento della conversione (di solito richiede pochi secondi).",
+          "step4": "Scarica le tue nuove foto JPG.",
+          "cta": "Converti i tuoi file ora:",
+          "buttonJpg": "Converti HEIC in JPG",
+          "buttonPng": "Converti in PNG",
+          "buttonWebp": "Converti in WebP",
+          "buttonPdf": "Converti in PDF"
+        },
+        "cta": {
+          "title": "Pronto a convertire?",
+          "desc": "Prova il nostro convertitore online veloce, sicuro e gratuito ora.",
+          "button": "Converti HEIC in JPG Ora"
+        }
+      },
+      "heicToWebp": {
+        "seoTitle": "Come Convertire HEIC in WebP (Migliore Compressione)",
+        "seoDesc": "Guida alla conversione di immagini HEIC in formato WebP. Impara come ridurre la dimensione del file mantenendo un'alta qualità per il web.",
+        "title": "Come Convertire HEIC in WebP",
+        "intro": "WebP è un formato immagine moderno che fornisce una compressione lossless e lossy superiore per le immagini sul web. Ecco come convertire le tue foto HEIC in WebP.",
+        "learnMore": "Per capire l'efficienza del formato sorgente prima dell'ottimizzazione, controlla la nostra guida: {link}.",
+        "whyChoose": {
+          "title": "Perché Scegliere WebP?",
+          "reasons": {
+            "compression": "<strong>Compressione Superiore:</strong> Le immagini WebP sono del 26% più piccole rispetto ai PNG.",
+            "loading": "<strong>Caricamento Più Veloce:</strong> Dimensioni file più piccole significano tempi di caricamento del sito web più veloci.",
+            "transparency": "<strong>Trasparenza:</strong> Come PNG, anche WebP supporta la trasparenza."
+          }
+        },
+        "method1": {
+          "title": "Convertitore Online (Consigliato)",
+          "desc": "Ottimizza le tue immagini per il web istantaneamente usando il nostro strumento gratuito.",
+          "step1": "Vai al {link}.",
+          "step2": "Carica i tuoi file HEIC.",
+          "step3": "Attendi il completamento della conversione.",
+          "step4": "Scarica i tuoi file WebP ottimizzati.",
+          "cta": "Inizia a ottimizzare:",
+          "buttonJpg": "Converti in JPG",
+          "buttonPng": "Converti in PNG",
+          "buttonWebp": "Converti HEIC in WebP",
+          "buttonPdf": "Converti in PDF"
+        },
+        "cta": {
+          "title": "Pronto a ottimizzare?",
+          "desc": "Converti le tue foto HEIC in efficiente formato WebP istantaneamente.",
+          "button": "Converti HEIC in WebP"
+        }
+      },
+      "heicToPdf": {
+        "seoTitle": "Come Convertire HEIC in PDF (Unisci Foto)",
+        "seoDesc": "Impara come convertire più foto HEIC in un singolo documento PDF online. Perfetto per condividere documenti o ricevute.",
+        "title": "Come Convertire HEIC in PDF",
+        "intro": "Hai bisogno di inviare più foto iPhone come un singolo documento? Convertire HEIC in PDF è la soluzione migliore.",
+        "learnMore": "Se vuoi saperne di più sul formato immagine usato da iPhone prima dell'archiviazione, vedi: {link}.",
+        "whyChoose": {
+          "title": "Perché Convertire HEIC in PDF?",
+          "reasons": {
+            "compatibility": "<strong>Compatibilità Universale:</strong> PDF funziona su ogni dispositivo.",
+            "singleFile": "<strong>Singolo File:</strong> Combina 10+ foto in un file facile da condividere.",
+            "security": "<strong>Sicurezza:</strong> I PDF sono più difficili da modificare delle immagini."
+          }
+        },
+        "method1": {
+          "title": "Convertitore Online (Consigliato)",
+          "desc": "Unisci facilmente più immagini HEIC in un documento PDF.",
+          "step1": "Apri il {link}.",
+          "step2": "Seleziona le tue immagini HEIC.",
+          "step3": "(Opzionale) Riordina le immagini se necessario.",
+          "step4": "Clicca <strong>Converti</strong> per generare il tuo PDF.",
+          "cta": "Crea il tuo PDF:",
+          "buttonJpg": "Converti in JPG",
+          "buttonPng": "Converti in PNG",
+          "buttonWebp": "Converti in WebP",
+          "buttonPdf": "Converti HEIC in PDF"
+        },
+        "cta": {
+          "title": "Inizia a Convertire",
+          "desc": "Trasforma le tue foto HEIC in documenti PDF professionali istantaneamente.",
+          "button": "Converti HEIC in PDF"
+        }
+      },
+      "whatIsHeic": {
+        "seoTitle": "Cos'è un file HEIC? Origini, Caratteristiche e Confronto",
+        "seoDesc": "Guida completa al formato HEIC. Scopri la sua storia, caratteristiche e come si confronta con JPG, PNG, WebP e PDF.",
+        "title": "Cos'è un file HEIC?",
+        "intro": "Un file HEIC è un formato immagine utilizzato dai dispositivi Apple come iPhone e iPad per archiviare foto in modo più efficiente rispetto ai formati tradizionali come JPG. HEIC sta per High Efficiency Image Container e si basa sullo standard HEIF (High Efficiency Image File Format). In parole povere, HEIC è un nuovo formato immagine utilizzato dagli iPhone per salvare le foto. Mantiene una qualità dell'immagine superiore occupando meno spazio di archiviazione rispetto a JPG.",
+        "origins": {
+          "title": "Origini e Sviluppo",
+          "content": "HEIC è l'estensione del file per lo standard **HEIF** (High Efficiency Image File Format). È stato sviluppato dal **MPEG** (Moving Picture Experts Group) — lo stesso team dietro il formato audio AAC utilizzato in iTunes.\n\nMentre lo standard è stato finalizzato nel 2015, ha guadagnato l'attenzione mainstream nel **2017** quando Apple lo ha adottato come formato immagine predefinito per iOS 11. Questo cambiamento ha sostituito il vecchio formato JPEG sugli iPhone, consentendo agli utenti di salvare foto di alta qualità con metà della dimensione del file."
+        },
+        "features": {
+          "title": "Caratteristiche Chiave di HEIC",
+          "list": {
+            "compression": "<strong>Compressione Superiore:</strong> Le immagini HEIC sono tipicamente il 50% più piccole dei JPEG di qualità simile.",
+            "quality": "<strong>Colore a 16-bit:</strong> Supporta gamme di colori significativamente più profonde rispetto agli 8-bit del JPEG, riducendo il banding in cieli e gradienti.",
+            "advanced": "<strong>Capacità Avanzate:</strong> Supporta la trasparenza (come PNG) e le sequenze di immagini (come Live Photos o GIF) in un singolo file.",
+            "editing": "<strong>Editing Non Distruttivo:</strong> Modifiche come ritaglio e rotazione possono essere salvate senza alterare i dati dell'immagine originale."
+          }
+        },
+        "comparison": {
+          "title": "HEIC vs JPG: Confronto Completo dei Formati",
+          "desc": "La tabella seguente confronta in modo completo HEIC con i formati JPG, PNG e WebP, evidenziando le differenze in termini di dimensione del file, qualità dell'immagine, compatibilità e migliori casi d'uso, aiutandoti a capire le distinzioni principali a colpo d'occhio.",
+          "table": {
+            "header": [
+              "Formato",
+              "Dimensione File",
+              "Qualità Immagine",
+              "Trasparenza",
+              "Compatibilità",
+              "Ideale Per"
+            ],
+            "rows": [
+              {
+                "format": "HEIC",
+                "size": "Piccola (Migliore)",
+                "quality": "Alta (16-bit)",
+                "transparency": "Sì",
+                "compatibility": "Limitata",
+                "useCase": "Ecosistema Apple, risparmio spazio, qualità originale"
+              },
+              {
+                "format": "JPG",
+                "size": "Media",
+                "quality": "Media (8-bit)",
+                "transparency": "No",
+                "compatibility": "Universale",
+                "useCase": "Condivisione, social media, compatibilità generale"
+              },
+              {
+                "format": "PNG",
+                "size": "Grande",
+                "quality": "Lossless",
+                "transparency": "Sì",
+                "compatibility": "Alta",
+                "useCase": "Sfondi trasparenti, testo/grafica, editing pixel-perfect"
+              },
+              {
+                "format": "WebP",
+                "size": "Molto Piccola",
+                "quality": "Alta",
+                "transparency": "Sì",
+                "compatibility": "Alta (Web)",
+                "useCase": "Velocità sito web, web app moderne"
+              }
+            ]
+          }
+        },
+        "whyConvert": {
+          "title": "Perché Dobbiamo Convertire i File HEIC?",
+          "inconveniences": {
+            "title": "Inconvenienti Comuni con HEIC",
+            "list": {
+              "windows": "<strong>Compatibilità Windows:</strong> L'app nativa Foto di Windows richiede spesso estensioni a pagamento per aprire file HEIC.",
+              "web": "<strong>Upload Web:</strong> Molti siti web, moduli governativi e portali online accettano solo JPG o PDF.",
+              "sharing": "<strong>Condivisione:</strong> Gli utenti Android o le persone su dispositivi più vecchi potrebbero non essere in grado di visualizzare le foto HEIC inviate loro.",
+              "software": "<strong>Software di Editing:</strong> Alcuni editor di foto più vecchi non supportano il formato HEIC."
+            }
+          },
+          "cta": {
+            "text": "Risolvi questi problemi istantaneamente convertendo i tuoi file:",
+            "buttonJpg": "Converti HEIC in JPG",
+            "buttonPng": "Converti in PNG",
+            "buttonWebp": "Converti in WebP",
+            "buttonPdf": "Converti in PDF"
+          }
+        },
+        "cta": {
+          "title": "Hai bisogno di convertire un file?",
+          "desc": "Usa il nostro strumento online gratuito per convertire i tuoi file HEIC in JPG o PNG istantaneamente.",
+          "button": "Vai al Convertitore"
+        }
+      },
+      "openHeicOnWindows": {
+        "title": "Come Aprire File HEIC su Windows",
+        "description": "Impara i modi migliori per visualizzare e aprire file HEIC su Windows 10 e 11, inclusi strumenti gratuiti ed estensioni ufficiali.",
+        "learnMore": "Prima di visualizzarli, se vuoi capire perché Apple usa questo formato, dai un'occhiata alla nostra guida: {link}.",
+        "whyCantOpen": {
+          "title": "Perché Windows Non Può Aprire File HEIC?",
+          "reasons": {
+            "codec": "<strong>Codec HEVC Mancante:</strong> Windows non include le estensioni video HEVC necessarie di default a causa di problemi di licenza.",
+            "license": "<strong>Costi di Licenza:</strong> Microsoft richiede spesso agli utenti di acquistare le Estensioni Video HEVC dallo Store ($0.99) per visualizzare questi file.",
+            "compatibility": "<strong>Supporto Legacy:</strong> Le versioni precedenti come Windows 7 e 8 non hanno supporto nativo per i formati HEIC/HEIF."
+          }
+        },
+        "methods": {
+          "title": "Come Aprire File HEIC su Windows (5 Metodi)",
+          "method1": {
+            "title": "Metodo 1: Usa Convertitore Online Gratuito (Consigliato)",
+            "desc": "Il modo più semplice per visualizzare file HEIC è convertirli in un formato universale come JPG o PNG. Questo non richiede installazione di software.",
+            "cons": "<strong>Svantaggio:</strong> Richiede connessione internet.",
+            "cta": "Converti i tuoi file ora:",
+            "buttonJpg": "Converti HEIC in JPG",
+            "buttonPng": "Converti in PNG",
+            "buttonWebp": "Converti in WebP",
+            "buttonPdf": "Converti in PDF"
+          },
+          "method2": {
+            "title": "Metodo 2: Installa Estensioni HEIF Microsoft",
+            "desc": "Puoi aggiungere il supporto nativo all'app Foto di Windows installando estensioni dal Microsoft Store.",
+            "steps": "Cerca 'Estensioni Immagine HEIF' e 'Estensioni Video HEVC' nel Microsoft Store.",
+            "cons": "<strong>Svantaggio:</strong> L'estensione HEVC costa di solito $0.99 e l'installazione può a volte essere buggata."
+          },
+          "method3": {
+            "title": "Metodo 3: Usa Visualizzatori di Immagini di Terze Parti",
+            "desc": "Strumenti come IrfanView, XnView o CopyTrans HEIC per Windows ti permettono di visualizzare file HEIC.",
+            "cons": "<strong>Svantaggio:</strong> Richiede l'installazione di software di terze parti che potrebbe includere bloatware o interfacce obsolete."
+          },
+          "method4": {
+            "title": "Metodo 4: Usa Google Foto o OneDrive",
+            "desc": "Carica le tue foto HEIC sui servizi di cloud storage, che hanno visualizzatori integrati.",
+            "cons": "<strong>Svantaggio:</strong> Lento per grandi numeri di file; problemi di privacy con il caricamento di foto personali."
+          },
+          "method5": {
+            "title": "Metodo 5: Usa Software di Fotoritocco",
+            "desc": "Strumenti professionali come Adobe Photoshop o Lightroom supportano i file HEIC.",
+            "cons": "<strong>Svantaggio:</strong> Software molto costoso; eccessivo solo per visualizzare foto."
+          }
+        }
+      }
+    }
+  }
+}

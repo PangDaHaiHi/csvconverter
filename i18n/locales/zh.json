@@ -1,0 +1,606 @@
+{
+  "home": {
+    "hero": {
+      "title": "HEIC 转换器：免费在线工具",
+      "subtitle": "极速将 HEIC 转换为 PNG、JPG 或 PDF。无上传限制。100% 基于浏览器。"
+    },
+    "features": {
+      "noLimits": "无上传限制",
+      "free": "100% 免费",
+      "secure": "客户端安全处理"
+    },
+    "tools": {
+      "heicToPng": {
+        "title": "HEIC 转 PNG",
+        "desc": "将 .heic 转换为支持透明度的 PNG"
+      },
+      "heicToWebp": {
+        "title": "HEIC 转 WebP",
+        "desc": "将 HEIC 转换为 WebP 以提升网页性能"
+      },
+      "heicToJpg": {
+        "title": "HEIC 转 JPG",
+        "desc": "将 HEIC 照片转换为标准 JPG 格式"
+      },
+      "heicToPdf": {
+        "title": "HEIC 转 PDF",
+        "desc": "将多张 HEIC 图像变成 PDF 文档"
+      }
+    },
+    "guides": {
+      "title": "HEIC转换指南",
+      "subtitle": "了解有关 HEIC 文件的所有信息，以及如何在 Windows、Mac 和 Android 上处理它们。",
+      "whatIsHeic": {
+        "title": "什么是 HEIC 文件？",
+        "description": "了解为什么 iPhone 使用 HEIC 以及它与 JPG 相比的优缺点。"
+      },
+      "openHeicOnWindows": {
+        "title": "如何在 Windows 上打开 HEIC 文件？",
+        "description": "Windows 默认不支持 HEIC。了解如何无需安装额外软件即可在 Windows 上打开 HEIC 文件。"
+      },
+      "heicToPng": {
+        "title": "如何将 HEIC 转换为 PNG",
+        "description": "如何将 HEIC 图像转换为高质量的 PNG 格式。"
+      },
+      "heicToJpg": {
+        "title": "如何将 HEIC 转换为 JPG",
+        "description": "将 HEIC 照片更改为 JPG 格式的分步指南。"
+      },
+      "heicToPdf": {
+        "title": "如何将 HEIC 转换为 PDF",
+        "description": "如何将多张 HEIC 图像保存为单个 PDF 文档。"
+      },
+      "heicToWebp": {
+        "title": "如何将 HEIC 转换为 WebP",
+        "description": "将 HEIC 转换为 WebP 格式以优化网页性能的指南。"
+      }
+    }
+  },
+  "brand": {
+    "title": "HeicTools",
+    "description": "免费在线 HEIC 转换器：HEIC 转 JPG，HEIC 转 PNG，HEIC 转 PDF。安全客户端处理。",
+    "logoAlt": "HeicTools Logo"
+  },
+  "nav": {
+    "home": "首页",
+    "heicToJpg": "HEIC 转 JPG",
+    "heicToPng": "HEIC 转 PNG",
+    "heicToWebp": "HEIC 转 WebP",
+    "heicToPdf": "HEIC 转 PDF",
+    "whatIsHeic": "什么是 HEIC？"
+  },
+  "tools": {
+    "common": {
+      "errors": {
+        "fileLimitExceeded": "一次最多只能上传 {max} 个文件。"
+      },
+      "actions": {
+        "downloadAll": "下载全部",
+        "downloadZip": "下载 ZIP",
+        "downloadPdf": "下载 PDF",
+        "clearAll": "清空全部",
+        "download": "下载",
+        "remove": "移除",
+        "addMore": "添加更多",
+        "limitReached": "数量已满"
+      },
+      "status": {
+        "converting": "转换中...",
+        "ready": "已完成",
+        "failed": "失败",
+        "waiting": "等待中..."
+      },
+      "whatIsHeicLink": {
+        "text": "想先了解 HEIC 是什么？可以先阅读：",
+        "linkText": "什么是 HEIC 文件？"
+      }
+    },
+    "heicToJpg": {
+      "title": "HEIC/HEIF 转 JPG 转换器",
+      "description": "免费在线将 HEIC 或 HEIF 转换为 JPG/JPEG。",
+      "metaTitle": "HEIC/HEIF 转 JPG 转换器（转为 JPEG） — 免费在线 | HeicTools",
+      "metaDescription": "在线即时将 HEIC 或 HEIF（.heic/.heif）转换为 JPG。免费、安全且无上传限制。适用于 Windows、Mac 和 iPhone。",
+      "h1": "HEIC/HEIF 转 JPG 转换器（转为 JPEG）",
+      "subtitle": "将 HEIC/HEIF（.heic/.heif）照片转换为广泛支持的 JPG 格式。非常适合分享和 Windows 兼容性。",
+      "converting": "正在转换...",
+      "download": "下载 JPG",
+      "convertAnother": "转换其他文件",
+      "errors": {
+        "invalidFormat": "文件格式无效。请上传 .heic 或 .heif 文件。",
+        "conversionFailed": "转换失败。请尝试其他文件。"
+      },
+      "seo": {
+        "section1": {
+          "title": "将 HEIC/HEIF 转换为 JPG",
+          "content": "需要编辑或分享 .heic 或 .heif 照片？转换为 JPG 以获得最大的设备和软件兼容性。"
+        },
+        "section2": {
+          "title": "为什么选择 JPG？",
+          "content": "JPG 是世界上最通用的图像格式。它可以在任何设备、网站或软件上打开，并且文件体积通常比 PNG 更小，非常适合照片存储和分享。"
+        },
+        "section3": {
+          "title": "如何转换",
+          "steps": [
+            "选择或拖放您的 HEIC 文件到上方区域",
+            "等待转换完成（通常只需几秒钟）",
+            "点击下载按钮保存您的 JPG 图片"
+          ]
+        },
+        "guideLink": {
+          "text": "需要更详细的指南？请阅读我们的完整教程：",
+          "linkText": "如何将 HEIC 转换为 JPG"
+        }
+      },
+      "upload": {
+        "dropText": "拖放文件到这里",
+        "browse": "选择文件",
+        "support": "支持 HEIC（.heic），兼容 HEIF（.heif）"
+      }
+    },
+    "heicToPng": {
+      "title": "HEIC 转 PNG 转换器",
+      "description": "将 .heic 文件转换为高质量 PNG 图像。",
+      "metaTitle": "HEIC/HEIF 转 PNG 转换器 — 免费在线工具 | HeicTools",
+      "metaDescription": "在线将 HEIC 或 HEIF（.heic/.heif）转换为 PNG。无损输出，适合编辑。100% 客户端隐私。",
+      "h1": "HEIC 转 PNG 转换器",
+      "subtitle": "将 HEIC/HEIF（.heic/.heif）转换为 PNG，浏览器本地处理，私密、快速、免费。",
+      "trust": {
+        "summary": "浏览器本地转换，私密、快速、免费。",
+        "items": [
+          {
+            "desc": "浏览器本地处理，不上传。"
+          },
+          {
+            "desc": "快速转换，立即下载。"
+          },
+          {
+            "desc": "免费使用，无需注册。"
+          }
+        ]
+      },
+      "converting": "正在转换...",
+      "download": "下载 PNG",
+      "convertAnother": "转换其他文件",
+      "errors": {
+        "invalidFormat": "文件格式无效。请上传 .heic 或 .heif 文件。",
+        "conversionFailed": "转换失败。请尝试其他文件。"
+      },
+      "seo": {
+        "section1": {
+          "title": "将 HEIC/HEIF 转换为 PNG",
+          "content": "需要编辑 .heic 或 .heif 照片？转换为 PNG 可尽量保留画质，并支持透明背景。"
+        },
+        "section2": {
+          "title": "为什么选择 PNG？",
+          "content": "PNG 是一种无损格式，非常适合需要高质量图像的场景。与 JPG 不同，PNG 支持透明度，且多次保存不会损失画质。"
+        },
+        "section3": {
+          "title": "如何转换",
+          "steps": [
+            "选择或拖放您的 HEIC/HEIF 文件到上方区域",
+            "等待转换完成（通常只需几秒钟）",
+            "点击下载按钮保存您的 PNG 图片"
+          ]
+        },
+        "guideLink": {
+          "text": "需要更详细的指南？请阅读我们的完整教程：",
+          "linkText": "如何将 HEIC/HEIF 转换为 PNG"
+        }
+      },
+      "upload": {
+        "dropText": "拖放文件到这里",
+        "browse": "选择文件",
+        "support": "支持 HEIC（.heic），兼容 HEIF（.heif）"
+      }
+    },
+    "heicToWebp": {
+      "title": "HEIC/HEIF 转 WebP 转换器",
+      "description": "将 HEIC 或 HEIF 照片转换为 WebP 格式。",
+      "metaTitle": "HEIC/HEIF 转 WebP 转换器 — 免费在线工具 | HeicTools",
+      "metaDescription": "在线将 HEIC 或 HEIF（.heic/.heif）转换为 WebP。保持质量同时减小体积。100% 客户端隐私。",
+      "h1": "HEIC/HEIF 转 WebP 转换器",
+      "subtitle": "将 HEIC/HEIF（.heic/.heif）转换为 WebP，以获得更小的文件大小和更快的网页加载速度。安全且免费。",
+      "converting": "正在转换...",
+      "download": "下载 WebP",
+      "convertAnother": "转换其他文件",
+      "errors": {
+        "invalidFormat": "文件格式无效。请上传 .heic 或 .heif 文件。",
+        "conversionFailed": "转换失败。请尝试其他文件。"
+      },
+      "seo": {
+        "section1": {
+          "title": "将 HEIC/HEIF 转换为 WebP",
+          "content": "WebP 是现代网页图像标准。将 HEIC 转换为 WebP 可确保您的图像在所有现代浏览器上快速加载，同时保持较小的文件大小。"
+        },
+        "section2": {
+          "title": "为什么选择 WebP？",
+          "content": "与 JPG 和 PNG 相比，WebP 提供了卓越的压缩性能。它支持有损和无损压缩以及透明度，使其成为最通用的网页格式。"
+        },
+        "section3": {
+          "title": "如何转换",
+          "steps": [
+            "选择或拖放您的 HEIC 文件",
+            "等待转换完成",
+            "点击下载获取您的 WebP 文件"
+          ]
+        },
+        "guideLink": {
+          "text": "需要更详细的指南？请阅读我们的完整教程：",
+          "linkText": "如何将 HEIC 转换为 WebP"
+        }
+      },
+      "upload": {
+        "dropText": "拖放文件到这里",
+        "browse": "选择文件",
+        "support": "支持 HEIC（.heic），兼容 HEIF（.heif）"
+      }
+    },
+    "heicToPdf": {
+      "title": "HEIC/HEIF 转 PDF 转换器",
+      "description": "将您的 HEIC 或 HEIF 照片变成 PDF 文档。",
+      "metaTitle": "HEIC/HEIF 转 PDF 转换器 — 免费在线工具 | HeicTools",
+      "metaDescription": "将 HEIC 或 HEIF（.heic/.heif）转换为 PDF 文档。快速、免费且安全，客户端本地处理。",
+      "h1": "HEIC/HEIF 转 PDF 转换器",
+      "subtitle": "轻松将您的 HEIC/HEIF（.heic/.heif）图像变成 PDF 文档。非常适合将多张照片作为单个文件分享。",
+      "converting": "正在转换...",
+      "download": "下载 PDF",
+      "convertAnother": "转换其他文件",
+      "errors": {
+        "invalidFormat": "文件格式无效。请上传 .heic 或 .heif 文件。",
+        "conversionFailed": "转换失败。请尝试其他文件。"
+      },
+      "seo": {
+        "section1": {
+          "title": "将 HEIC/HEIF 转换为 PDF",
+          "content": "非常适合扫描收据、身份证或归档照片集。将多张 HEIC 文件合并为一个可分享的 PDF 文档。"
+        },
+        "section2": {
+          "title": "为什么选择 PDF？",
+          "content": "PDF 是全球通用的文档标准。它确保您的图像在任何设备和打印机上看起来都完全一致。与图像不同，PDF 可以在一个文件中包含多个页面。"
+        },
+        "section3": {
+          "title": "如何转换",
+          "steps": [
+            "选择或拖放您的 HEIC 文件",
+            "如果需要，重新排序图像",
+            "点击“转换”下载您的 PDF"
+          ]
+        },
+        "guideLink": {
+          "text": "需要更详细的指南？请阅读我们的完整教程：",
+          "linkText": "如何将 HEIC 转换为 PDF"
+        }
+      },
+      "upload": {
+        "dropText": "拖放文件到这里",
+        "browse": "选择文件",
+        "support": "支持 HEIC（.heic），兼容 HEIF（.heif）"
+      }
+    }
+  },
+  "footer": {
+    "rightsReserved": "版权所有。"
+  },
+  "cookie": {
+    "title": "我们重视您的隐私",
+    "description": "我们使用 Cookie 来增强您的体验并分析我们的流量。点击“接受”即表示您同意我们使用 Cookie。了解更多信息，请参阅我们的",
+    "policyLink": "隐私政策",
+    "decline": "拒绝",
+    "accept": "接受"
+  },
+  "privacyPolicy": {
+    "metaTitle": "隐私政策 - HeicTools",
+    "metaDescription": "HeicTools 的隐私政策。了解我们如何通过客户端处理保护您的隐私。",
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：",
+    "sections": {
+      "intro": {
+        "title": "1. 简介",
+        "content": "欢迎使用 HeicTools。我们尊重您的隐私，并致力于保护您的个人数据。本隐私政策将告知您当您访问我们的网站时我们如何处理您的个人数据，并告知您您的隐私权利以及法律如何保护您。"
+      },
+      "clientSide": {
+        "title": "2. 客户端处理",
+        "content": "HeicTools 将隐私作为重中之重。<strong>我们不会将您的文件上传到我们的服务器。</strong>所有文件转换（HEIC 转 JPG、PNG、PDF）完全在您的 Web 浏览器（客户端）中进行。您的照片从未离开您的设备，确保您个人数据的完全隐私和安全。"
+      },
+      "dataCollection": {
+        "title": "3. 数据收集",
+        "content": "由于我们不在服务器上处理文件，因此我们不会收集、存储或共享您转换的任何内容。但是，我们可能会收集有关您访问的非个人信息，以帮助我们改进服务：",
+        "items": [
+          "通过 Google Analytics 收集的使用数据（访问的页面、停留时间等）",
+          "设备和浏览器信息（以确保兼容性）",
+          "语言偏好"
+        ]
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": "我们使用 Cookie 来增强您的浏览体验并分析我们的流量。您可以选择通过我们的 Cookie 同意横幅接受或拒绝 Cookie。我们主要使用 Google Analytics Cookie 来了解用户如何与我们的网站互动。"
+      },
+      "contact": {
+        "title": "5. 联系我们",
+        "content": "如果您对本隐私政策或我们的隐私惯例有任何疑问，请通过以下方式联系我们："
+      }
+    }
+  },
+  "pages": {
+    "guides": {
+      "common": {
+        "readyTitle": "准备好转换了吗？",
+        "convertNow": "将 HEIC 转换为 {format}",
+        "method": "方法 {number}：{title}",
+        "steps": "分步指南",
+        "whyChoose": "为什么选择 {format}？",
+        "howToConvert": "如何在线转换"
+      },
+      "heicToPng": {
+        "seoTitle": "如何将 HEIC 转换为 PNG（高质量）",
+        "seoDesc": "将 HEIC 图像转换为 PNG 格式的指南。最适合保持图像质量和透明背景。",
+        "title": "如何将 HEIC 转换为 PNG",
+        "intro": "HEIC 非常适合照片，但有时您需要 PNG 以获得无损质量或与网页设计工具的兼容性。",
+        "learnMore": "在编辑之前，如果您想了解有关源格式的更多信息，请阅读我们的指南：{link}。",
+        "whyChoose": {
+          "title": "为什么选择 PNG 而不是 JPG？",
+          "reasons": {
+            "lossless": "<strong>无损压缩：</strong> 保存时无质量损失。",
+            "transparency": "<strong>透明度：</strong> 支持透明背景（如果源文件包含）。",
+            "standard": "<strong>网络标准：</strong> 被所有浏览器和编辑器广泛支持。"
+          }
+        },
+        "method1": {
+          "title": "在线转换器（推荐）",
+          "desc": "无需安装软件即可将 HEIC 转换为 PNG 的最快方法。",
+          "step1": "前往 {link}。",
+          "step2": "上传您的 HEIC 文件。",
+          "step3": "等待转换完成。",
+          "step4": "下载您的高质量 PNG 文件。",
+          "cta": "立即转换您的文件：",
+          "buttonJpg": "转换为 JPG",
+          "buttonPng": "将 HEIC 转换为 PNG",
+          "buttonWebp": "转换为 WebP",
+          "buttonPdf": "转换为 PDF"
+        },
+        "cta": {
+          "title": "准备好开始了吗？",
+          "desc": "几秒钟内将您的 HEIC 照片转换为高质量 PNG。",
+          "button": "转换 HEIC 为 PNG"
+        }
+      },
+      "heicToJpg": {
+        "seoTitle": "如何在 Windows 和 Mac 上将 HEIC 转换为 JPG（免费）",
+        "seoDesc": "将 HEIC 转换为 JPG 的分步指南。了解如何使用免费在线工具或内置系统应用将 HEIC 文件更改为 JPG。",
+        "title": "如何将 HEIC 转换为 JPG",
+        "intro": "HEIC 文件非常适合节省 iPhone 空间，但在其他设备上分享或打开可能会很麻烦。以下是如何轻松将 HEIC 更改为 JPG。",
+        "learnMore": "在查看这些文件之前，如果您想了解 Apple 为什么使用这种格式，请查看我们的指南：{link}。",
+        "whyChoose": {
+          "title": "为什么要将 HEIC 转换为 JPG？",
+          "reasons": {
+            "compatibility": "<strong>通用兼容性：</strong> JPG 可在任何设备上打开，从旧 Windows PC 到 Android 手机。",
+            "sharing": "<strong>轻松分享：</strong> 社交媒体应用和网站始终接受 JPG 文件。",
+            "software": "<strong>软件支持：</strong> 无需特殊插件或付费扩展。"
+          }
+        },
+        "method1": {
+          "title": "方法 1：使用免费在线转换器（推荐）",
+          "desc": "无需安装任何软件即可将 HEIC 转换为 JPG 的最快方法是使用基于浏览器的工具。",
+          "step1": "前往 {link}。",
+          "step2": "将您的 .heic 文件拖放到上传区域。",
+          "step3": "等待转换完成（通常只需几秒钟）。",
+          "step4": "下载您的新 JPG 照片。",
+          "cta": "立即转换您的文件：",
+          "buttonJpg": "将 HEIC 转换为 JPG",
+          "buttonPng": "转换为 PNG",
+          "buttonWebp": "转换为 WebP",
+          "buttonPdf": "转换为 PDF"
+        },
+        "cta": {
+          "title": "准备好转换了吗？",
+          "desc": "立即尝试我们快速、安全且免费的在线转换器。",
+          "button": "立即转换 HEIC 为 JPG"
+        }
+      },
+      "heicToWebp": {
+        "seoTitle": "如何将 HEIC 转换为 WebP（最佳压缩）",
+        "seoDesc": "将 HEIC 图像转换为 WebP 格式的指南。了解如何在保持高质量的同时减小文件大小以用于网络。",
+        "title": "如何将 HEIC 转换为 WebP",
+        "intro": "WebP 是一种现代图像格式，为网络图像提供卓越的无损和有损压缩。以下是如何将您的 HEIC 照片转换为 WebP。",
+        "learnMore": "在优化之前，如果您想了解源格式的效率，请查看我们的指南：{link}。",
+        "whyChoose": {
+          "title": "为什么选择 WebP？",
+          "reasons": {
+            "compression": "<strong>卓越的压缩：</strong> WebP 图像的大小比 PNG 小 26%。",
+            "loading": "<strong>加载更快：</strong> 更小的文件大小意味着更快的网站加载时间。",
+            "transparency": "<strong>透明度：</strong> 与 PNG 一样，WebP 也支持透明度。"
+          }
+        },
+        "method1": {
+          "title": "在线转换器（推荐）",
+          "desc": "使用我们的免费工具即时优化您的网页图像。",
+          "step1": "前往 {link}。",
+          "step2": "上传您的 HEIC 文件。",
+          "step3": "等待转换完成。",
+          "step4": "下载优化后的 WebP 文件。",
+          "cta": "开始优化：",
+          "buttonJpg": "转换为 JPG",
+          "buttonPng": "转换为 PNG",
+          "buttonWebp": "将 HEIC 转换为 WebP",
+          "buttonPdf": "转换为 PDF"
+        },
+        "cta": {
+          "title": "准备好优化了吗？",
+          "desc": "立即将您的 HEIC 照片转换为高效的 WebP 格式。",
+          "button": "转换 HEIC 为 WebP"
+        }
+      },
+      "heicToPdf": {
+        "seoTitle": "如何将 HEIC 转换为 PDF（合并照片）",
+        "seoDesc": "了解如何在线将多张 HEIC 照片转换为单个 PDF 文档。非常适合分享文档或收据。",
+        "title": "如何将 HEIC 转换为 PDF",
+        "intro": "需要将多张 iPhone 照片作为单个文档发送？将 HEIC 转换为 PDF 是最佳解决方案。",
+        "learnMore": "如果您想在归档之前了解更多关于 iPhone 使用的图像格式，请参阅：{link}。",
+        "whyChoose": {
+          "title": "为什么将 HEIC 转换为 PDF？",
+          "reasons": {
+            "compatibility": "<strong>通用兼容性：</strong> PDF 适用于所有设备。",
+            "singleFile": "<strong>单个文件：</strong> 将 10 多张照片合并为一个易于分享的文件。",
+            "security": "<strong>安全性：</strong> PDF 比图像更难编辑。"
+          }
+        },
+        "method1": {
+          "title": "在线转换器（推荐）",
+          "desc": "轻松将多张 HEIC 图像合并为一个 PDF 文档。",
+          "step1": "打开 {link}。",
+          "step2": "选择您的 HEIC 图像。",
+          "step3": "（可选）如果需要，重新排序图像。",
+          "step4": "点击<strong>转换</strong>生成您的 PDF。",
+          "cta": "创建您的 PDF：",
+          "buttonJpg": "转为 JPG",
+          "buttonPng": "转为 PNG",
+          "buttonWebp": "转为 WebP",
+          "buttonPdf": "HEIC 转 PDF"
+        },
+        "cta": {
+          "title": "开始转换",
+          "desc": "立即将您的 HEIC 照片变成专业的 PDF 文档。",
+          "button": "转换 HEIC 为 PDF"
+        }
+      },
+      "whatIsHeic": {
+        "seoTitle": "什么是 HEIC 文件？起源、特性与格式对比",
+        "seoDesc": "HEIC 格式全方位指南。了解它的历史、特性，以及它与 JPG、PNG、WebP 和 PDF 的详细对比。",
+        "title": "什么是 HEIC 文件？",
+        "intro": "HEIC 文件是一种图像格式，被 iPhone 和 iPad 等 Apple 设备使用，用于比 JPG 等传统格式更高效地存储照片。HEIC 代表高效图像容器 (High Efficiency Image Container)，基于 HEIF (High Efficiency Image File Format) 标准。简单来说，HEIC 文件就是 iPhone 用来保存照片的一种新型图片格式，它在保持更高图像质量的同时，占用的存储空间比 JPG 更小。",
+        "origins": {
+          "title": "起源与发展",
+          "content": "HEIC 是 **HEIF**（高效图像文件格式）标准的文件扩展名。它由 **MPEG**（动态图像专家组）开发——该团队也是 iTunes 中使用的 AAC 音频格式的开发者。\n\n虽然该标准于 2015 年最终确定，但直到 **2017 年** Apple 将其作为 iOS 11 的默认图像格式后，它才获得主流关注。这一转变取代了 iPhone 上老化的 JPEG 格式，允许用户以一半的文件大小保存高质量照片。"
+        },
+        "features": {
+          "title": "HEIC 的核心特性",
+          "list": {
+            "compression": "<strong>卓越的压缩：</strong> 在相同质量下，HEIC 图像通常比 JPEG 小 50%。",
+            "quality": "<strong>16 位色彩：</strong> 支持比 JPEG 的 8 位更深的色彩范围，减少了天空和渐变中的色带。",
+            "advanced": "<strong>高级功能：</strong> 支持透明度（像 PNG）和在单个文件中存储图像序列（像实况照片或 GIF）。",
+            "editing": "<strong>非破坏性编辑：</strong> 裁剪和旋转等编辑可以在不改变原始图像数据的情况下保存。"
+          }
+        },
+        "comparison": {
+          "title": "HEIC vs JPG：图片格式全方位对比",
+          "desc": "下表全方位对比了 HEIC 与 JPG、PNG、WebP 格式，从文件大小、图像质量、兼容性和最佳适用场景方面的差异，让你一图看懂不同图片格式的核心区别。",
+          "table": {
+            "header": [
+              "格式",
+              "文件大小",
+              "图像质量",
+              "透明背景",
+              "兼容性",
+              "最佳适用场景"
+            ],
+            "rows": [
+              {
+                "format": "HEIC",
+                "size": "极小 (最佳)",
+                "quality": "高 (16位色)",
+                "transparency": "支持",
+                "compatibility": "受限",
+                "useCase": "Apple 生态系统，节省存储空间，保留原始质量"
+              },
+              {
+                "format": "JPG",
+                "size": "中等",
+                "quality": "中 (8位色)",
+                "transparency": "不支持",
+                "compatibility": "通用",
+                "useCase": "分享，社交媒体，通用兼容性"
+              },
+              {
+                "format": "PNG",
+                "size": "较大",
+                "quality": "无损",
+                "transparency": "支持",
+                "compatibility": "高",
+                "useCase": "透明背景，文本/图形，像素级完美编辑"
+              },
+              {
+                "format": "WebP",
+                "size": "极小",
+                "quality": "高",
+                "transparency": "支持",
+                "compatibility": "高 (网页)",
+                "useCase": "网站加速，现代 Web 应用"
+              }
+            ]
+          }
+        },
+        "whyConvert": {
+          "title": "为什么我们需要转换 HEIC 文件？",
+          "inconveniences": {
+            "title": "HEIC 在日常使用中的不便",
+            "list": {
+              "windows": "<strong>Windows 兼容性：</strong> Windows 系统通常需要安装付费扩展才能打开 HEIC 图片。",
+              "web": "<strong>网页上传：</strong> 许多网站、报名系统和政府平台仅支持 JPG 或 PDF 格式。",
+              "sharing": "<strong>分享困难：</strong> 发送给 Android 用户或旧设备用户时，他们可能无法查看 HEIC 照片。",
+              "software": "<strong>软件支持：</strong> 一些旧版的图片编辑软件不支持 HEIC 格式。"
+            }
+          },
+          "cta": {
+            "text": "立即转换格式，解决兼容性问题：",
+            "buttonJpg": "将 HEIC 转换为 JPG",
+            "buttonPng": "转换为 PNG",
+            "buttonWebp": "转换为 WebP",
+            "buttonPdf": "转换为 PDF"
+          }
+        },
+        "cta": {
+          "title": "需要转换文件吗？",
+          "desc": "使用我们的免费在线工具即时将您的 HEIC 文件转换为 JPG 或 PNG。",
+          "button": "前往转换器"
+        }
+      },
+      "openHeicOnWindows": {
+        "title": "如何在 Windows 上打开 HEIC 文件",
+        "description": "了解在 Windows 10 和 11 上查看和打开 HEIC 文件的最佳方法，包括免费工具和官方扩展。",
+        "learnMore": "在查看这些文件之前，如果您想了解 Apple 为什么使用这种格式，请查看我们的指南：{link}。",
+        "whyCantOpen": {
+          "title": "为什么 Windows 打不开 HEIC 文件？",
+          "reasons": {
+            "codec": "<strong>缺少 HEVC 解码器：</strong> 由于许可问题，Windows 默认不包含必要的 HEVC 视频扩展。",
+            "license": "<strong>许可费用：</strong> 微软通常要求用户在商店购买 HEVC 视频扩展（约 $0.99）才能查看这些文件。",
+            "compatibility": "<strong>旧版兼容性：</strong> Windows 7 和 8 等旧版本完全不支持 HEIC/HEIF 格式。"
+          }
+        },
+        "methods": {
+          "title": "如何在 Windows 上打开 HEIC 文件（5种方法）",
+          "method1": {
+            "title": "方法 1：使用免费在线转换器（推荐）",
+            "desc": "查看 HEIC 文件最简单的方法是将其转换为 JPG 或 PNG 等通用格式。这不需要安装任何软件。",
+            "cons": "<strong>缺点：</strong> 需要互联网连接。",
+            "cta": "立即转换您的文件：",
+            "buttonJpg": "将 HEIC 转换为 JPG",
+            "buttonPng": "转换为 PNG",
+            "buttonWebp": "转换为 WebP",
+            "buttonPdf": "转换为 PDF"
+          },
+          "method2": {
+            "title": "方法 2：安装微软 HEIF 扩展",
+            "desc": "您可以通过从 Microsoft Store 安装扩展程序，为 Windows 照片应用添加原生支持。",
+            "steps": "在 Microsoft Store 中搜索“HEIF 图像扩展”和“HEVC 视频扩展”。",
+            "cons": "<strong>缺点：</strong> HEVC 扩展通常需要付费（约 7 元人民币），且安装过程有时会出现问题。"
+          },
+          "method3": {
+            "title": "方法 3：使用第三方图片查看器",
+            "desc": "IrfanView、XnView 或 CopyTrans HEIC for Windows 等工具允许您查看 HEIC 文件。",
+            "cons": "<strong>缺点：</strong> 需要安装第三方软件，界面可能较旧或包含不必要的捆绑软件。"
+          },
+          "method4": {
+            "title": "方法 4：使用 Google Photos 或 OneDrive",
+            "desc": "将您的 HEIC 照片上传到云存储服务，这些服务通常内置了查看器。",
+            "cons": "<strong>缺点：</strong> 对于大量文件传输较慢；上传私人照片存在隐私隐患。"
+          },
+          "method5": {
+            "title": "方法 5：使用专业修图软件",
+            "desc": "Adobe Photoshop 或 Lightroom 等专业工具支持 HEIC 文件。",
+            "cons": "<strong>缺点：</strong> 软件非常昂贵；仅为了查看照片而言大材小用。"
+          }
+        }
+      }
+    }
+  }
+}
