@@ -1,8 +1,8 @@
 {
   "home": {
     "hero": {
-      "title": "The Ultimate CSV Converter Tool",
-      "subtitle": "Seamlessly convert CSV to JSON, Excel, and other formats directly in your browser. Fast, secure, and 100% free with no file size limits."
+      "title": "Free Online CSV Converter",
+      "subtitle": "Convert JSON, Excel, TXT, XML and PDF to CSV in seconds. No signup required."
     },
     "features": {
       "noLimits": "Unlimited Uploads",
@@ -10,38 +10,60 @@
       "secure": "Private & Secure"
     },
     "whyChoose": {
-      "title": "Why Choose Our Tool?",
+      "title": "Why Use Our CSV Converter?",
       "subtitle": "We provide the best experience for converting your data files.",
       "items": {
         "privacy": {
-          "title": "Privacy First",
-          "desc": "Your data never leaves your device. All conversions happen locally in your browser."
+          "title": "100% Free & Online",
+          "desc": "No hidden fees, no subscriptions. Use all tools completely free directly in your browser."
         },
         "speed": {
-          "title": "Lightning Fast",
-          "desc": "Powered by modern web technologies for instant conversion results."
+          "title": "Fast & Secure Processing",
+          "desc": "Your data never leaves your device. All conversions happen locally for maximum security and speed."
         },
         "simple": {
-          "title": "Easy to Use",
-          "desc": "Simple drag-and-drop interface designed for everyone, from beginners to pros."
+          "title": "No File Upload Limits",
+          "desc": "Convert large files without restrictions. We don't cap your file size or daily usage."
         }
       }
     },
     "howItWorks": {
-      "title": "How It Works",
-      "subtitle": "Convert your files in 3 simple steps.",
+      "title": "How to Convert to CSV",
+      "subtitle": "Follow these simple steps to convert any file to CSV format.",
       "steps": {
         "step1": {
-          "title": "Upload File",
-          "desc": "Drag and drop your file or click to select from your computer."
+          "title": "Choose File",
+          "desc": "Select the file you want to convert (JSON, Excel, TXT, etc.)."
         },
         "step2": {
-          "title": "Process",
-          "desc": "Our tool automatically processes your file instantly."
+          "title": "Upload & Process",
+          "desc": "Drag and drop your file. Our tool automatically processes it instantly."
         },
         "step3": {
-          "title": "Download",
-          "desc": "Preview the result and download your converted file immediately."
+          "title": "Download CSV",
+          "desc": "Preview your data and download the converted CSV file immediately."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common questions about our CSV converter.",
+      "items": {
+        "q1": {
+          "question": "What is a CSV converter?",
+          "answer": "A CSV converter is a tool that transforms data from various formats (like JSON, Excel, XML) into Comma-Separated Values (CSV) format, making it compatible with spreadsheet software."
+        },
+        "q2": {
+          "question": "Is this CSV converter free?",
+          "answer": "Yes, our tool is 100% free to use. There are no hidden charges, subscriptions, or limits on the number of files you can convert."
+        },
+        "q3": {
+          "question": "Can I convert Excel to CSV online?",
+          "answer": "Absolutely. You can upload your Excel (.xlsx or .xls) files and convert them to CSV format instantly while preserving your data."
+        },
+        "q4": {
+          "question": "Is my data safe?",
+          "answer": "Yes, your data is completely safe. We use client-side processing, meaning your files are converted directly in your browser and are never uploaded to our servers."
         }
       }
     },
@@ -61,6 +83,18 @@
       "excelToCsv": {
         "title": "Excel to CSV",
         "desc": "Convert Excel (.xlsx) files to CSV"
+      },
+      "txtToCsv": {
+        "title": "TXT to CSV",
+        "desc": "Convert TXT files to CSV"
+      },
+      "xmlToCsv": {
+        "title": "XML to CSV",
+        "desc": "Convert XML files to CSV"
+      },
+      "pdfToCsv": {
+        "title": "PDF to CSV",
+        "desc": "Convert PDF tables to CSV"
       }
     },
     "guides": {
@@ -90,10 +124,10 @@
   },
   "nav": {
     "home": "Home",
-    "csvToJson": "CSV to JSON",
     "jsonToCsv": "JSON to CSV",
-    "csvToExcel": "CSV to Excel",
-    "excelToCsv": "Excel to CSV"
+    "txtToCsv": "TXT to CSV",
+    "excelToCsv": "Excel to CSV",
+    "xmlToCsv": "XML to CSV"
   },
   "tools": {
     "common": {
@@ -231,6 +265,98 @@
             "The data is converted to comma-separated text.",
             "Download your lightweight CSV file."
           ]
+        },
+        "encoding": {
+          "title": "CSV Encoding (UTF-8)",
+          "content": "Our converter ensures your CSV files are encoded in UTF-8. This is critical for preserving special characters, emojis, and non-English text, preventing the common 'garbled text' issue in Excel."
+        },
+        "differences": {
+          "title": "Excel vs CSV Differences",
+          "content": "Excel files (.xlsx) contain formatting, formulas, and multiple sheets. CSV files are plain text, containing only the raw data. Converting to CSV removes formatting but ensures maximum compatibility."
+        }
+      }
+    },
+    "txtToCsv": {
+      "title": "TXT to CSV Converter",
+      "description": "Convert Text files to CSV online for free.",
+      "metaTitle": "TXT to CSV Converter — Free Online | CSV Converter",
+      "metaDescription": "Convert TXT to CSV online instantly. Supports custom delimiters (comma, tab, pipe). Free & secure.",
+      "h1": "TXT to CSV Converter",
+      "subtitle": "Convert Text files to CSV format with custom delimiters.",
+      "upload": {
+        "dropText": "Drag & drop TXT file here",
+        "browse": "Browse Files",
+        "support": "Supports .txt files"
+      },
+      "seo": {
+        "why": {
+          "title": "Why Convert TXT to CSV?",
+          "content": "Text files often contain structured data but lack the format needed for spreadsheet software. Converting TXT to CSV organizes your data into columns and rows."
+        },
+        "how": {
+          "title": "How to Convert TXT to CSV",
+          "steps": [
+            "Upload your .txt file.",
+            "Select the delimiter (Comma, Tab, Space).",
+            "Preview the structured data.",
+            "Download as .csv file."
+          ]
+        }
+      }
+    },
+    "xmlToCsv": {
+      "title": "XML to CSV Converter",
+      "description": "Convert XML files to CSV online for free.",
+      "metaTitle": "XML to CSV Converter — Free Online | CSV Converter",
+      "metaDescription": "Convert XML data to CSV format. Flatten nested XML structures automatically.",
+      "h1": "XML to CSV Converter",
+      "subtitle": "Transform hierarchical XML data into flat CSV tables.",
+      "upload": {
+        "dropText": "Drag & drop XML file here",
+        "browse": "Browse Files",
+        "support": "Supports .xml files"
+      },
+      "seo": {
+        "why": {
+          "title": "Why Convert XML to CSV?",
+          "content": "XML is great for machines but hard for humans to read. Converting to CSV makes it easy to view, edit, and analyze XML data in Excel."
+        },
+        "how": {
+          "title": "How to Convert XML to CSV",
+          "steps": [
+            "Upload your .xml file.",
+            "The tool parses the XML tree.",
+            "We flatten the structure into rows and columns.",
+            "Download your clean CSV file."
+          ]
+        }
+      }
+    },
+    "pdfToCsv": {
+      "title": "PDF to CSV Converter",
+      "description": "Convert PDF tables to CSV online.",
+      "metaTitle": "PDF to CSV Converter — Extract Tables from PDF",
+      "metaDescription": "Extract tabular data from PDF files and convert to CSV. Free online tool.",
+      "h1": "PDF to CSV Converter",
+      "subtitle": "Extract tables from PDF files into editable CSV format.",
+      "upload": {
+        "dropText": "Drag & drop PDF file here",
+        "browse": "Browse Files",
+        "support": "Supports .pdf files"
+      },
+      "seo": {
+        "why": {
+          "title": "Why Convert PDF to CSV?",
+          "content": "PDFs are for viewing, not editing. Converting PDF tables to CSV unlocks the data for analysis in Excel or Google Sheets."
+        },
+        "how": {
+          "title": "How to Convert PDF to CSV",
+          "steps": [
+            "Upload your PDF file.",
+            "We detect tabular data in the document.",
+            "The data is extracted and formatted as CSV.",
+            "Download your file."
+          ]
         }
       }
     }
@@ -241,58 +367,59 @@
   "pages": {
     "guides": {
       "whatIsCsv": {
-        "title": "What is a CSV File?",
-        "seoTitle": "What is a CSV File? Meaning & Usage | CSV Converter",
-        "seoDesc": "Learn what a CSV file is, how to open it, and why it is the standard for data exchange. Full guide on Comma Separated Values.",
+        "title": "What Is a CSV File?",
+        "seoTitle": "What Is a CSV File? Definition, Format & Examples",
+        "seoDesc": "Learn what a CSV file is, what it stands for, and how to use it. Complete guide with examples and CSV vs Excel comparison.",
         "intro": "A CSV (Comma Separated Values) file is a plain text file that contains a list of data. These files are often used for exchanging data between different applications. For example, databases and contact managers often support CSV files.",
-        "origins": {
-          "title": "Origins & Usage",
-          "content": "CSV files have been around since the early days of computing. They provide a simple way to store tabular data in a format that can be read by both humans and machines. Because they are plain text, they can be opened in any text editor, but they are most commonly viewed in spreadsheet software like Microsoft Excel or Google Sheets."
-        },
-        "features": {
-          "title": "Key Features",
-          "list": {
-            "simple": "<strong>Simple Structure:</strong> Data is separated by commas, making it easy to parse.",
-            "compatible": "<strong>Universal Compatibility:</strong> Can be opened by almost any data processing software.",
-            "lightweight": "<strong>Lightweight:</strong> Plain text format ensures small file sizes compared to proprietary formats.",
-            "humanReadable": "<strong>Human Readable:</strong> You can read and edit CSV files with a simple text editor like Notepad."
+        "sections": {
+          "standFor": {
+            "title": "What Does CSV Stand For?",
+            "content": "CSV stands for <strong>Comma Separated Values</strong>. It is a simple file format used to store tabular data, such as a spreadsheet or database. Files in the CSV format can be imported to and exported from programs that store data in tables, such as Microsoft Excel or OpenOffice Calc."
+          },
+          "format": {
+            "title": "What Is CSV Format?",
+            "content": "A CSV file is a text file that has a specific format which allows data to be saved in a table structured format. <br><br>Key characteristics include:<br><ul><li>Each line of the file is a data record.</li><li>Each record consists of one or more fields, separated by commas.</li><li>The use of the comma as a field separator is the source of the name for this file format.</li></ul>"
+          },
+          "usedFor": {
+            "title": "What Is a CSV File Used For?",
+            "content": "CSV files are primarily used for <strong>data exchange</strong> between different programs. <br><br>Common use cases:<br><ul><li>Exporting contacts from smartphones to import into Google Contacts.</li><li>Transferring product data from an e-commerce platform to a shipping tool.</li><li>Saving spreadsheet data in a format that can be read by any text editor.</li></ul>"
+          },
+          "example": {
+            "title": "CSV Example Explained",
+            "content": "Here is a simple example of what a CSV file looks like when opened in a text editor:",
+            "code": "Name,Email,Phone Number\nJohn Doe,john{'@'}example.com,555-555-5555\nJane Smith,jane{'@'}example.com,555-555-1234\nBob Jones,bob{'@'}example.com,555-555-6789",
+            "explanation": "The first line is often the header, which defines the column names. Each subsequent line represents a row of data."
+          },
+          "vsExcel": {
+            "title": "CSV vs Excel (XLSX)",
+            "content": "While both CSV and Excel (XLSX) files store tabular data, they have significant differences. Many users search for 'csv in excel format', but it's important to understand they are not the same.",
+            "table": {
+              "headers": ["Feature", "CSV", "Excel (.xlsx)"],
+              "rows": [
+                ["Format", "Plain Text", "Binary (Proprietary)"],
+                [
+                  "Formatting",
+                  "None (Raw Data)",
+                  "Rich (Fonts, Colors, Borders)"
+                ],
+                ["Formulas", "Not Supported", "Supported"],
+                ["File Size", "Small & Lightweight", "Larger"],
+                [
+                  "Compatibility",
+                  "Universal (Any Text Editor)",
+                  "Requires Excel or Compatible App"
+                ]
+              ]
+            }
           }
         },
-        "comparison": {
-          "title": "CSV vs Excel vs JSON",
-          "desc": "How does CSV compare to other popular data formats?",
-          "table": {
-            "header": [
-              "Format",
-              "Readability",
-              "Complexity",
-              "File Size",
-              "Best For"
-            ],
-            "rows": [
-              {
-                "format": "CSV",
-                "readability": "High",
-                "complexity": "Low",
-                "size": "Small",
-                "useCase": "Data Exchange, Simple Tables"
-              },
-              {
-                "format": "Excel (.xlsx)",
-                "readability": "Medium (Requires App)",
-                "complexity": "High (Formulas, Formatting)",
-                "size": "Medium",
-                "useCase": "Complex Analysis, Reporting"
-              },
-              {
-                "format": "JSON",
-                "readability": "Medium",
-                "complexity": "Medium (Nested Data)",
-                "size": "Medium",
-                "useCase": "Web APIs, Configuration"
-              }
-            ]
-          }
+        "internalLinks": {
+          "title": "Free CSV Tools",
+          "list": [
+            { "text": "Convert JSON to CSV", "path": "/json-to-csv" },
+            { "text": "Convert Excel to CSV", "path": "/xlsx-to-csv" },
+            { "text": "How to Open CSV Files", "path": "/how-to-open-csv-file" }
+          ]
         }
       },
       "howToOpenCsv": {

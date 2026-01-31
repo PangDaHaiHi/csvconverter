@@ -1,13 +1,19 @@
 <script setup lang="ts">
-import { Earth, FileJson, FileSpreadsheet, FileText } from "lucide-vue-next";
+import {
+  Earth,
+  FileJson,
+  FileSpreadsheet,
+  FileText,
+  Code,
+} from "lucide-vue-next";
 const { locale, locales, setLocale } = useI18n();
 const localePath = useLocalePath();
 
 const navItems = [
-  { path: "/csv-to-json", icon: FileJson, label: "nav.csvToJson" },
-  { path: "/json-to-csv", icon: FileText, label: "nav.jsonToCsv" },
-  { path: "/csv-to-excel", icon: FileSpreadsheet, label: "nav.csvToExcel" },
-  { path: "/excel-to-csv", icon: FileSpreadsheet, label: "nav.excelToCsv" },
+  { path: "/json-to-csv", icon: FileJson, label: "nav.jsonToCsv" },
+  { path: "/txt-to-csv", icon: FileText, label: "nav.txtToCsv" },
+  { path: "/xlsx-to-csv", icon: FileSpreadsheet, label: "nav.excelToCsv" },
+  { path: "/xml-to-csv", icon: Code, label: "nav.xmlToCsv" },
 ];
 </script>
 

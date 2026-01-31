@@ -6,6 +6,7 @@ import {
   Shield,
   Zap,
   MousePointer,
+  Code,
 } from "lucide-vue-next";
 
 const { t } = useI18n();
@@ -20,36 +21,36 @@ useSeoMeta({
 
 const tools = [
   {
-    path: "/csv-to-json",
-    icon: FileJson,
-    title: "home.tools.csvToJson.title",
-    desc: "home.tools.csvToJson.desc",
-    color: "text-blue-600",
-    bg: "bg-blue-50",
-  },
-  {
     path: "/json-to-csv",
-    icon: FileText,
+    icon: FileJson,
     title: "home.tools.jsonToCsv.title",
     desc: "home.tools.jsonToCsv.desc",
     color: "text-green-600",
     bg: "bg-green-50",
   },
   {
-    path: "/csv-to-excel",
-    icon: FileSpreadsheet,
-    title: "home.tools.csvToExcel.title",
-    desc: "home.tools.csvToExcel.desc",
-    color: "text-indigo-600",
-    bg: "bg-indigo-50",
+    path: "/txt-to-csv",
+    icon: FileText,
+    title: "home.tools.txtToCsv.title",
+    desc: "home.tools.txtToCsv.desc",
+    color: "text-slate-600",
+    bg: "bg-slate-50",
   },
   {
-    path: "/excel-to-csv",
+    path: "/xlsx-to-csv",
     icon: FileSpreadsheet,
     title: "home.tools.excelToCsv.title",
     desc: "home.tools.excelToCsv.desc",
     color: "text-red-600",
     bg: "bg-red-50",
+  },
+  {
+    path: "/xml-to-csv",
+    icon: Code,
+    title: "home.tools.xmlToCsv.title",
+    desc: "home.tools.xmlToCsv.desc",
+    color: "text-orange-600",
+    bg: "bg-orange-50",
   },
 ];
 </script>
@@ -126,7 +127,9 @@ const tools = [
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+          >
             <div
               class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6"
             >
@@ -140,7 +143,9 @@ const tools = [
             </p>
           </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+          >
             <div
               class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6"
             >
@@ -154,7 +159,9 @@ const tools = [
             </p>
           </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+          >
             <div
               class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6"
             >

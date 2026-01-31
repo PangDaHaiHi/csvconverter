@@ -79,7 +79,7 @@ useHead({
           >
             <template #link>
               <NuxtLink
-                :to="localePath('/what-is-an-csv-file')"
+                :to="localePath('/what-is-csv')"
                 class="text-blue-600 hover:text-blue-800 font-medium underline"
               >
                 {{ $t("pages.guides.whatIsCsv.title") }}

@@ -104,7 +104,7 @@ const clear = () => {
     <div class="mt-4 text-sm text-gray-600 text-center mb-8">
       {{ $t("tools.common.whatIsCsvLink.text") }}
       <NuxtLink
-        :to="localePath('/what-is-an-csv-file')"
+        :to="localePath('/what-is-csv')"
         class="text-blue-600 hover:text-blue-700 font-medium hover:underline"
       >
         {{ $t("tools.common.whatIsCsvLink.linkText") }}
@@ -193,7 +193,20 @@ const clear = () => {
           </h2>
           <p>{{ $t("tools.jsonToCsv.seo.why.content") }}</p>
         </section>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            {{ $t("tools.jsonToCsv.seo.when.title") }}
+          </h2>
+          <p>{{ $t("tools.jsonToCsv.seo.when.content") }}</p>
+        </section>
       </div>
+
+      <section class="mb-12 bg-gray-50 p-6 rounded-lg">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">
+          {{ $t("tools.jsonToCsv.seo.example.title") }}
+        </h2>
+        <p class="mb-4">{{ $t("tools.jsonToCsv.seo.example.content") }}</p>
+      </section>
 
       <section class="bg-blue-50 rounded-2xl p-8 mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">

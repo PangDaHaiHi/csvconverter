@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Papa from "papaparse";
+import * as XLSX from "xlsx";
 import { Upload, Download, Copy, Trash2 } from "lucide-vue-next";
 
 const { t, tm, rt } = useI18n();
@@ -8,19 +8,23 @@ const localePath = useLocalePath();
 const fileInput = ref<HTMLInputElement | null>(null);
 
 const file = ref<File | null>(null);
-const jsonOutput = ref<string>("");
+const csvOutput = ref<string>("");
 const error = ref<string>("");
 const isConverting = ref(false);
 
 useSeoMeta({
-  title: t("tools.csvToJson.metaTitle"),
-  description: t("tools.csvToJson.metaDescription"),
+  title: t("tools.excelToCsv.metaTitle"),
+  description: t("tools.excelToCsv.metaDescription"),
 });
 
 const handleFile = (f: File) => {
-  // Simple check, PapaParse handles most text files well
-  if (f.type && !f.type.includes("text") && !f.name.endsWith(".csv")) {
-    error.value = "Invalid file type. Please upload a CSV file.";
+  if (
+    f.type &&
+    !f.type.includes("sheet") &&
+    !f.type.includes("excel") &&
+    !f.name.match(/\.xlsx?$/)
+  ) {
+    error.value = "Invalid file type. Please upload an Excel file.";
     return;
   }
   file.value = f;
@@ -46,29 +50,36 @@ const convert = () => {
   if (!file.value) return;
   isConverting.value = true;
 
-  Papa.parse(file.value, {
-    header: true,
-    skipEmptyLines: true,
-    complete: (results) => {
-      jsonOutput.value = JSON.stringify(results.data, null, 2);
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = new Uint8Array(e.target?.result as ArrayBuffer);
+      const workbook = XLSX.read(data, { type: "array" });
+      const firstSheetName = workbook.SheetNames[0];
+      const worksheet = workbook.Sheets[firstSheetName];
+      csvOutput.value = XLSX.utils.sheet_to_csv(worksheet);
       isConverting.value = false;
-    },
-    error: (err) => {
-      error.value = err.message;
+    } catch (err) {
+      error.value = "Error reading Excel file.";
       isConverting.value = false;
-    },
-  });
+    }
+  };
+  reader.onerror = () => {
+    error.value = "Error reading file.";
+    isConverting.value = false;
+  };
+  reader.readAsArrayBuffer(file.value);
 };
 
-const downloadJson = () => {
-  if (!jsonOutput.value) return;
-  const blob = new Blob([jsonOutput.value], { type: "application/json" });
+const downloadCsv = () => {
+  if (!csvOutput.value) return;
+  const blob = new Blob([csvOutput.value], { type: "text/csv" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
   a.download = file.value
-    ? file.value.name.replace(/\.[^/.]+$/, "") + ".json"
-    : "output.json";
+    ? file.value.name.replace(/\.[^/.]+$/, "") + ".csv"
+    : "output.csv";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -76,12 +87,12 @@ const downloadJson = () => {
 };
 
 const copyToClipboard = () => {
-  navigator.clipboard.writeText(jsonOutput.value);
+  navigator.clipboard.writeText(csvOutput.value);
 };
 
 const clear = () => {
   file.value = null;
-  jsonOutput.value = "";
+  csvOutput.value = "";
   error.value = "";
   if (fileInput.value) {
     fileInput.value.value = "";
@@ -92,16 +103,16 @@ const clear = () => {
 <template>
   <div class="container mx-auto px-4 py-12 max-w-4xl">
     <h1 class="text-3xl font-bold text-center mb-4">
-      {{ $t("tools.csvToJson.h1") }}
+      {{ $t("tools.excelToCsv.h1") }}
     </h1>
     <p class="text-center text-gray-600 mb-2">
-      {{ $t("tools.csvToJson.subtitle") }}
+      {{ $t("tools.excelToCsv.subtitle") }}
     </p>
 
     <div class="mt-4 text-sm text-gray-600 text-center mb-8">
       {{ $t("tools.common.whatIsCsvLink.text") }}
       <NuxtLink
-        :to="localePath('/what-is-an-csv-file')"
+        :to="localePath('/what-is-csv')"
         class="text-blue-600 hover:text-blue-700 font-medium hover:underline"
       >
         {{ $t("tools.common.whatIsCsvLink.linkText") }}
@@ -110,7 +121,7 @@ const clear = () => {
 
     <!-- Upload Area -->
     <div
-      v-if="!jsonOutput"
+      v-if="!csvOutput"
       @dragover.prevent
       @drop="onDrop"
       class="border-2 border-dashed border-gray-300 rounded-xl p-12 text-center hover:border-blue-500 transition-colors cursor-pointer bg-gray-50"
@@ -119,7 +130,7 @@ const clear = () => {
       <input
         ref="fileInput"
         type="file"
-        accept=".csv,text/csv"
+        accept=".xlsx,.xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"
         class="hidden"
         @change="onFileSelect"
       />
@@ -131,14 +142,14 @@ const clear = () => {
         </div>
         <div>
           <p class="text-lg font-medium text-gray-900">
-            {{ $t("tools.csvToJson.upload.dropText") }}
+            {{ $t("tools.excelToCsv.upload.dropText") }}
           </p>
           <p class="text-sm text-gray-500 mt-1">
-            {{ $t("tools.csvToJson.upload.browse") }}
+            {{ $t("tools.excelToCsv.upload.browse") }}
           </p>
         </div>
         <p class="text-xs text-gray-400">
-          {{ $t("tools.csvToJson.upload.support") }}
+          {{ $t("tools.excelToCsv.upload.support") }}
         </p>
       </div>
     </div>
@@ -149,9 +160,9 @@ const clear = () => {
     </div>
 
     <!-- Result Area -->
-    <div v-if="jsonOutput" class="mt-8">
+    <div v-if="csvOutput" class="mt-8">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-xl font-semibold">JSON Output</h2>
+        <h2 class="text-xl font-semibold">CSV Output</h2>
         <div class="flex gap-2">
           <button
             @click="copyToClipboard"
@@ -161,7 +172,7 @@ const clear = () => {
             {{ $t("tools.common.actions.copy") }}
           </button>
           <button
-            @click="downloadJson"
+            @click="downloadCsv"
             class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
           >
             <Download class="w-4 h-4" />
@@ -177,7 +188,7 @@ const clear = () => {
       </div>
       <pre
         class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-auto max-h-[500px] text-sm font-mono"
-        >{{ jsonOutput }}</pre
+        >{{ csvOutput }}</pre
       >
     </div>
 
@@ -186,19 +197,34 @@ const clear = () => {
       <div class="grid md:grid-cols-2 gap-12 mb-12">
         <section>
           <h2 class="text-2xl font-bold text-gray-900 mb-4">
-            {{ $t("tools.csvToJson.seo.why.title") }}
+            {{ $t("tools.excelToCsv.seo.why.title") }}
           </h2>
-          <p>{{ $t("tools.csvToJson.seo.why.content") }}</p>
+          <p>{{ $t("tools.excelToCsv.seo.why.content") }}</p>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            {{ $t("tools.excelToCsv.seo.encoding.title") }}
+          </h2>
+          <p>{{ $t("tools.excelToCsv.seo.encoding.content") }}</p>
         </section>
       </div>
 
+      <section
+        class="mb-12 border-l-4 border-green-500 pl-6 py-2 bg-green-50 rounded-r-lg"
+      >
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">
+          {{ $t("tools.excelToCsv.seo.differences.title") }}
+        </h2>
+        <p>{{ $t("tools.excelToCsv.seo.differences.content") }}</p>
+      </section>
+
       <section class="bg-blue-50 rounded-2xl p-8 mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
-          {{ $t("tools.csvToJson.seo.how.title") }}
+          {{ $t("tools.excelToCsv.seo.how.title") }}
         </h2>
         <ul class="space-y-4">
           <li
-            v-for="(step, index) in tm('tools.csvToJson.seo.how.steps')"
+            v-for="(step, index) in tm('tools.excelToCsv.seo.how.steps')"
             :key="index"
             class="flex items-start"
           >
@@ -210,6 +236,19 @@ const clear = () => {
             <span class="pt-1">{{ rt(step) }}</span>
           </li>
         </ul>
+      </section>
+
+      <section class="border-t border-gray-200 pt-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
+        <div class="flex flex-wrap gap-4">
+          <NuxtLink
+            :to="localePath('/how-to-open-csv-file')"
+            class="text-blue-600 hover:text-blue-800 font-medium hover:underline flex items-center gap-2"
+          >
+            {{ $t("pages.guides.howToOpenCsv.title") }}
+            <span aria-hidden="true">&rarr;</span>
+          </NuxtLink>
+        </div>
       </section>
     </div>
   </div>
