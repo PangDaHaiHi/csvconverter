@@ -21,7 +21,7 @@ useHead({
             "@type": "Organization",
             name: t("brand.title"),
           },
-        })
+        }),
       ),
     },
   ],
@@ -31,15 +31,17 @@ const comparisonRows = computed(() => {
   const rows = tm("pages.guides.whatIsCsv.sections.vsExcel.table.rows") as any;
   if (Array.isArray(rows)) {
     return rows.map((row: any) => {
-       // row is an array of strings
-       return row.map((cell: any) => rt(cell));
+      // row is an array of strings
+      return row.map((cell: any) => rt(cell));
     });
   }
   return [];
 });
 
 const tableHeaders = computed(() => {
-  const headers = tm("pages.guides.whatIsCsv.sections.vsExcel.table.headers") as any;
+  const headers = tm(
+    "pages.guides.whatIsCsv.sections.vsExcel.table.headers",
+  ) as any;
   if (Array.isArray(headers)) {
     return headers.map((h: any) => rt(h));
   }
@@ -47,14 +49,14 @@ const tableHeaders = computed(() => {
 });
 
 const internalLinks = computed(() => {
-    const list = tm("pages.guides.whatIsCsv.internalLinks.list") as any;
-    if (Array.isArray(list)) {
-        return list.map((item: any) => ({
-            text: rt(item.text),
-            path: rt(item.path)
-        }));
-    }
-    return [];
+  const list = tm("pages.guides.whatIsCsv.internalLinks.list") as any;
+  if (Array.isArray(list)) {
+    return list.map((item: any) => ({
+      text: rt(item.text),
+      path: rt(item.path),
+    }));
+  }
+  return [];
 });
 </script>
 
@@ -71,20 +73,32 @@ const internalLinks = computed(() => {
         </p>
 
         <!-- What Does CSV Stand For -->
-        <div class="mt-12 mb-6 border-l-4 border-indigo-500 pl-4">
+        <div
+          id="stand-for"
+          class="mt-12 mb-6 border-l-4 border-indigo-500 pl-4 scroll-mt-24"
+        >
           <h2 class="text-2xl font-bold text-gray-900 m-0">
             {{ $t("pages.guides.whatIsCsv.sections.standFor.title") }}
           </h2>
         </div>
-        <div class="text-lg text-gray-700 leading-relaxed mb-12" v-html="$t('pages.guides.whatIsCsv.sections.standFor.content')"></div>
+        <div
+          class="text-lg text-gray-700 leading-relaxed mb-12"
+          v-html="$t('pages.guides.whatIsCsv.sections.standFor.content')"
+        ></div>
 
         <!-- What Is CSV Format -->
-        <div class="mt-12 mb-6 border-l-4 border-blue-500 pl-4">
+        <div
+          id="format"
+          class="mt-12 mb-6 border-l-4 border-blue-500 pl-4 scroll-mt-24"
+        >
           <h2 class="text-2xl font-bold text-gray-900 m-0">
             {{ $t("pages.guides.whatIsCsv.sections.format.title") }}
           </h2>
         </div>
-        <div class="text-lg text-gray-700 leading-relaxed mb-12" v-html="$t('pages.guides.whatIsCsv.sections.format.content')"></div>
+        <div
+          class="text-lg text-gray-700 leading-relaxed mb-12"
+          v-html="$t('pages.guides.whatIsCsv.sections.format.content')"
+        ></div>
 
         <!-- What Is CSV Used For -->
         <div class="mt-12 mb-6 border-l-4 border-green-500 pl-4">
@@ -92,7 +106,10 @@ const internalLinks = computed(() => {
             {{ $t("pages.guides.whatIsCsv.sections.usedFor.title") }}
           </h2>
         </div>
-        <div class="text-lg text-gray-700 leading-relaxed mb-12" v-html="$t('pages.guides.whatIsCsv.sections.usedFor.content')"></div>
+        <div
+          class="text-lg text-gray-700 leading-relaxed mb-12"
+          v-html="$t('pages.guides.whatIsCsv.sections.usedFor.content')"
+        ></div>
 
         <!-- Example -->
         <div class="mt-12 mb-6 border-l-4 border-yellow-500 pl-4">
@@ -101,10 +118,14 @@ const internalLinks = computed(() => {
           </h2>
         </div>
         <div class="text-lg text-gray-700 leading-relaxed mb-4">
-            {{ $t("pages.guides.whatIsCsv.sections.example.content") }}
+          {{ $t("pages.guides.whatIsCsv.sections.example.content") }}
         </div>
-        <pre class="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto mb-4"><code>{{ $t("pages.guides.whatIsCsv.sections.example.code") }}</code></pre>
-        <p class="text-gray-600 italic mb-12">{{ $t("pages.guides.whatIsCsv.sections.example.explanation") }}</p>
+        <pre
+          class="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto mb-4"
+        ><code>{{ $t("pages.guides.whatIsCsv.sections.example.code") }}</code></pre>
+        <p class="text-gray-600 italic mb-12">
+          {{ $t("pages.guides.whatIsCsv.sections.example.explanation") }}
+        </p>
 
         <!-- CSV vs Excel -->
         <div class="mt-12 mb-6 border-l-4 border-red-500 pl-4">
@@ -116,7 +137,9 @@ const internalLinks = computed(() => {
           {{ $t("pages.guides.whatIsCsv.sections.vsExcel.content") }}
         </p>
 
-        <div class="overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5 rounded-xl mb-16">
+        <div
+          class="overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5 rounded-xl mb-16"
+        >
           <div class="overflow-x-auto">
             <table class="min-w-full bg-white divide-y divide-gray-200">
               <thead class="bg-gray-50">
@@ -136,28 +159,18 @@ const internalLinks = computed(() => {
                   :key="rowIndex"
                   class="hover:bg-gray-50 transition-colors"
                 >
-                  <td v-for="(cell, cellIndex) in row" :key="cellIndex" class="px-6 py-4 whitespace-nowrap text-gray-600 first:font-medium first:text-gray-900">
-                      {{ cell }}
+                  <td
+                    v-for="(cell, cellIndex) in row"
+                    :key="cellIndex"
+                    class="px-6 py-4 whitespace-nowrap text-gray-600 first:font-medium first:text-gray-900"
+                  >
+                    {{ cell }}
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-
-        <!-- Internal Links -->
-        <div class="mt-16 pt-8 border-t border-gray-200">
-            <h3 class="text-xl font-bold mb-4">{{ $t("pages.guides.whatIsCsv.internalLinks.title") }}</h3>
-            <ul class="flex flex-col gap-3">
-                <li v-for="link in internalLinks" :key="link.path">
-                    <NuxtLink :to="localePath(link.path)" class="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-2">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-                        {{ link.text }}
-                    </NuxtLink>
-                </li>
-            </ul>
-        </div>
-
       </div>
     </div>
   </div>

@@ -7,6 +7,8 @@ import {
   Zap,
   MousePointer,
   Code,
+  Laptop,
+  File,
 } from "lucide-vue-next";
 
 const { t } = useI18n();
@@ -37,7 +39,7 @@ const tools = [
     bg: "bg-slate-50",
   },
   {
-    path: "/xlsx-to-csv",
+    path: "/excel-to-csv",
     icon: FileSpreadsheet,
     title: "home.tools.excelToCsv.title",
     desc: "home.tools.excelToCsv.desc",
@@ -83,6 +85,7 @@ const tools = [
 
         <!-- Quick Tool Links -->
         <div
+          id="tools"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 w-full max-w-7xl mx-auto"
         >
           <NuxtLink
@@ -115,7 +118,7 @@ const tools = [
     <HomeSeoContent />
 
     <!-- Features / Why Choose Us -->
-    <div class="py-24 bg-gray-50">
+    <div class="py-12 bg-gray-50">
       <div class="container mx-auto px-4 max-w-screen-xl">
         <div class="text-center mb-16">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -126,7 +129,7 @@ const tools = [
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div
             class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
           >
@@ -172,6 +175,22 @@ const tools = [
             </h3>
             <p class="text-gray-600 leading-relaxed">
               {{ $t("home.whyChoose.items.simple.desc") }}
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+          >
+            <div
+              class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-6"
+            >
+              <Laptop class="w-6 h-6" />
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              {{ $t("home.whyChoose.items.device.title") }}
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              {{ $t("home.whyChoose.items.device.desc") }}
             </p>
           </div>
         </div>

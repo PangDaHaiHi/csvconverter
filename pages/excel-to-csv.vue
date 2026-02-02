@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
-import Papa from "papaparse";
+import { ref } from "vue";
+import * as XLSX from "xlsx";
 import { Upload, Download, Copy, Trash2, Check } from "lucide-vue-next";
 
 const { t, tm, rt } = useI18n();
@@ -14,28 +14,33 @@ const isConverting = ref(false);
 const isCopied = ref(false);
 
 useSeoMeta({
-  title: t("tools.jsonToCsv.metaTitle"),
-  description: t("tools.jsonToCsv.metaDescription"),
+  title: t("tools.excelToCsv.metaTitle"),
+  description: t("tools.excelToCsv.metaDescription"),
 });
 
+const seoExampleExcel = [
+  { Name: "John Doe", Email: "john@example.com", Phone: "555-555-5555" },
+  { Name: "Jane Smith", Email: "jane@example.com", Phone: "555-555-1234" },
+];
+
+const seoExampleCsv = `Name,Email,Phone
+John Doe,john@example.com,555-555-5555
+Jane Smith,jane@example.com,555-555-1234`;
+
 const handleFile = (f: File) => {
-  if (f.type && !f.type.includes("json") && !f.name.endsWith(".json")) {
-    error.value = "Invalid file type. Please upload a JSON file.";
+  if (
+    f.type &&
+    !f.type.includes("sheet") &&
+    !f.type.includes("excel") &&
+    !f.name.match(/\.xlsx?$/)
+  ) {
+    error.value = "Invalid file type. Please upload an Excel file.";
     return;
   }
   file.value = f;
   error.value = "";
   convert();
 };
-
-const seoExampleJson = `{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "phone": "555-555-5555"
-}`;
-
-const seoExampleCsv = `name,email,phone
-John Doe,john@example.com,555-555-5555`;
 
 const onDrop = (e: DragEvent) => {
   e.preventDefault();
@@ -58,21 +63,14 @@ const convert = () => {
   const reader = new FileReader();
   reader.onload = (e) => {
     try {
-      let json = JSON.parse(e.target?.result as string);
-
-      // Handle array vs object
-      let dataToConvert = json;
-      if (!Array.isArray(json)) {
-        dataToConvert = [json];
-      }
-
-      // Flatten objects
-      dataToConvert = dataToConvert.map((item: any) => flattenObject(item));
-
-      csvOutput.value = Papa.unparse(dataToConvert);
+      const data = new Uint8Array(e.target?.result as ArrayBuffer);
+      const workbook = XLSX.read(data, { type: "array" });
+      const firstSheetName = workbook.SheetNames[0];
+      const worksheet = workbook.Sheets[firstSheetName];
+      csvOutput.value = XLSX.utils.sheet_to_csv(worksheet);
       isConverting.value = false;
     } catch (err) {
-      error.value = "Invalid JSON file. Please ensure it is valid JSON.";
+      error.value = "Error reading Excel file.";
       isConverting.value = false;
     }
   };
@@ -80,23 +78,7 @@ const convert = () => {
     error.value = "Error reading file.";
     isConverting.value = false;
   };
-  reader.readAsText(file.value);
-};
-
-const flattenObject = (obj: any, prefix = "", result: any = {}) => {
-  for (const key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      const value = obj[key];
-      const newKey = prefix ? `${prefix}.${key}` : key;
-
-      if (value && typeof value === "object" && !Array.isArray(value)) {
-        flattenObject(value, newKey, result);
-      } else {
-        result[newKey] = value;
-      }
-    }
-  }
-  return result;
+  reader.readAsArrayBuffer(file.value);
 };
 
 const downloadCsv = () => {
@@ -134,15 +116,48 @@ const clear = () => {
     fileInput.value.value = "";
   }
 };
+
+// JSON-LD Schema
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: t("tools.excelToCsv.seo.how.title"),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: t("tools.excelToCsv.seo.how.steps[0]"), // Simplified for brevity in dynamic generation
+      },
+    },
+    {
+      "@type": "Question",
+      name: t("tools.excelToCsv.seo.guide.title"),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: t("tools.excelToCsv.seo.guide.content"),
+      },
+    },
+  ],
+};
+
+useHead({
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify(jsonLd),
+    },
+  ],
+});
 </script>
 
 <template>
   <div class="container mx-auto px-4 py-12 max-w-4xl">
     <h1 class="text-3xl font-bold text-center mb-4">
-      {{ $t("tools.jsonToCsv.h1") }}
+      {{ $t("tools.excelToCsv.h1") }}
     </h1>
     <p class="text-center text-gray-600 mb-8">
-      {{ $t("tools.jsonToCsv.subtitle") }}
+      {{ $t("tools.excelToCsv.subtitle") }}
     </p>
 
     <!-- Upload Area -->
@@ -156,7 +171,7 @@ const clear = () => {
       <input
         ref="fileInput"
         type="file"
-        accept=".json,application/json"
+        accept=".xlsx,.xls,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"
         class="hidden"
         @change="onFileSelect"
       />
@@ -168,14 +183,14 @@ const clear = () => {
         </div>
         <div>
           <p class="text-lg font-medium text-gray-900">
-            {{ $t("tools.jsonToCsv.upload.dropText") }}
+            {{ $t("tools.excelToCsv.upload.dropText") }}
           </p>
           <p class="text-sm text-gray-500 mt-1">
-            {{ $t("tools.jsonToCsv.upload.browse") }}
+            {{ $t("tools.excelToCsv.upload.browse") }}
           </p>
         </div>
         <p class="text-xs text-gray-400">
-          {{ $t("tools.jsonToCsv.upload.support") }}
+          {{ $t("tools.excelToCsv.upload.support") }}
         </p>
       </div>
     </div>
@@ -235,11 +250,11 @@ const clear = () => {
       <!-- How Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
-          {{ $t("tools.jsonToCsv.seo.how.title") }}
+          {{ $t("tools.excelToCsv.seo.how.title") }}
         </h2>
         <ol class="space-y-4 list-decimal pl-5">
           <li
-            v-for="(step, index) in tm('tools.jsonToCsv.seo.how.steps')"
+            v-for="(step, index) in tm('tools.excelToCsv.seo.how.steps')"
             :key="index"
             class="pl-2"
           >
@@ -251,11 +266,11 @@ const clear = () => {
       <!-- Guide Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">
-          {{ $t("tools.jsonToCsv.seo.guide.title") }}
+          {{ $t("tools.excelToCsv.seo.guide.title") }}
         </h2>
-        <p class="mb-4">{{ $t("tools.jsonToCsv.seo.guide.content") }}</p>
+        <p class="mb-4">{{ $t("tools.excelToCsv.seo.guide.content") }}</p>
         <p class="mb-4">
-          {{ $t("tools.jsonToCsv.seo.guide.linkText") }}
+          {{ $t("tools.excelToCsv.seo.guide.linkText") }}
           <NuxtLink
             :to="localePath('/what-is-csv')"
             class="text-blue-600 hover:underline"
@@ -268,24 +283,43 @@ const clear = () => {
       <!-- Example Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">
-          {{ $t("tools.jsonToCsv.seo.example.title") }}
+          {{ $t("tools.excelToCsv.seo.example.title") }}
         </h2>
         <div>
-          <p class="mb-4">{{ $t("tools.jsonToCsv.seo.example.intro") }}</p>
+          <p class="mb-4">{{ $t("tools.excelToCsv.seo.example.intro") }}</p>
 
           <div class="grid md:grid-cols-2 gap-6">
             <div>
               <h3 class="font-semibold mb-2">
-                {{ $t("tools.jsonToCsv.seo.example.jsonLabel") }}
+                {{ $t("tools.excelToCsv.seo.example.excelLabel") }}
               </h3>
-              <pre
-                class="bg-gray-800 text-gray-100 p-4 rounded text-sm overflow-x-auto"
-                >{{ seoExampleJson }}</pre
-              >
+              <!-- Excel-like Table -->
+              <div class="overflow-x-auto border border-gray-200 rounded-lg">
+                <table class="min-w-full text-sm text-left">
+                  <thead class="bg-gray-100 text-gray-700 font-semibold">
+                    <tr>
+                      <th class="px-4 py-2 border-b">Name</th>
+                      <th class="px-4 py-2 border-b">Email</th>
+                      <th class="px-4 py-2 border-b">Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr
+                      v-for="(row, i) in seoExampleExcel"
+                      :key="i"
+                      class="bg-white"
+                    >
+                      <td class="px-4 py-2">{{ row.Name }}</td>
+                      <td class="px-4 py-2">{{ row.Email }}</td>
+                      <td class="px-4 py-2">{{ row.Phone }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div>
               <h3 class="font-semibold mb-2">
-                {{ $t("tools.jsonToCsv.seo.example.csvLabel") }}
+                {{ $t("tools.excelToCsv.seo.example.csvLabel") }}
               </h3>
               <pre
                 class="bg-gray-800 text-gray-100 p-4 rounded text-sm overflow-x-auto"
@@ -299,25 +333,16 @@ const clear = () => {
       <!-- More Tools Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
-          {{ $t("tools.jsonToCsv.seo.moreTools.title") }}
+          {{ $t("tools.excelToCsv.seo.moreTools.title") }}
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <NuxtLink
-            :to="localePath('/excel-to-csv')"
+            :to="localePath('/json-to-csv')"
             class="block p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
           >
-            <h3 class="font-bold text-lg text-blue-600 mb-2">Excel to CSV</h3>
+            <h3 class="font-bold text-lg text-blue-600 mb-2">JSON to CSV</h3>
             <p class="text-sm text-gray-600">
-              {{ $t("home.tools.excelToCsv.desc") }}
-            </p>
-          </NuxtLink>
-          <NuxtLink
-            :to="localePath('/xml-to-csv')"
-            class="block p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
-          >
-            <h3 class="font-bold text-lg text-blue-600 mb-2">XML to CSV</h3>
-            <p class="text-sm text-gray-600">
-              {{ $t("home.tools.xmlToCsv.desc") }}
+              {{ $t("home.tools.jsonToCsv.desc") }}
             </p>
           </NuxtLink>
           <NuxtLink
@@ -327,6 +352,15 @@ const clear = () => {
             <h3 class="font-bold text-lg text-blue-600 mb-2">TXT to CSV</h3>
             <p class="text-sm text-gray-600">
               {{ $t("home.tools.txtToCsv.desc") }}
+            </p>
+          </NuxtLink>
+          <NuxtLink
+            :to="localePath('/xml-to-csv')"
+            class="block p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
+          >
+            <h3 class="font-bold text-lg text-blue-600 mb-2">XML to CSV</h3>
+            <p class="text-sm text-gray-600">
+              {{ $t("home.tools.xmlToCsv.desc") }}
             </p>
           </NuxtLink>
         </div>
