@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import Papa from "papaparse";
 import { Upload, Download, Copy, Trash2, Check } from "lucide-vue-next";
 
 const { t, tm, rt } = useI18n();
@@ -51,9 +50,16 @@ const onFileSelect = (e: Event) => {
   }
 };
 
-const convert = () => {
+const convert = async () => {
   if (!file.value) return;
   isConverting.value = true;
+
+  const Papa = (window as any).Papa;
+  if (!Papa) {
+    error.value = "CSV parser not ready. Please try again.";
+    isConverting.value = false;
+    return;
+  }
 
   const reader = new FileReader();
   reader.onload = (e) => {
