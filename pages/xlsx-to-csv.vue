@@ -14,8 +14,8 @@ const isConverting = ref(false);
 const isCopied = ref(false);
 
 useSeoMeta({
-  title: t("tools.excelToCsv.metaTitle"),
-  description: t("tools.excelToCsv.metaDescription"),
+  title: t("tools.xlsxToCsv.metaTitle"),
+  description: t("tools.xlsxToCsv.metaDescription"),
 });
 
 const seoExampleExcel = [
@@ -124,18 +124,18 @@ const jsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: t("tools.excelToCsv.seo.how.title"),
+      name: t("tools.xlsxToCsv.seo.how.title"),
       acceptedAnswer: {
         "@type": "Answer",
-        text: t("tools.excelToCsv.seo.how.steps[0]"), // Simplified for brevity in dynamic generation
+        text: t("tools.xlsxToCsv.seo.how.steps[0]"), // Simplified for brevity in dynamic generation
       },
     },
     {
       "@type": "Question",
-      name: t("tools.excelToCsv.seo.guide.title"),
+      name: t("tools.xlsxToCsv.seo.guide.title"),
       acceptedAnswer: {
         "@type": "Answer",
-        text: t("tools.excelToCsv.seo.guide.content"),
+        text: t("tools.xlsxToCsv.seo.guide.content"),
       },
     },
   ],
@@ -145,7 +145,7 @@ useHead({
   script: [
     {
       type: "application/ld+json",
-      children: JSON.stringify(jsonLd),
+      innerHTML: JSON.stringify(jsonLd),
     },
   ],
 });
@@ -154,10 +154,10 @@ useHead({
 <template>
   <div class="container mx-auto px-4 py-12 max-w-4xl">
     <h1 class="text-3xl font-bold text-center mb-4">
-      {{ $t("tools.excelToCsv.h1") }}
+      {{ $t("tools.xlsxToCsv.h1") }}
     </h1>
     <p class="text-center text-gray-600 mb-8">
-      {{ $t("tools.excelToCsv.subtitle") }}
+      {{ $t("tools.xlsxToCsv.subtitle") }}
     </p>
 
     <!-- Upload Area -->
@@ -183,14 +183,14 @@ useHead({
         </div>
         <div>
           <p class="text-lg font-medium text-gray-900">
-            {{ $t("tools.excelToCsv.upload.dropText") }}
+            {{ $t("tools.xlsxToCsv.upload.dropText") }}
           </p>
           <p class="text-sm text-gray-500 mt-1">
-            {{ $t("tools.excelToCsv.upload.browse") }}
+            {{ $t("tools.xlsxToCsv.upload.browse") }}
           </p>
         </div>
         <p class="text-xs text-gray-400">
-          {{ $t("tools.excelToCsv.upload.support") }}
+          {{ $t("tools.xlsxToCsv.upload.support") }}
         </p>
       </div>
     </div>
@@ -250,11 +250,11 @@ useHead({
       <!-- How Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
-          {{ $t("tools.excelToCsv.seo.how.title") }}
+          {{ $t("tools.xlsxToCsv.seo.how.title") }}
         </h2>
         <ol class="space-y-4 list-decimal pl-5">
           <li
-            v-for="(step, index) in tm('tools.excelToCsv.seo.how.steps')"
+            v-for="(step, index) in tm('tools.xlsxToCsv.seo.how.steps')"
             :key="index"
             class="pl-2"
           >
@@ -266,11 +266,11 @@ useHead({
       <!-- Guide Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">
-          {{ $t("tools.excelToCsv.seo.guide.title") }}
+          {{ $t("tools.xlsxToCsv.seo.guide.title") }}
         </h2>
-        <p class="mb-4">{{ $t("tools.excelToCsv.seo.guide.content") }}</p>
+        <p class="mb-4">{{ $t("tools.xlsxToCsv.seo.guide.content") }}</p>
         <p class="mb-4">
-          {{ $t("tools.excelToCsv.seo.guide.linkText") }}
+          {{ $t("tools.xlsxToCsv.seo.guide.linkText") }}
           <NuxtLink
             :to="localePath('/what-is-csv')"
             class="text-blue-600 hover:underline"
@@ -283,15 +283,15 @@ useHead({
       <!-- Example Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">
-          {{ $t("tools.excelToCsv.seo.example.title") }}
+          {{ $t("tools.xlsxToCsv.seo.example.title") }}
         </h2>
         <div>
-          <p class="mb-4">{{ $t("tools.excelToCsv.seo.example.intro") }}</p>
+          <p class="mb-4">{{ $t("tools.xlsxToCsv.seo.example.intro") }}</p>
 
           <div class="grid md:grid-cols-2 gap-6">
             <div>
               <h3 class="font-semibold mb-2">
-                {{ $t("tools.excelToCsv.seo.example.excelLabel") }}
+                {{ $t("tools.xlsxToCsv.seo.example.excelLabel") }}
               </h3>
               <!-- Excel-like Table -->
               <div class="overflow-x-auto border border-gray-200 rounded-lg">
@@ -319,7 +319,7 @@ useHead({
             </div>
             <div>
               <h3 class="font-semibold mb-2">
-                {{ $t("tools.excelToCsv.seo.example.csvLabel") }}
+                {{ $t("tools.xlsxToCsv.seo.example.csvLabel") }}
               </h3>
               <pre
                 class="bg-gray-800 text-gray-100 p-4 rounded text-sm overflow-x-auto"
@@ -333,7 +333,7 @@ useHead({
       <!-- More Tools Section -->
       <section class="mb-12">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
-          {{ $t("tools.excelToCsv.seo.moreTools.title") }}
+          {{ $t("tools.xlsxToCsv.seo.moreTools.title") }}
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <NuxtLink

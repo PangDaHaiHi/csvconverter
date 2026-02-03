@@ -6,6 +6,7 @@ import {
   Code,
   Laptop,
 } from "lucide-vue-next";
+import { computed } from "vue";
 
 const { t } = useI18n();
 const localePath = useLocalePath();
@@ -32,29 +33,6 @@ useHead({
         }),
       ),
     },
-    {
-      type: "application/ld+json",
-      innerHTML: computed(() =>
-        JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: t("pages.guides.howToOpenCsv.whyCantOpen.title"),
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: `<ul>
-                  <li>${t("pages.guides.howToOpenCsv.whyCantOpen.reasons.formatting")}</li>
-                  <li>${t("pages.guides.howToOpenCsv.whyCantOpen.reasons.encoding")}</li>
-                  <li>${t("pages.guides.howToOpenCsv.whyCantOpen.reasons.delimiter")}</li>
-                </ul>`,
-              },
-            },
-          ],
-        }),
-      ),
-    },
   ],
 });
 </script>
@@ -73,7 +51,7 @@ useHead({
       <div class="mb-12 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r-lg">
         <p class="text-gray-700 m-0">
           <i18n-t
-            keypath="pages.guides.openHeicOnWindows.learnMore"
+            keypath="pages.guides.howToOpenCsv.learnMore"
             tag="span"
             scope="global"
           >
@@ -88,26 +66,6 @@ useHead({
           </i18n-t>
         </p>
       </div>
-
-      <!-- Common Issues Section -->
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">
-        {{ $t("pages.guides.howToOpenCsv.whyCantOpen.title") }}
-      </h2>
-      <ul class="space-y-4 mb-12">
-        <li
-          v-for="(reason, key) in ['formatting', 'encoding', 'delimiter']"
-          :key="key"
-          class="flex items-start"
-        >
-          <span class="text-red-500 mr-2 font-bold">!</span>
-          <span
-            class="text-gray-700"
-            v-html="
-              $t(`pages.guides.howToOpenCsv.whyCantOpen.reasons.${reason}`)
-            "
-          ></span>
-        </li>
-      </ul>
 
       <!-- 5 Methods Section -->
       <h2 class="text-2xl font-bold text-gray-900 mb-8">
@@ -220,21 +178,30 @@ useHead({
 
         <!-- CTA Box -->
         <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
-          <p class="mb-4 text-blue-800 font-medium text-lg">
-            {{ $t("pages.guides.howToOpenCsv.methods.method5.cta") }}
-          </p>
-          <div class="flex flex-wrap gap-4">
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
             <NuxtLink
-              :to="localePath('/csv-to-json')"
-              class="inline-flex items-center justify-center px-5 py-2.5 border border-blue-200 text-base font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 hover:border-blue-300 transition-all shadow-sm"
+              :to="localePath('/json-to-csv')"
+              class="inline-flex items-center justify-center px-4 py-2.5 border border-blue-200 text-sm font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 hover:border-blue-300 transition-all shadow-sm text-center"
             >
-              {{ $t("pages.guides.howToOpenCsv.methods.method5.buttonJson") }}
+              {{ $t("home.tools.jsonToCsv.title") }}
             </NuxtLink>
             <NuxtLink
-              :to="localePath('/csv-to-excel')"
-              class="inline-flex items-center justify-center px-5 py-2.5 border border-blue-200 text-base font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 hover:border-blue-300 transition-all shadow-sm"
+              :to="localePath('/xlsx-to-csv')"
+              class="inline-flex items-center justify-center px-4 py-2.5 border border-blue-200 text-sm font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 hover:border-blue-300 transition-all shadow-sm text-center"
             >
-              {{ $t("pages.guides.howToOpenCsv.methods.method5.buttonExcel") }}
+              {{ $t("home.tools.xlsxToCsv.title") }}
+            </NuxtLink>
+            <NuxtLink
+              :to="localePath('/txt-to-csv')"
+              class="inline-flex items-center justify-center px-4 py-2.5 border border-blue-200 text-sm font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 hover:border-blue-300 transition-all shadow-sm text-center"
+            >
+              {{ $t("home.tools.txtToCsv.title") }}
+            </NuxtLink>
+            <NuxtLink
+              :to="localePath('/xml-to-csv')"
+              class="inline-flex items-center justify-center px-4 py-2.5 border border-blue-200 text-sm font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 hover:border-blue-300 transition-all shadow-sm text-center"
+            >
+              {{ $t("home.tools.xmlToCsv.title") }}
             </NuxtLink>
           </div>
         </div>

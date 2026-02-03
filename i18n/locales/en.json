@@ -2,7 +2,7 @@
   "home": {
     "hero": {
       "title": "Free Online CSV Converter",
-      "subtitle": "Convert JSON, Excel, TXT, XML to CSV. Safe, Fast, Free to use. No signup required.",
+      "subtitle": "Convert JSON, XLSX, TXT, XML to CSV. Safe, Fast, Free to use. No signup required.",
       "cta": "Start Converting"
     },
     "features": {
@@ -85,9 +85,9 @@
         "title": "CSV to Excel",
         "desc": "Convert .csv files to Excel (.xlsx)"
       },
-      "excelToCsv": {
-        "title": "Excel to CSV",
-        "desc": "Convert Excel (.xlsx) files to CSV"
+      "xlsxToCsv": {
+        "title": "XLSX to CSV",
+        "desc": "Convert XLSX files to CSV"
       },
       "txtToCsv": {
         "title": "TXT to CSV",
@@ -135,7 +135,7 @@
     "home": "Home",
     "jsonToCsv": "JSON to CSV",
     "txtToCsv": "TXT to CSV",
-    "excelToCsv": "Excel to CSV",
+    "xlsxToCsv": "XLSX to CSV",
     "xmlToCsv": "XML to CSV"
   },
   "tools": {
@@ -260,13 +260,13 @@
         }
       }
     },
-    "excelToCsv": {
-      "title": "Excel to CSV Converter",
-      "description": "Convert Excel to CSV online for free.",
-      "metaTitle": "Excel to CSV Converter — Free Online | CSV Converter",
-      "metaDescription": "Convert Excel (.xlsx) to CSV online instantly. Free, secure, and no upload limits.",
-      "h1": "Excel to CSV Converter",
-      "subtitle": "Convert Excel files to CSV format instantly in your browser. No signup required. Fast, secure, and easy to use.",
+    "xlsxToCsv": {
+      "title": "XLSX to CSV Converter",
+      "description": "Convert Excel (XLSX) files to CSV format instantly",
+      "metaTitle": "XLSX to CSV Converter - Convert Excel to CSV Online",
+      "metaDescription": "Free online tool to convert Excel files (.xlsx, .xls) to CSV format. Fast, secure, and easy to use. No upload required.",
+      "h1": "Convert Excel (XLSX) to CSV",
+      "subtitle": "Convert Excel files (.xlsx) to CSV format instantly in your browser. No signup required. Fast, secure, and easy to use.",
       "upload": {
         "dropText": "Drag & drop Excel file here",
         "browse": "Or click to upload",
@@ -417,6 +417,10 @@
   "footer": {
     "rightsReserved": "All rights reserved."
   },
+  "error": {
+    "pageNotFound": "Page Not Found",
+    "goHome": "Go Back Home"
+  },
   "pages": {
     "guides": {
       "whatIsCsv": {
@@ -435,7 +439,7 @@
           },
           "usedFor": {
             "title": "What Is a CSV File Used For?",
-            "content": "CSV files are primarily used for <strong>data exchange</strong> between different programs. <br><br>Common use cases:<br><ul><li>Exporting contacts from smartphones to import into Google Contacts.</li><li>Transferring product data from an e-commerce platform to a shipping tool.</li><li>Saving spreadsheet data in a format that can be read by any text editor.</li></ul><br><br>CSV files are often created by converting data from other formats such as <a href='/json-to-csv' class='text-blue-600 hover:underline'>JSON</a>, <a href='/txt-to-csv' class='text-blue-600 hover:underline'>TXT</a>, <a href='/excel-to-csv' class='text-blue-600 hover:underline'>Excel (XLSX)</a>, or <a href='/xml-to-csv' class='text-blue-600 hover:underline'>XML</a>."
+            "content": "CSV files are primarily used for <strong>data exchange</strong> between different programs. <br><br>Common use cases:<br><ul><li>Exporting contacts from smartphones to import into Google Contacts.</li><li>Transferring product data from an e-commerce platform to a shipping tool.</li><li>Saving spreadsheet data in a format that can be read by any text editor.</li></ul><br><br>CSV files are often created by converting data from other formats such as <a href='/json-to-csv' class='text-blue-600 hover:underline'>JSON</a>, <a href='/txt-to-csv' class='text-blue-600 hover:underline'>TXT</a>, <a href='/xlsx-to-csv' class='text-blue-600 hover:underline'>Excel (XLSX)</a>, or <a href='/xml-to-csv' class='text-blue-600 hover:underline'>XML</a>."
           },
           "example": {
             "title": "CSV Example Explained",
@@ -470,7 +474,7 @@
           "title": "Free CSV Tools",
           "list": [
             { "text": "Convert JSON to CSV", "path": "/json-to-csv" },
-            { "text": "Convert Excel to CSV", "path": "/excel-to-csv" },
+            { "text": "Convert Excel to CSV", "path": "/xlsx-to-csv" },
             { "text": "How to Open CSV Files", "path": "/how-to-open-csv-file" }
           ]
         }
@@ -541,14 +545,6 @@
         "seoTitle": "How to Open CSV Files on Windows, Mac & Online",
         "seoDesc": "Step-by-step guide on how to open CSV files using Excel, Google Sheets, Notepad, and online viewers.",
         "description": "CSV files are plain text files, which means they can be opened by a wide variety of programs. Here are the most common ways to open and view CSV files.",
-        "whyCantOpen": {
-          "title": "Common Issues",
-          "reasons": {
-            "formatting": "<strong>Formatting Issues:</strong> Sometimes data isn't separated correctly.",
-            "encoding": "<strong>Encoding Errors:</strong> Special characters might look weird if not saved as UTF-8.",
-            "delimiter": "<strong>Wrong Delimiter:</strong> Some regions use semicolons (;) instead of commas."
-          }
-        },
         "methods": {
           "title": "5 Ways to Open CSV Files",
           "method1": {
@@ -576,14 +572,12 @@
             "cons": "More technical interface."
           },
           "method5": {
-            "title": "5. Online CSV Viewer",
-            "desc": "Use our free online tools to convert and view CSV data.",
-            "cta": "Try our tools:",
-            "buttonJson": "Convert to JSON",
-            "buttonExcel": "Convert to Excel",
+            "title": "5. Convert to CSV (Related Tools)",
+            "desc": "Need to create a CSV file instead? Use our free online converters.",
             "cons": "Requires internet connection."
           }
-        }
+        },
+        "learnMore": "Want to understand more about CSV files? Read our guide: {link}"
       }
     }
   },
@@ -608,6 +602,14 @@
           "We do not track your file content.",
           "We use Google Analytics for site usage statistics (anonymized)."
         ]
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": "We use cookies to enhance your experience, analyze site usage, and assist in our marketing efforts. You can choose to disable cookies through your browser settings."
+      },
+      "contact": {
+        "title": "5. Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us at:"
       }
     }
   }

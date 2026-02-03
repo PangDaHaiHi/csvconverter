@@ -12,7 +12,7 @@ const localePath = useLocalePath();
 const navItems = [
   { path: "/json-to-csv", icon: FileJson, label: "nav.jsonToCsv" },
   { path: "/txt-to-csv", icon: FileText, label: "nav.txtToCsv" },
-  { path: "/excel-to-csv", icon: FileSpreadsheet, label: "nav.excelToCsv" },
+  { path: "/xlsx-to-csv", icon: FileSpreadsheet, label: "nav.xlsxToCsv" },
   { path: "/xml-to-csv", icon: Code, label: "nav.xmlToCsv" },
 ];
 </script>

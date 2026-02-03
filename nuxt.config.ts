@@ -9,22 +9,22 @@ export default defineNuxtConfig({
     blockAiBots: false,
     header: false,
     disallow: ["/cdn-cgi/"],
-    sitemap: "https://csvconverter.online/sitemap.xml",
+    sitemap: ["https://csvconverter.online/sitemap.xml"],
   },
   sitemap: {
     exclude: ["/privacy-policy", "/**/privacy-policy"],
   },
   site: {
     url: "https://csvconverter.online",
-    name: "csvconverter",
+    name: "CSV Converter",
     description:
-      "Free online HEIC converter: HEIC to JPG, PNG, PDF. 100% client-side secure conversion.",
+      "Free online CSV converter: Convert JSON, Excel (XLSX), TXT, XML to CSV. Safe, client-side, and fast.",
     defaultLocale: "en",
   },
 
   runtimeConfig: {
     public: {
-      gtagId: "",
+      gtagId: "G-RGG9PEJF5X",
     },
   },
 
@@ -71,6 +71,6 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   compatibilityDate: "2025-01-22",
 });

@@ -21,6 +21,28 @@ useSeoMeta({
   ogDescription: t("home.hero.subtitle"),
 });
 
+useHead({
+  titleTemplate: "%s",
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        name: "CSV Converter",
+        url: "https://csvconverter.online",
+        applicationCategory: "UtilityApplication",
+        operatingSystem: "Any",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+      }),
+    },
+  ],
+});
+
 const tools = [
   {
     path: "/json-to-csv",
@@ -39,10 +61,10 @@ const tools = [
     bg: "bg-slate-50",
   },
   {
-    path: "/excel-to-csv",
+    path: "/xlsx-to-csv",
     icon: FileSpreadsheet,
-    title: "home.tools.excelToCsv.title",
-    desc: "home.tools.excelToCsv.desc",
+    title: "home.tools.xlsxToCsv.title",
+    desc: "home.tools.xlsxToCsv.desc",
     color: "text-red-600",
     bg: "bg-red-50",
   },

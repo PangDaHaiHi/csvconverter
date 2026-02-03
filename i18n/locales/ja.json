@@ -1,606 +1,592 @@
 {
   "home": {
     "hero": {
-      "title": "HEIC変換ツール：無料オンラインツール",
-      "subtitle": "HEICを即座にPNG、JPG、またはPDFに変換します。アップロード制限なし。100%ブラウザベース。"
+      "title": "無料オンラインCSVコンバーター",
+      "subtitle": "JSON、XLSX、TXT、XMLをCSVに変換。安全、高速、無料。登録不要。",
+      "cta": "変換を開始"
     },
     "features": {
       "noLimits": "アップロード制限なし",
       "free": "100% 無料",
-      "secure": "クライアントサイドで安全"
+      "secure": "プライベート＆セキュア"
+    },
+    "whyChoose": {
+      "title": "なぜ当社のCSVコンバーターを選ぶのか？",
+      "subtitle": "データファイルを変換するための最高の体験を提供します。",
+      "items": {
+        "privacy": {
+          "title": "100%無料＆オンライン",
+          "desc": "隠れた費用やサブスクリプションはありません。ブラウザで直接すべてのツールを無料で使用できます。"
+        },
+        "speed": {
+          "title": "高速かつ安全な処理",
+          "desc": "データはデバイスを離れません。すべての変換はローカルで行われ、最大限のセキュリティと速度を実現します。"
+        },
+        "simple": {
+          "title": "ファイルアップロード制限なし",
+          "desc": "制限なく大容量ファイルを変換できます。ファイルサイズや1日の使用量を制限しません。"
+        },
+        "device": {
+          "title": "あらゆるデバイスで動作",
+          "desc": "Windows、Mac、Linux、iOS、Androidからツールにアクセスできます。ソフトウェアのインストールは不要です。"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "CSVへの変換方法",
+      "subtitle": "任意のファイルをCSV形式に変換するための簡単なステップ。",
+      "steps": {
+        "step1": {
+          "title": "ファイルを選択",
+          "desc": "変換したいファイル（JSON、Excel、TXTなど）を選択します。"
+        },
+        "step2": {
+          "title": "アップロードと処理",
+          "desc": "ファイルをドラッグ＆ドロップします。ツールが自動的に即座に処理します。"
+        },
+        "step3": {
+          "title": "CSVをダウンロード",
+          "desc": "データをプレビューして、変換されたCSVファイルをすぐにダウンロードします。"
+        }
+      }
+    },
+    "faq": {
+      "title": "よくある質問",
+      "subtitle": "CSVコンバーターに関する一般的な質問。",
+      "items": {
+        "q1": {
+          "question": "CSVコンバーターとは何ですか？",
+          "answer": "CSVコンバーターは、さまざまな形式（JSON、Excel、XMLなど）のデータをCSV（カンマ区切り値）形式に変換し、スプレッドシートソフトウェアと互換性を持たせるツールです。"
+        },
+        "q2": {
+          "question": "このCSVコンバーターは無料ですか？",
+          "answer": "はい、当社のツールは100%無料で使用できます。隠れた料金、サブスクリプション、変換できるファイル数の制限はありません。"
+        },
+        "q3": {
+          "question": "オンラインでExcelをCSVに変換できますか？",
+          "answer": "もちろんです。Excel（.xlsxまたは.xls）ファイルをアップロードして、データを保持したまま即座にCSV形式に変換できます。"
+        },
+        "q4": {
+          "question": "データは安全ですか？",
+          "answer": "はい、データは完全に安全です。クライアントサイド処理を使用しているため、ファイルはブラウザで直接変換され、サーバーにアップロードされることはありません。"
+        }
+      }
     },
     "tools": {
-      "heicToPng": {
-        "title": "HEICからPNGへ",
-        "desc": ".heicを透明度サポート付きのPNGに変換"
+      "csvToJson": {
+        "title": "CSVからJSONへ",
+        "desc": ".csvファイルをJSON形式に変換"
       },
-      "heicToWebp": {
-        "title": "HEICからWebPへ",
-        "desc": "Webパフォーマンス向上のためにHEICをWebPに変換"
+      "jsonToCsv": {
+        "title": "JSONからCSVへ",
+        "desc": ".jsonファイルをCSV形式に変換"
       },
-      "heicToJpg": {
-        "title": "HEICからJPGへ",
-        "desc": "HEIC写真を標準的なJPG形式に変換"
+      "csvToExcel": {
+        "title": "CSVからExcelへ",
+        "desc": ".csvファイルをExcel（.xlsx）に変換"
       },
-      "heicToPdf": {
-        "title": "HEICからPDFへ",
-        "desc": "複数のHEIC画像をPDFドキュメントに変換"
+      "xlsxToCsv": {
+        "title": "XLSXからCSVへ",
+        "desc": "XLSXファイルをCSVに変換"
+      },
+      "txtToCsv": {
+        "title": "TXTからCSVへ",
+        "desc": "TXTファイルをCSVに変換"
+      },
+      "xmlToCsv": {
+        "title": "XMLからCSVへ",
+        "desc": "XMLファイルをCSVに変換"
       }
     },
     "guides": {
-      "title": "HEIC変換ガイド",
-      "subtitle": "HEICファイルについて知っておくべきこと、およびWindows、Mac、Androidでの取り扱い方法。",
-      "whatIsHeic": {
-        "title": "HEICファイルとは何ですか？",
-        "description": "なぜiPhoneがHEICを使用するのか、そしてJPGに対する長所と短所を理解しましょう。"
+      "title": "CSVファイルマスター：究極のガイド",
+      "subtitle": "基本的な定義から高度なフォーマットや使用のヒントまで。",
+      "whatDoesCsvStandFor": {
+        "title": "CSVは何の略ですか？",
+        "description": "カンマ区切り値（Comma Separated Values）の定義。"
       },
-      "openHeicOnWindows": {
-        "title": "WindowsでHEICファイルを開く方法は？",
-        "description": "WindowsはデフォルトでHEICをサポートしていません。追加のソフトウェアをインストールせずにWindowsでHEICファイルを開く方法を学びましょう。"
+      "whatIsCsvFormat": {
+        "title": "CSV形式とは何ですか？",
+        "description": "CSVファイルの構造を理解する。"
       },
-      "heicToPng": {
-        "title": "HEICをPNGに変換する方法",
-        "description": "HEIC画像を高画質なPNG形式に変換する方法。"
+      "whatIsCsv": {
+        "title": "CSVファイルとは何ですか？",
+        "description": "CSVファイルに関する包括的なガイド。"
       },
-      "heicToJpg": {
-        "title": "HEICをJPGに変換する方法",
-        "description": "HEIC写真をJPG形式に変更するためのステップバイステップガイド。"
-      },
-      "heicToPdf": {
-        "title": "HEICをPDFに変換する方法",
-        "description": "複数のHEIC画像を単一のPDFドキュメントとして保存する方法。"
-      },
-      "heicToWebp": {
-        "title": "HEICをWebPに変換する方法",
-        "description": "Web最適化のためにHEICをWebPに変換するガイド。"
+      "howToOpenCsv": {
+        "title": "CSVファイルを開く方法",
+        "description": "あらゆるデバイスでCSVファイルを開いて編集する最適な方法を学びます。"
       }
     }
   },
+  "cookie": {
+    "title": "私たちはあなたのプライバシーを尊重します",
+    "description": "私たちはあなたの体験を向上させ、トラフィックを分析するためにクッキーを使用します。「同意する」をクリックすると、クッキーの使用に同意したことになります。詳細については、以下をご覧ください。",
+    "policyLink": "プライバシーポリシー",
+    "decline": "拒否",
+    "accept": "同意する"
+  },
   "brand": {
-    "title": "HeicTools",
-    "description": "無料のオンラインHEIC変換ツール：HEICからJPG、HEICからPNG、HEICからPDFへ。安全なクライアントサイド処理。",
-    "logoAlt": "HeicToolsロゴ"
+    "title": "CSVコンバーター",
+    "description": "無料のオンラインCSVコンバーター：JSON、Excel、XMLからCSVへ。安全なクライアントサイド処理。",
+    "logoAlt": "CSVコンバーターロゴ"
   },
   "nav": {
     "home": "ホーム",
-    "heicToJpg": "HEICからJPG",
-    "heicToPng": "HEICからPNG",
-    "heicToWebp": "HEICからWebP",
-    "heicToPdf": "HEICからPDF",
-    "whatIsHeic": "HEICとは？"
+    "jsonToCsv": "JSONからCSVへ",
+    "txtToCsv": "TXTからCSVへ",
+    "xlsxToCsv": "XLSXからCSVへ",
+    "xmlToCsv": "XMLからCSVへ"
   },
   "tools": {
     "common": {
+      "csvOutput": "CSV出力",
+      "whatIsCsvLink": {
+        "text": "CSVファイルは初めてですか？",
+        "linkText": "CSVファイルとは何かを学ぶ"
+      },
       "errors": {
         "fileLimitExceeded": "最大{max}ファイルまで許可されています。"
       },
       "actions": {
         "downloadAll": "すべてダウンロード",
         "downloadZip": "Zipをダウンロード",
-        "downloadPdf": "PDFをダウンロード",
         "clearAll": "すべてクリア",
         "download": "ダウンロード",
         "remove": "削除",
         "addMore": "さらに追加",
-        "limitReached": "制限に達しました"
+        "limitReached": "制限に達しました",
+        "copy": "クリップボードにコピー",
+        "copied": "コピーしました！",
+        "convertAnother": "別のファイルを変換"
       },
       "status": {
         "converting": "変換中...",
         "ready": "完了",
         "failed": "失敗",
         "waiting": "待機中..."
-      },
-      "whatIsHeicLink": {
-        "text": "HEICとは何か知りたいですか？読んでください：",
-        "linkText": "HEICファイルとは何ですか？"
       }
     },
-    "heicToJpg": {
-      "title": "HEIC/HEIFからJPGへの変換ツール",
-      "description": "オンラインで無料でHEICまたはHEIFをJPG/JPEGに変換します。",
-      "metaTitle": "HEIC/HEIFからJPGへの変換ツール（JPEGに変換）— 無料オンライン | HeicTools",
-      "metaDescription": "オンラインで即座にHEICまたはHEIF（.heic/.heif）をJPGに変換します。無料、安全、アップロード制限なし。Windows、Mac、iPhoneで動作します。",
-      "h1": "HEIC/HEIFからJPGへの変換ツール（JPEGに変換）",
-      "subtitle": "HEIC/HEIF（.heic/.heif）写真を広くサポートされているJPG形式に変換します。共有やWindowsとの互換性に最適です。",
-      "converting": "変換中...",
-      "download": "JPGをダウンロード",
-      "convertAnother": "別のファイルを変換",
-      "errors": {
-        "invalidFormat": "無効なファイル形式です。.heicまたは.heifファイルをアップロードしてください。",
-        "conversionFailed": "変換に失敗しました。別のファイルで試してください。"
+    "csvToJson": {
+      "title": "CSVからJSONへのコンバーター",
+      "description": "オンラインで無料でCSVをJSON形式に変換します。",
+      "metaTitle": "CSVからJSONへのコンバーター — 無料オンライン | CSVコンバーター",
+      "metaDescription": "オンラインで即座にCSVをJSONに変換します。無料、安全、アップロード制限なし。",
+      "h1": "CSVからJSONへのコンバーター",
+      "subtitle": "ブラウザでCSVファイルをJSON形式に即座に変換します — プライベート、高速、無料。",
+      "upload": {
+        "dropText": "CSVファイルをここにドラッグ＆ドロップ",
+        "browse": "ファイルを参照",
+        "support": ".csvファイルをサポート"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIFをJPGに変換",
-          "content": "多くのユーザーがWindowsでiPhoneの写真を開くのに苦労しています。当社のツールを使用すると、ソフトウェアやプラグインをインストールすることなく、HEICを即座にJPGに変更できます。"
+        "why": {
+          "title": "なぜCSVをJSONに変換するのですか？",
+          "content": "JSONはWeb APIや最新のアプリケーションの標準形式です。CSVをJSONに変換することで、スプレッドシートデータをJavaScriptアプリケーション、NoSQLデータベース、構成ファイルで簡単に使用できるようになります。"
         },
-        "section2": {
-          "title": "なぜJPGを選ぶのか？",
-          "content": "JPGは世界で最も普遍的な画像形式です。どのデバイス、ウェブサイト、ソフトウェアでも開くことができ、通常はPNGよりもファイルサイズが小さいため、写真の保存や共有に最適です。"
-        },
-        "section3": {
-          "title": "変換方法",
+        "how": {
+          "title": "CSVをJSONに変換する方法",
           "steps": [
-            "上のエリアにHEICファイルを選択またはドラッグ＆ドロップします",
-            "変換が完了するのを待ちます（通常は一瞬です）",
-            "ダウンロードボタンをクリックしてJPG画像を保存します"
+            "CSVファイルをアップロードします。",
+            "ツールがクライアントサイドでデータを解析します。",
+            "JSON出力をプレビューしてコピーします。",
+            "結果を.jsonファイルとしてダウンロードします。"
           ]
-        },
-        "guideLink": {
-          "text": "より詳細なガイドが必要ですか？以下の完全なチュートリアルを読んでください：",
-          "linkText": "HEICをJPGに変換する方法"
         }
-      },
-      "upload": {
-        "dropText": "ここにファイルをドラッグ＆ドロップ",
-        "browse": "ファイルを参照",
-        "support": "HEIC（.heic）をサポート、HEIF（.heif）と互換性あり"
       }
     },
-    "heicToPng": {
-      "title": "HEICからPNGへの変換ツール",
-      "description": ".heicファイルを高画質なPNG画像に変換します。",
-      "metaTitle": "HEIC/HEIFからPNGへの変換ツール — 無料オンラインツール | HeicTools",
-      "metaDescription": "オンラインでHEICまたはHEIF（.heic/.heif）をPNGに変換します。編集用のロスレス出力。100%クライアントサイドのプライバシー。",
-      "h1": "HEICからPNGへの変換ツール",
-      "subtitle": "ブラウザでHEIC/HEIF（.heic/.heif）をPNGに変換 — プライベート、高速、無料。",
-      "trust": {
-        "summary": "ブラウザでのローカル変換 — プライベート、高速、無料。",
-        "items": [
-          {
-            "desc": "ローカル処理。アップロードなし。"
-          },
-          {
-            "desc": "ブラウザでの高速変換。"
-          },
-          {
-            "desc": "無料で使用可能。登録不要。"
-          }
-        ]
-      },
-      "converting": "変換中...",
-      "download": "PNGをダウンロード",
-      "convertAnother": "別のファイルを変換",
-      "errors": {
-        "invalidFormat": "無効なファイル形式です。.heicまたは.heifファイルをアップロードしてください。",
-        "conversionFailed": "変換に失敗しました。別のファイルで試してください。"
+    "jsonToCsv": {
+      "title": "JSONからCSVへのコンバーター – JSONファイルをオンラインでCSVに変換",
+      "description": "オンラインで無料でJSONをCSVに変換します。JSONファイルをアップロードして、きれいなCSVファイルを即座にダウンロードします。登録不要、高速、安全。",
+      "metaTitle": "JSONからCSVへのコンバーター – JSONファイルをオンラインでCSVに変換",
+      "metaDescription": "オンラインで無料でJSONをCSVに変換します。JSONファイルをアップロードして、きれいなCSVファイルを即座にダウンロードします。登録不要、高速、安全。",
+      "h1": "JSONからCSVへのコンバーター",
+      "subtitle": "ブラウザでJSONファイルをCSV形式に即座に変換します。登録不要。高速、安全、使いやすい。",
+      "upload": {
+        "dropText": "JSONファイルをここにドラッグ＆ドロップ",
+        "browse": "またはクリックしてアップロード",
+        "support": ".jsonファイルをサポート"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIFをPNGに変換",
-          "content": "編集が必要な.heicまたは.heif写真がありますか？品質を保持し、透明度をサポートするためにPNGに変換してください。"
-        },
-        "section2": {
-          "title": "なぜPNGを選ぶのか？",
-          "content": "PNGはロスレス形式であり、高画質な画像に最適です。JPGとは異なり、PNGは透明度をサポートし、何度も保存しても画質が劣化しません。"
-        },
-        "section3": {
-          "title": "変換方法",
+        "how": {
+          "title": "JSONをCSVに変換する方法",
           "steps": [
-            "HEIC/HEIFファイルを選択またはドラッグ＆ドロップします",
-            "変換が完了するのを待ちます（通常は一瞬です）",
-            "ダウンロードボタンをクリックしてPNGを保存します"
+            "JSONファイルをアップロードするか、JSONコンテンツをコンバーターに貼り付けます。",
+            "<strong>変換</strong>ボタンをクリックします。",
+            "変換されたCSVファイルを即座にダウンロードします。"
           ]
         },
-        "guideLink": {
-          "text": "より詳細なガイドが必要ですか？以下の完全なチュートリアルを読んでください：",
-          "linkText": "HEIC/HEIFをPNGに変換する方法"
+        "guide": {
+          "title": "JSONからCSVへの変換とは何ですか？",
+          "content": "JSONからCSVへの変換は、JSONデータをCSV（カンマ区切り値）形式に変換するプロセスです。これにより、JSONデータをExcelやGoogleスプレッドシートなどのスプレッドシートツールで開き、編集し、分析できるようになります。",
+          "linkText": "CSVファイルの詳細についてはこちら： "
+        },
+        "example": {
+          "title": "JSONからCSVへの例",
+          "intro": "これはJSONをCSVに変換する簡単な例です。",
+          "jsonLabel": "JSON入力：",
+          "csvLabel": "変換されたCSV出力："
+        },
+        "moreTools": {
+          "title": "その他のCSVツール"
         }
-      },
-      "upload": {
-        "dropText": "ここにファイルをドラッグ＆ドロップ",
-        "browse": "ファイルを参照",
-        "support": "HEIC（.heic）をサポート、HEIF（.heif）と互換性あり"
       }
     },
-    "heicToWebp": {
-      "title": "HEIC/HEIFからWebPへの変換ツール",
-      "description": "HEICまたはHEIF写真をWebP形式に変換します。",
-      "metaTitle": "HEIC/HEIFからWebPへの変換ツール — 無料オンラインツール | HeicTools",
-      "metaDescription": "オンラインでHEICまたはHEIF（.heic/.heif）をWebPに変換します。品質を維持しながらファイルサイズを削減します。100%クライアントサイドのプライバシー。",
-      "h1": "HEIC/HEIFからWebPへの変換ツール",
-      "subtitle": "HEIC/HEIF（.heic/.heif）をWebPに変換して、ファイルサイズを小さくし、Webの読み込みを高速化します。安全で無料。",
-      "converting": "変換中...",
-      "download": "WebPをダウンロード",
-      "convertAnother": "別のファイルを変換",
-      "errors": {
-        "invalidFormat": "無効なファイル形式です。.heicまたは.heifファイルをアップロードしてください。",
-        "conversionFailed": "変換に失敗しました。別のファイルで試してください。"
+    "csvToExcel": {
+      "title": "CSVからExcelへのコンバーター",
+      "description": "オンラインで無料でCSVをExcelに変換します。",
+      "metaTitle": "CSVからExcelへのコンバーター — 無料オンライン | CSVコンバーター",
+      "metaDescription": "オンラインで即座にCSVをExcel（.xlsx）に変換します。無料、安全、アップロード制限なし。",
+      "h1": "CSVからExcelへのコンバーター",
+      "subtitle": "ブラウザでCSVファイルをExcel形式に変換します — プライベート、高速、無料。",
+      "upload": {
+        "dropText": "CSVファイルをここにドラッグ＆ドロップ",
+        "browse": "ファイルを参照",
+        "support": ".csvファイルをサポート"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIFをWebPに変換",
-          "content": "WebPはWeb画像の最新標準です。HEICをWebPに変換することで、ファイルサイズを小さく保ちながら、すべての最新ブラウザで画像が高速に読み込まれるようになります。"
+        "why": {
+          "title": "なぜCSVをExcelに変換するのですか？",
+          "content": "ExcelはCSVファイルを開くことができますが、エンコーディングやフォーマットが乱れることがよくあります。ネイティブExcel（.xlsx）に変換することで、データ型、特殊文字、フォーマットが正しく保持されます。"
         },
-        "section2": {
-          "title": "なぜWebPを選ぶのか？",
-          "content": "WebPはJPGやPNGと比較して優れた圧縮率を提供します。非可逆圧縮と可逆圧縮の両方、および透明度をサポートしており、Webにとって最も汎用性の高い形式です。"
-        },
-        "section3": {
-          "title": "変換方法",
+        "how": {
+          "title": "CSVをExcelに変換する方法",
           "steps": [
-            "HEICファイルを選択またはドラッグ＆ドロップします",
-            "変換が完了するのを待ちます",
-            "ダウンロードをクリックしてWebPファイルを取得します"
+            "CSVファイルを選択します。",
+            "ツールが変換を即座に処理します。",
+            "データがExcelスプレッドシートにフォーマットされます。",
+            "すぐに使用できる.xlsxファイルをダウンロードします。"
           ]
-        },
-        "guideLink": {
-          "text": "より詳細なガイドが必要ですか？以下の完全なチュートリアルを読んでください：",
-          "linkText": "HEICをWebPに変換する方法"
         }
-      },
-      "upload": {
-        "dropText": "ここにファイルをドラッグ＆ドロップ",
-        "browse": "ファイルを参照",
-        "support": "HEIC（.heic）をサポート、HEIF（.heif）と互換性あり"
       }
     },
-    "heicToPdf": {
-      "title": "HEIC/HEIFからPDFへの変換ツール",
-      "description": "HEICまたはHEIF写真をPDFドキュメントに変換します。",
-      "metaTitle": "HEIC/HEIFからPDFへの変換ツール — 無料オンラインツール | HeicTools",
-      "metaDescription": "HEICまたはHEIF（.heic/.heif）をPDFドキュメントに変換します。クライアントサイド処理を備えた高速、無料、安全なオンライン変換ツール。",
-      "h1": "HEIC/HEIFからPDFへの変換ツール",
-      "subtitle": "HEIC/HEIF（.heic/.heif）画像を簡単にPDFドキュメントに変換します。単一のファイルとして共有するのに最適です。",
-      "converting": "変換中...",
-      "download": "PDFをダウンロード",
-      "convertAnother": "別のファイルを変換",
-      "errors": {
-        "invalidFormat": "無効なファイル形式です。.heicまたは.heifファイルをアップロードしてください。",
-        "conversionFailed": "変換に失敗しました。別のファイルで試してください。"
+    "xlsxToCsv": {
+      "title": "XLSXからCSVへのコンバーター",
+      "description": "Excel（XLSX）ファイルを即座にCSV形式に変換します",
+      "metaTitle": "XLSXからCSVへのコンバーター - ExcelをオンラインでCSVに変換",
+      "metaDescription": "Excelファイル（.xlsx、.xls）をCSV形式に変換する無料のオンラインツール。高速、安全、使いやすい。アップロード不要。",
+      "h1": "Excel（XLSX）をCSVに変換",
+      "subtitle": "ブラウザでExcelファイル（.xlsx）を即座にCSV形式に変換します。登録不要。高速、安全、使いやすい。",
+      "upload": {
+        "dropText": "Excelファイルをここにドラッグ＆ドロップ",
+        "browse": "またはクリックしてアップロード",
+        "support": ".xlsx、.xlsファイルをサポート"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIFをPDFに変換",
-          "content": ".heicまたは.heif写真を単一のPDFドキュメントに変換して、共有や印刷を容易にします。"
-        },
-        "section2": {
-          "title": "なぜPDFを選ぶのか？",
-          "content": "PDFはドキュメントの世界標準です。すべてのデバイスやプリンターで画像がまったく同じように見えることを保証します。画像とは異なり、PDFは1つのファイルに複数のページを含めることができます。"
-        },
-        "section3": {
-          "title": "変換方法",
+        "how": {
+          "title": "ExcelをCSVに変換する方法",
           "steps": [
-            "HEICファイルを選択またはドラッグ＆ドロップします",
-            "必要に応じて画像を並べ替えます",
-            "「変換」をクリックしてPDFをダウンロードします"
+            "Excel（.xlsxまたは.xls）ファイルをアップロードします。",
+            "アクティブなシートのデータを抽出します。",
+            "データはカンマ区切りのテキストに変換されます。",
+            "軽量なCSVファイルをダウンロードします。"
           ]
         },
-        "guideLink": {
-          "text": "より詳細なガイドが必要ですか？以下の完全なチュートリアルを読んでください：",
-          "linkText": "HEICをPDFに変換する方法"
+        "guide": {
+          "title": "ExcelからCSVへの変換とは何ですか？",
+          "content": "ExcelからCSVへの変換は、複雑なExcelスプレッドシート（.xlsx）をプレーンテキストのCSV形式にエクスポートするプロセスです。Excelファイルにはフォーマット、数式、複数のシートが含まれていますが、CSVファイルには生データのみが含まれており、データベースや他のソフトウェアへのインポートに最適です。",
+          "linkText": "CSVファイルの詳細についてはこちら： "
+        },
+        "example": {
+          "title": "ExcelからCSVへの例",
+          "intro": "これはCSV形式に変換されたExcelスプレッドシートデータの例です。",
+          "excelLabel": "Excel入力（表）：",
+          "csvLabel": "変換されたCSV出力："
+        },
+        "moreTools": {
+          "title": "その他のCSVツール"
+        }
+      }
+    },
+    "txtToCsv": {
+      "title": "TXTからCSVへのコンバーター",
+      "description": "オンラインで無料でテキストファイルをCSVに変換します。",
+      "metaTitle": "TXTからCSVへのコンバーター — 無料オンライン | CSVコンバーター",
+      "metaDescription": "オンラインで即座にTXTをCSVに変換します。カスタム区切り文字（カンマ、タブ、パイプ）をサポート。無料かつ安全。",
+      "h1": "TXTからCSVへのコンバーター",
+      "subtitle": "ブラウザでTXTファイルを即座にCSV形式に変換します。登録不要。高速、安全、使いやすい。",
+      "upload": {
+        "dropText": "TXTファイルをここにドラッグ＆ドロップ",
+        "browse": "またはクリックしてアップロード",
+        "support": ".txtファイルをサポート"
+      },
+      "delimiter": {
+        "label": "区切り文字を選択",
+        "hint": "注：英語モードの記号を使用してください",
+        "options": {
+          "comma": "カンマ (,)",
+          "tab": "タブ (\\t)",
+          "pipe": "パイプ ({'|'})",
+          "semicolon": "セミコロン (;)",
+          "space": "スペース ( )"
         }
       },
+      "seo": {
+        "how": {
+          "title": "TXTをCSVに変換する方法",
+          "steps": [
+            ".txtファイルをアップロードするか、テキストコンテンツを貼り付けます。",
+            "テキストファイルで使用されている<strong>区切り文字</strong>（例：カンマ、タブ、パイプ）を選択します。",
+            "<strong>変換</strong>をクリックしてファイルを処理します。",
+            "構造化されたCSVファイルをダウンロードします。"
+          ]
+        },
+        "guide": {
+          "title": "TXTからCSVへの変換とは何ですか？",
+          "content": "TXTからCSVへの変換は、生のテキストデータを表形式に構造化するプロセスです。テキストファイルは、多くの場合、特定の区切り文字（タブやパイプなど）を使用してデータを保存します。これらをCSVに変換すると、Excelなどのスプレッドシートソフトウェアでデータを使用できるようになります。",
+          "linkText": "CSVファイルの詳細についてはこちら： "
+        },
+        "example": {
+          "title": "TXTからCSVへの例",
+          "intro": "これはカンマ区切りのテキストファイルをCSVに変換する例です。",
+          "txtLabel": "TXT入力（カンマ区切り）：",
+          "csvLabel": "変換されたCSV出力："
+        },
+        "moreTools": {
+          "title": "その他のCSVツール"
+        }
+      }
+    },
+    "xmlToCsv": {
+      "title": "XMLからCSVへのコンバーター",
+      "description": "オンラインで無料でXMLファイルをCSVに変換します。",
+      "metaTitle": "XMLからCSVへのコンバーター — 無料オンライン | CSVコンバーター",
+      "metaDescription": "XMLデータをCSV形式に変換します。ネストされたXML構造を自動的にフラット化します。",
+      "h1": "XMLからCSVへのコンバーター",
+      "subtitle": "ブラウザでXMLファイルを即座にCSV形式に変換します。登録不要。高速、安全、使いやすい。",
       "upload": {
-        "dropText": "ここにファイルをドラッグ＆ドロップ",
+        "dropText": "XMLファイルをここにドラッグ＆ドロップ",
+        "browse": "またはクリックしてアップロード",
+        "support": ".xmlファイルをサポート"
+      },
+      "seo": {
+        "how": {
+          "title": "XMLをCSVに変換する方法",
+          "steps": [
+            ".xmlファイルをアップロードします。",
+            "ツールがXMLツリーを解析します。",
+            "構造を行と列にフラット化します。",
+            "きれいなCSVファイルをダウンロードします。"
+          ]
+        },
+        "guide": {
+          "title": "XMLからCSVへの変換とは何ですか？",
+          "content": "XMLからCSVへの変換は、階層的なXMLデータをフラットなCSV（カンマ区切り値）形式に変換するプロセスです。これにより、XMLデータをExcelやGoogleスプレッドシートなどのスプレッドシートツールで開き、編集し、分析できるようになります。",
+          "linkText": "CSVファイルの詳細についてはこちら： "
+        },
+        "example": {
+          "title": "XMLからCSVへの例",
+          "intro": "これはXMLをCSVに変換する簡単な例です。",
+          "xmlLabel": "XML入力：",
+          "csvLabel": "変換されたCSV出力："
+        },
+        "moreTools": {
+          "title": "その他のCSVツール"
+        }
+      }
+    },
+    "pdfToCsv": {
+      "title": "PDFからCSVへのコンバーター",
+      "description": "オンラインでPDFの表をCSVに変換します。",
+      "metaTitle": "PDFからCSVへのコンバーター — PDFから表を抽出",
+      "metaDescription": "PDFファイルから表データを抽出してCSVに変換します。無料のオンラインツール。",
+      "h1": "PDFからCSVへのコンバーター",
+      "subtitle": "PDFファイルから表を抽出して、編集可能なCSV形式に変換します。",
+      "upload": {
+        "dropText": "PDFファイルをここにドラッグ＆ドロップ",
         "browse": "ファイルを参照",
-        "support": "HEIC（.heic）をサポート、HEIF（.heif）と互換性あり"
+        "support": ".pdfファイルをサポート"
+      },
+      "seo": {
+        "why": {
+          "title": "なぜPDFをCSVに変換するのですか？",
+          "content": "PDFは閲覧用であり、編集用ではありません。PDFの表をCSVに変換すると、ExcelやGoogleスプレッドシートで分析するためにデータのロックを解除できます。"
+        },
+        "how": {
+          "title": "PDFをCSVに変換する方法",
+          "steps": [
+            "PDFファイルをアップロードします。",
+            "ドキュメント内の表データを検出します。",
+            "データが抽出され、CSVとしてフォーマットされます。",
+            "ファイルをダウンロードします。"
+          ]
+        }
       }
     }
   },
   "footer": {
-    "rightsReserved": "全著作権所有。"
-  },
-  "cookie": {
-    "title": "私たちはあなたのプライバシーを尊重します",
-    "description": "私たちはクッキーを使用して、あなたの体験を向上させ、トラフィックを分析します。「同意する」をクリックすることで、クッキーの使用に同意したことになります。詳細はこちら：",
-    "policyLink": "プライバシーポリシー",
-    "decline": "拒否する",
-    "accept": "同意する"
-  },
-  "privacyPolicy": {
-    "metaTitle": "プライバシーポリシー - HeicTools",
-    "metaDescription": "HeicToolsのプライバシーポリシー。クライアントサイド処理であなたのプライバシーを保護する方法をご覧ください。",
-    "title": "プライバシーポリシー",
-    "lastUpdated": "最終更新日：",
-    "sections": {
-      "intro": {
-        "title": "1. はじめに",
-        "content": "HeicToolsへようこそ。私たちはあなたのプライバシーを尊重し、個人データを保護することに尽力しています。このプライバシーポリシーは、あなたが当社のウェブサイトを訪問した際に私たちがどのように個人データを扱うか、そしてあなたのプライバシー権と法律がどのようにあなたを保護するかについてお知らせします。"
-      },
-      "clientSide": {
-        "title": "2. クライアントサイド処理",
-        "content": "HeicToolsはプライバシーを優先して設計されています。<strong>私たちはあなたのファイルをサーバーにアップロードしません。</strong>すべてのファイル変換（HEICからJPG、PNG、PDF）は、完全にあなたのWebブラウザ内（クライアントサイド）で行われます。あなたの写真はデバイスを離れることはなく、個人データの完全なプライバシーとセキュリティを保証します。"
-      },
-      "dataCollection": {
-        "title": "3. データ収集",
-        "content": "私たちはサーバー上でファイルを処理しないため、あなたが変換するコンテンツを収集、保存、または共有することはありません。ただし、サービスの向上に役立てるために、あなたの訪問に関する非個人情報を収集する場合があります：",
-        "items": [
-          "使用データ（訪問したページ、滞在時間など） - Google Analytics経由",
-          "デバイスとブラウザの情報（互換性を確保するため）",
-          "言語設定"
-        ]
-      },
-      "cookies": {
-        "title": "4. クッキー",
-        "content": "私たちはクッキーを使用して、ブラウジング体験を向上させ、トラフィックを分析します。クッキー同意バナーを通じて、クッキーを受け入れるか拒否するかを選択できます。私たちは主にGoogle Analyticsクッキーを使用して、ユーザーがウェブサイトとどのように対話しているかを理解しています。"
-      },
-      "contact": {
-        "title": "5. お問い合わせ",
-        "content": "このプライバシーポリシーまたは当社のプライバシー慣行について質問がある場合は、以下までお問い合わせください："
-      }
-    }
+    "rightsReserved": "All rights reserved."
   },
   "pages": {
     "guides": {
-      "common": {
-        "readyTitle": "変換する準備はできましたか？",
-        "convertNow": "HEICを{format}に変換",
-        "method": "方法 {number}：{title}",
-        "steps": "ステップバイステップガイド",
-        "whyChoose": "なぜ{format}を選ぶのか？",
-        "howToConvert": "オンラインで変換する方法"
-      },
-      "heicToPng": {
-        "seoTitle": "HEICをPNGに変換する方法（高画質）",
-        "seoDesc": "HEIC画像をPNG形式に変換するガイド。画質の保持と透明な背景に最適です。",
-        "title": "HEICをPNGに変換する方法",
-        "intro": "HEICは写真に最適ですが、ロスレス品質やWebデザインツールとの互換性のためにPNGが必要な場合があります。",
-        "learnMore": "編集する前に、ソース形式について詳しく知りたい場合は、私たちのガイドを読んでください：{link}。",
-        "whyChoose": {
-          "title": "なぜJPGではなくPNGを選ぶのか？",
-          "reasons": {
-            "lossless": "<strong>可逆圧縮：</strong> 保存時に画質の劣化がありません。",
-            "transparency": "<strong>透明度：</strong> 透明な背景をサポートします（ソースにある場合）。",
-            "standard": "<strong>Web標準：</strong> すべてのブラウザとエディタで広くサポートされています。"
-          }
-        },
-        "method1": {
-          "title": " オンライン変換ツール（推奨）",
-          "desc": "ソフトウェアをインストールせずにHEICをPNGに変換する最速の方法。",
-          "step1": "{link}にアクセスします。",
-          "step2": "HEICファイルをアップロードします。",
-          "step3": "変換が完了するのを待ちます。",
-          "step4": "高画質なPNGファイルをダウンロードします。",
-          "cta": "今すぐファイルを変換：",
-          "buttonJpg": "JPGに変換",
-          "buttonPng": "HEICをPNGに変換",
-          "buttonWebp": "WebPに変換",
-          "buttonPdf": "PDFに変換"
-        },
-        "cta": {
-          "title": "始める準備はできましたか？",
-          "desc": "数秒でHEIC写真から高画質なPNGを取得します。",
-          "button": "HEICをPNGに変換"
-        }
-      },
-      "heicToJpg": {
-        "seoTitle": "WindowsとMacでHEICをJPGに変換する方法（無料）",
-        "seoDesc": "HEICをJPGに変換するステップバイステップガイド。無料のオンラインツールや組み込みのシステムアプリを使用してHEICファイルをJPGに変更する方法を学びます。",
-        "title": "HEICをJPGに変換する方法",
-        "intro": "HEICファイルはiPhoneの容量を節約するのに最適ですが、他のデバイスで共有したり開いたりするのが面倒な場合があります。ここでは、HEICを簡単にJPGに変更する方法を紹介します。",
-        "learnMore": "それらを表示する前に、なぜAppleがこの形式を使用するのかを理解したい場合は、私たちのガイドをチェックしてください：{link}。",
-        "whyChoose": {
-          "title": "なぜHEICをJPGに変換するのか？",
-          "reasons": {
-            "compatibility": "<strong>普遍的な互換性：</strong> JPGは、古いWindows PCからAndroid携帯まで、すべてのデバイスで開きます。",
-            "sharing": "<strong>簡単な共有：</strong> ソーシャルメディアアプリやウェブサイトは常にJPGファイルを受け入れます。",
-            "software": "<strong>ソフトウェアサポート：</strong> 特別なプラグインや有料の拡張機能は必要ありません。"
-          }
-        },
-        "method1": {
-          "title": "無料のオンライン変換ツールを使用する（推奨）",
-          "desc": "ソフトウェアをインストールせずにHEICをJPGに変換する最速の方法は、ブラウザベースのツールを使用することです。",
-          "step1": "{link}にアクセスします。",
-          "step2": ".heicファイルをアップロードエリアにドラッグ＆ドロップします。",
-          "step3": "変換が完了するのを待ちます（通常は数秒かかります）。",
-          "step4": "新しいJPG写真をダウンロードします。",
-          "cta": "今すぐファイルを変換：",
-          "buttonJpg": "HEICをJPGに変換",
-          "buttonPng": "PNGに変換",
-          "buttonWebp": "WebPに変換",
-          "buttonPdf": "PDFに変換"
-        },
-        "cta": {
-          "title": "変換する準備はできましたか？",
-          "desc": "今すぐ高速、安全、無料のオンライン変換ツールをお試しください。",
-          "button": "今すぐHEICをJPGに変換"
-        }
-      },
-      "heicToWebp": {
-        "seoTitle": "HEICをWebPに変換する方法（最高の圧縮）",
-        "seoDesc": "HEIC画像をWebP形式に変換するガイド。Web用に高品質を維持しながらファイルサイズを削減する方法を学びます。",
-        "title": "HEICをWebPに変換する方法",
-        "intro": "WebPは、Web上の画像に対して優れた可逆および非可逆圧縮を提供する最新の画像形式です。ここでは、HEIC写真をWebPに変換する方法を紹介します。",
-        "learnMore": "最適化する前にソース形式の効率を理解するには、私たちのガイドをチェックしてください：{link}。",
-        "whyChoose": {
-          "title": "なぜWebPを選ぶのか？",
-          "reasons": {
-            "compression": "<strong>優れた圧縮：</strong> WebP画像はPNGと比較してサイズが26%小さくなります。",
-            "loading": "<strong>より速い読み込み：</strong> ファイルサイズが小さいということは、ウェブサイトの読み込み時間が短縮されることを意味します。",
-            "transparency": "<strong>透明度：</strong> PNGと同様に、WebPも透明度をサポートしています。"
-          }
-        },
-        "method1": {
-          "title": "オンライン変換ツール（推奨）",
-          "desc": "無料ツールを使用して、Web用に画像を即座に最適化します。",
-          "step1": "{link}にアクセスします。",
-          "step2": "HEICファイルをアップロードします。",
-          "step3": "変換が完了するのを待ちます。",
-          "step4": "最適化されたWebPファイルをダウンロードします。",
-          "cta": "最適化を開始：",
-          "buttonJpg": "JPGに変換",
-          "buttonPng": "PNGに変換",
-          "buttonWebp": "HEICをWebPに変換",
-          "buttonPdf": "PDFに変換"
-        },
-        "cta": {
-          "title": "最適化する準備はできましたか？",
-          "desc": "HEIC写真を効率的なWebP形式に即座に変換します。",
-          "button": "HEICをWebPに変換"
-        }
-      },
-      "heicToPdf": {
-        "seoTitle": "HEICをPDFに変換する方法（写真を結合）",
-        "seoDesc": "オンラインで複数のHEIC写真を単一のPDFドキュメントに変換する方法を学びます。ドキュメントや領収書の共有に最適です。",
-        "title": "HEICをPDFに変換する方法",
-        "intro": "複数のiPhone写真を1つのドキュメントとして送信する必要がありますか？HEICをPDFに変換するのが最善の解決策です。",
-        "learnMore": "アーカイブする前にiPhoneで使用されている画像形式について詳しく知りたい場合は、次を参照してください：{link}。",
-        "whyChoose": {
-          "title": "なぜHEICをPDFに変換するのか？",
-          "reasons": {
-            "compatibility": "<strong>普遍的な互換性：</strong> PDFはすべてのデバイスで動作します。",
-            "singleFile": "<strong>単一ファイル：</strong> 10枚以上の写真を1つの共有しやすいファイルにまとめます。",
-            "security": "<strong>セキュリティ：</strong> PDFは画像よりも編集が困難です。"
-          }
-        },
-        "method1": {
-          "title": "オンライン変換ツール（推奨）",
-          "desc": "複数のHEIC画像を1つのPDFドキュメントに簡単に結合します。",
-          "step1": "{link}を開きます。",
-          "step2": "HEIC画像を選択します。",
-          "step3": "（オプション）必要に応じて画像を並べ替えます。",
-          "step4": "<strong>変換</strong>をクリックしてPDFを生成します。",
-          "cta": "PDFを作成：",
-          "buttonJpg": "JPGに変換",
-          "buttonPng": "PNGに変換",
-          "buttonWebp": "WebPに変換",
-          "buttonPdf": "HEICをPDFに変換"
-        },
-        "cta": {
-          "title": "変換を開始",
-          "desc": "HEIC写真を即座にプロフェッショナルなPDFドキュメントに変換します。",
-          "button": "HEICをPDFに変換"
-        }
-      },
-      "whatIsHeic": {
-        "seoTitle": "HEICファイルとは何ですか？起源、特徴、比較",
-        "seoDesc": "HEIC形式の包括的なガイド。その歴史、特徴、およびJPG、PNG、WebP、PDFとの比較について学びます。",
-        "title": "HEICファイルとは何ですか？",
-        "intro": "HEICファイルは、iPhoneやiPadなどのAppleデバイスが、JPGのような従来の形式よりも効率的に写真を保存するために使用する画像形式です。HEICはHigh Efficiency Image Containerの略で、HEIF（High Efficiency Image File Format）標準に基づいています。簡単に言えば、HEICはiPhoneが写真を保存するために使用する新しい種類の画像形式です。JPGよりも少ない保存容量で、より高い画質を維持します。",
-        "origins": {
-          "title": "起源と開発",
-          "content": "HEICは**HEIF**（High Efficiency Image File Format）標準のファイル拡張子です。これは、iTunesで使用されるAACオーディオ形式の背後にある同じチームである**MPEG**（Moving Picture Experts Group）によって開発されました。\n\n標準は2015年に完成しましたが、**2017**年にAppleがiOS 11のデフォルト画像形式として採用したときに主流の注目を集めました。この移行により、iPhone上の老朽化したJPEG形式が置き換えられ、ユーザーは半分のファイルサイズで高品質の写真を保存できるようになりました。"
-        },
-        "features": {
-          "title": "HEICの主な特徴",
-          "list": {
-            "compression": "<strong>優れた圧縮：</strong> HEIC画像は通常、同様の品質のJPEGよりも50%小さくなります。",
-            "quality": "<strong>16ビットカラー：</strong> JPEGの8ビットよりも大幅に深い色域をサポートし、空やグラデーションのバンディングを減らします。",
-            "advanced": "<strong>高度な機能：</strong> 透明度（PNGのように）や画像シーケンス（Live PhotosやGIFのように）を単一のファイルでサポートします。",
-            "editing": "<strong>非破壊編集：</strong> トリミングや回転などの編集は、元の画像データを変更せずに保存できます。"
-          }
-        },
-        "comparison": {
-          "title": "HEIC vs JPG：完全な形式比較",
-          "desc": "以下の表は、HEICとJPG、PNG、WebP形式を包括的に比較し、ファイルサイズ、画質、互換性、および最適なユースケースの違いを強調して、主な違いを一目で理解できるようにします。",
-          "table": {
-            "header": [
-              "形式",
-              "ファイルサイズ",
-              "画質",
-              "透明度",
-              "互換性",
-              "最適",
-              "ユースケース"
-            ],
-            "rows": [
-              {
-                "format": "HEIC",
-                "size": "小（最良）",
-                "quality": "高（16ビット）",
-                "transparency": "はい",
-                "compatibility": "限定的",
-                "useCase": "Appleエコシステム、ストレージ節約、オリジナル品質"
-              },
-              {
-                "format": "JPG",
-                "size": "中",
-                "quality": "中（8ビット）",
-                "transparency": "いいえ",
-                "compatibility": "普遍的",
-                "useCase": "共有、ソーシャルメディア、一般的な互換性"
-              },
-              {
-                "format": "PNG",
-                "size": "大",
-                "quality": "ロスレス",
-                "transparency": "はい",
-                "compatibility": "高い",
-                "useCase": "透明な背景、テキスト/グラフィックス、ピクセルパーフェクトな編集"
-              },
-              {
-                "format": "WebP",
-                "size": "極小",
-                "quality": "高",
-                "transparency": "はい",
-                "compatibility": "高い（Web）",
-                "useCase": "ウェブサイトの速度、最新のWebアプリ"
-              }
-            ]
-          }
-        },
-        "whyConvert": {
-          "title": "なぜHEICファイルを変換する必要があるのですか？",
-          "inconveniences": {
-            "title": "HEICに関する一般的な不便",
-            "list": {
-              "windows": "<strong>Windowsの互換性：</strong> Windowsのネイティブフォトアプリでは、HEICファイルを開くために有料の拡張機能が必要なことがよくあります。",
-              "web": "<strong>Webアップロード：</strong> 多くのウェブサイト、政府のフォーム、オンラインポータルはJPGまたはPDFのみを受け入れます。",
-              "sharing": "<strong>共有：</strong> Androidユーザーや古いデバイスを使用している人は、送信されたHEIC写真を表示できない場合があります。",
-              "software": "<strong>編集ソフトウェア：</strong> 一部の古い写真編集ソフトはHEIC形式をサポートしていません。"
-            }
+      "whatDoesCsvStandFor": {
+        "title": "CSVは何の略ですか？",
+        "seoTitle": "CSVは何の略ですか？定義と意味",
+        "seoDesc": "CSVはComma Separated Valuesの略です。この包括的なガイドで、完全な定義、使用される理由、仕組み、歴史を発見してください。",
+        "intro": "CSVという頭字語は、データサイエンス、ビジネス、ソフトウェアエンジニアリングで広く使われています。しかし、それは正確には何の略であり、なぜこのシンプルな形式がそれほど強力なのでしょうか？",
+        "sections": {
+          "meaning": {
+            "title": "直接的な答え",
+            "content": "<strong>CSV</strong>は<strong>Comma Separated Values（カンマ区切り値）</strong>の略です。<br><br>これは、スプレッドシートやデータベースなどの表形式のデータを保存するために使用されるファイル形式です。名前が示すように、ファイル内の値はカンマで区切られています（デリミタ）。"
           },
-          "cta": {
-            "text": "ファイルを変換してこれらの問題を即座に解決します：",
-            "buttonJpg": "HEICをJPGに変換",
-            "buttonPng": "PNGに変換",
-            "buttonWebp": "WebPに変換",
-            "buttonPdf": "PDFに変換"
+          "breakdown": {
+            "title": "頭字語の分解",
+            "content": "用語を完全に理解するために、各コンポーネントを分解してみましょう：<br><br><ul class='list-disc pl-6 space-y-2'><li><strong>Comma（カンマ）</strong>: 個々のデータポイントを分割するために使用される特定の文字（<code>,</code>）。他の文字（セミコロンなど）も同様の形式で使用できますが、カンマが標準のデフォルトです。</li><li><strong>Separated（区切り）</strong>: これは整理の方法を表します。カンマは、異なる情報の間の境界またはフェンスとして機能し、ある値がどこで終わり、次の値がどこで始まるかをコンピュータに伝えます。</li><li><strong>Values（値）</strong>: これらは保存されている実際のデータ（テキスト、数字、日付、通貨など）です。</li></ul>"
+          },
+          "origin": {
+            "title": "歴史と起源",
+            "content": "CSV形式は、パーソナルコンピュータ時代の10年以上前から存在しています。OS/360下のIBM Fortran（レベルH拡張）コンパイラは、1967年にそれらをサポートしていました。これは、互いに通信できない異なるプログラム間でデータを移動するための簡単な方法として設計されました。プレーンテキストであるため、現存する最も耐久性があり普遍的なファイル形式の1つです。"
+          },
+          "variations": {
+            "title": "関連する頭字語とバリエーション",
+            "content": "CSVが最も一般的な用語ですが、データ処理で関連する形式に遭遇することがあります：<br><br><ul class='list-disc pl-6 space-y-2'><li><strong>TSV (Tab Separated Values)</strong>: カンマの代わりにタブ文字を使用します。データに多くのカンマが含まれている場合は、より安全なことがよくあります。</li><li><strong>DSV (Delimiter Separated Values)</strong>: 特定の文字を使用して値を区切る形式の総称です。</li><li><strong>SSV (Semicolon Separated Values)</strong>: カンマが小数点として使用されるヨーロッパ諸国で一般的です。</li></ul>"
           }
         },
-        "cta": {
-          "title": "ファイルを変換する必要がありますか？",
-          "desc": "無料のオンラインツールを使用して、HEICファイルを即座にJPGまたはPNGに変換します。",
-          "button": "変換ツールへ移動"
+        "internalLinks": {
+          "title": "関連ガイド",
+          "list": [
+            { "text": "CSVファイルとは何ですか？", "path": "/what-is-csv" },
+            { "text": "CSV形式とは何ですか？", "path": "/what-is-csv-format" }
+          ]
         }
       },
-      "openHeicOnWindows": {
-        "title": "WindowsでHEICファイルを開く方法",
-        "description": "無料ツールや公式拡張機能を含め、Windows 10および11でHEICファイルを表示して開くための最良の方法を学びます。",
-        "learnMore": "それらを表示する前に、なぜAppleがこの形式を使用するのかを理解したい場合は、私たちのガイドをチェックしてください：{link}。",
-        "whyCantOpen": {
-          "title": "なぜWindowsはHEICファイルを開けないのですか？",
-          "reasons": {
-            "codec": "<strong>HEVCコーデックの欠如：</strong> ライセンスの問題により、Windowsにはデフォルトで必要なHEVCビデオ拡張機能が含まれていません。",
-            "license": "<strong>ライセンス費用：</strong> Microsoftは、これらのファイルを表示するために、ユーザーにストアからHEVCビデオ拡張機能（$0.99）を購入するよう要求することがよくあります。",
-            "compatibility": "<strong>レガシーサポート：</strong> Windows 7や8のような古いバージョンには、HEIC/HEIF形式のネイティブサポートがありません。"
+      "whatIsCsvFormat": {
+        "title": "CSV形式とは何ですか？",
+        "seoTitle": "CSV形式とは何ですか？構造、ルール、区切り文字",
+        "seoDesc": "CSVファイル形式の構造、区切り文字のルール、引用符、文字エンコーディングについて深く掘り下げます。",
+        "intro": "CSVはシンプルに見えますが、有効なCSV形式を定義する特定のルールがあります。これらのルールを理解することは、データをインポートまたはエクスポートする際のエラーを回避するために重要です。",
+        "sections": {
+          "structure": {
+            "title": "基本構造",
+            "content": "CSVファイルは、値を区切るためにカンマを使用する区切りテキストファイルです。ファイルの各行はデータレコードです。各レコードは、区切り文字で区切られた1つ以上のフィールドで構成されています。"
+          },
+          "rules": {
+            "title": "フォーマットルール",
+            "content": "<ul><li><strong>区切り文字:</strong> 標準の区切り文字はカンマですが、一部の地域ではセミコロンを使用します。</li><li><strong>引用符:</strong> カンマを含むフィールドは二重引用符で囲む必要があります。</li><li><strong>改行:</strong> 各レコードは別の行にある必要があります。</li></ul>"
+          },
+          "encoding": {
+            "title": "文字エンコーディング",
+            "content": "最新のCSVファイルの標準エンコーディングは<strong>UTF-8</strong>です。これにより、特殊文字、絵文字、非ラテン文字がさまざまなオペレーティングシステムで正しく表示されます。"
           }
         },
+        "internalLinks": {
+          "title": "関連ガイド",
+          "list": [
+            { "text": "CSVは何の略ですか？", "path": "/what-does-csv-stand-for" },
+            { "text": "CSVファイルを開く方法", "path": "/how-to-open-csv-file" }
+          ]
+        }
+      },
+      "whatIsCsv": {
+        "title": "CSVファイルとは何ですか？",
+        "seoTitle": "CSVファイルとは何ですか？定義、形式、および例",
+        "seoDesc": "CSVファイルとは何か、何の略か、およびその使用方法を学びます。例とCSV対Excelの比較を含む完全なガイド。",
+        "intro": "CSV（Comma Separated Values）ファイルは、データを行と列に保存するために使用されるシンプルなテキストファイルで、各値はカンマで区切られています。これは、異なるツールやプラットフォーム間でデータを共有するための最も一般的な形式の1つです。",
+        "sections": {
+          "standFor": {
+            "title": "CSVは何の略ですか？",
+            "content": "CSVは<strong>Comma Separated Values（カンマ区切り値）</strong>の略です。スプレッドシートやデータベースなどの表形式のデータを保存するために使用されるシンプルなファイル形式です。CSV形式のファイルは、Microsoft ExcelやOpenOffice Calcなどの表にデータを保存するプログラムからインポートおよびエクスポートできます。"
+          },
+          "format": {
+            "title": "CSV形式とは何ですか？",
+            "content": "CSVファイルは、データを表構造形式で保存できる特定の形式を持つテキストファイルです。<br><br>主な特徴は次のとおりです：<br><ul><li>ファイルの各行はデータレコードです。</li><li>各レコードは、カンマで区切られた1つ以上のフィールドで構成されています。</li><li>フィールド区切り文字としてカンマを使用することが、このファイル形式の名前の由来です。</li></ul>"
+          },
+          "usedFor": {
+            "title": "CSVファイルは何に使用されますか？",
+            "content": "CSVファイルは主に、異なるプログラム間の<strong>データ交換</strong>に使用されます。<br><br>一般的な使用例：<br><ul><li>スマートフォンの連絡先をエクスポートしてGoogleコンタクトにインポートする。</li><li>eコマースプラットフォームから配送ツールに製品データを転送する。</li><li>任意のテキストエディタで読み取れる形式でスプレッドシートデータを保存する。</li></ul><br><br>CSVファイルは、<a href='/json-to-csv' class='text-blue-600 hover:underline'>JSON</a>、<a href='/txt-to-csv' class='text-blue-600 hover:underline'>TXT</a>、<a href='/xlsx-to-csv' class='text-blue-600 hover:underline'>Excel (XLSX)</a>、<a href='/xml-to-csv' class='text-blue-600 hover:underline'>XML</a>などの他の形式のデータを変換することによって作成されることがよくあります。"
+          },
+          "example": {
+            "title": "CSVの例の説明",
+            "content": "メモ帳やVS Codeなどのテキストエディタで開いたときのCSVファイルの外観は次のとおりです：",
+            "code": "名前,メール,電話番号\n山田 太郎,yamada{'@'}example.com,090-1234-5678\n佐藤 花子,sato{'@'}example.com,080-9876-5432\n鈴木 一郎,suzuki{'@'}example.com,070-1111-2222",
+            "explanation": "最初の行は多くの場合、列名を定義するヘッダーです。後続の各行はデータの行を表します。"
+          },
+          "vsExcel": {
+            "title": "CSV対Excel（XLSX）",
+            "content": "CSVファイルとExcel（XLSX）ファイルはどちらも表形式のデータを保存しますが、重要な違いがあります。多くのユーザーが「excel形式のcsv」を検索しますが、それらは同じではないことを理解することが重要です。",
+            "table": {
+              "headers": ["機能", "CSV", "Excel (.xlsx)"],
+              "rows": [
+                ["形式", "プレーンテキスト", "バイナリ（独自）"],
+                [
+                  "フォーマット",
+                  "なし（生データ）",
+                  "豊富（フォント、色、枠線）"
+                ]
+              ]
+            }
+          }
+        },
+        "internalLinks": {
+          "title": "関連ガイド",
+          "list": [
+            { "text": "JSONからCSVへ変換", "path": "/json-to-csv" },
+            { "text": "ExcelからCSVへ変換", "path": "/xlsx-to-csv" },
+            { "text": "CSVファイルを開く方法", "path": "/how-to-open-csv-file" }
+          ]
+        }
+      },
+      "howToOpenCsv": {
+        "title": "CSVファイルを開く方法",
+        "seoTitle": "Windows、Mac、オンラインでCSVファイルを開く方法",
+        "seoDesc": "Excel、Googleスプレッドシート、メモ帳、オンラインビューアーを使用してCSVファイルを開く手順ごとのガイド。",
+        "description": "CSVファイルはプレーンテキストファイルであるため、さまざまなプログラムで開くことができます。ここでは、CSVファイルを開いて表示する最も一般的な方法を紹介します。",
         "methods": {
-          "title": "WindowsでHEICファイルを開く方法（5つの方法）",
+          "title": "CSVファイルを開く5つの方法",
           "method1": {
-            "title": "方法1：無料のオンライン変換ツールを使用する（推奨）",
-            "desc": "HEICファイルを表示する最も簡単な方法は、JPGやPNGのような普遍的な形式に変換することです。これにはソフトウェアのインストールは必要ありません。",
-            "cons": "<strong>欠点：</strong> インターネット接続が必要です。",
-            "cta": "今すぐファイルを変換：",
-            "buttonJpg": "HEICをJPGに変換",
-            "buttonPng": "PNGに変換",
-            "buttonWebp": "WebPに変換",
-            "buttonPdf": "PDFに変換"
+            "title": "1. Microsoft Excel (推奨)",
+            "desc": "Excelは、CSVファイルの表示と編集に最も人気のあるツールです。",
+            "steps": "ファイルをダブルクリックするか、Excelを開いて「ファイル」>「開く」に移動します。",
+            "cons": "Microsoft Officeのライセンスが必要です。"
           },
           "method2": {
-            "title": "方法2：Microsoft HEIF拡張機能をインストールする",
-            "desc": "Microsoft Storeから拡張機能をインストールすることで、Windowsフォトアプリにネイティブサポートを追加できます。",
-            "steps": "Microsoft Storeで「HEIF画像拡張機能」と「HEVCビデオ拡張機能」を検索します。",
-            "cons": "<strong>欠点：</strong> HEVC拡張機能は通常$0.99かかり、インストールは時々バグが発生することがあります。"
+            "title": "2. Googleスプレッドシート (無料＆オンライン)",
+            "desc": "ブラウザで実行される優れた無料の代替手段です。",
+            "steps": "Googleスプレッドシートに移動し、新しいシートを作成して、「ファイル」>「インポート」>「アップロード」を選択します。",
+            "cons": "Googleアカウントが必要です。"
           },
           "method3": {
-            "title": "方法3：サードパーティの画像ビューアを使用する",
-            "desc": "IrfanView、XnView、またはCopyTrans HEIC for Windowsなどのツールを使用すると、HEICファイルを表示できます。",
-            "cons": "<strong>欠点：</strong> ブロートウェアや古いインターフェースが含まれる可能性のあるサードパーティソフトウェアのインストールが必要です。"
+            "title": "3. テキストエディタ (メモ帳/TextEdit)",
+            "desc": "生のデータ構造を表示します。",
+            "steps": "ファイルを右クリック > プログラムから開く > メモ帳 (Windows) または TextEdit (Mac)。",
+            "cons": "大規模なデータセットを読むのは困難です。"
           },
           "method4": {
-            "title": "方法4：GoogleフォトまたはOneDriveを使用する",
-            "desc": "HEIC写真をクラウドストレージサービスにアップロードすると、組み込みのビューアがあります。",
-            "cons": "<strong>欠点：</strong> 大量のファイルの場合は遅くなります。個人の写真をアップロードすることによるプライバシーの懸念があります。"
+            "title": "4. VS Code (開発者向け)",
+            "desc": "拡張機能を使用して大規模なCSVファイルを編集するのに最適です。",
+            "steps": "VS Codeでフォルダまたはファイルを開きます。「Rainbow CSV」などの拡張機能を使用すると、読みやすくなります。",
+            "cons": "より技術的なインターフェースです。"
           },
           "method5": {
-            "title": "方法5：写真編集ソフトウェアを使用する",
-            "desc": "Adobe PhotoshopやLightroomなどのプロフェッショナルツールはHEICファイルをサポートしています。",
-            "cons": "<strong>欠点：</strong> 非常に高価なソフトウェアです。写真を表示するだけなら過剰です。"
+            "title": "5. CSVに変換 (関連ツール)",
+            "desc": "代わりにCSVファイルを作成する必要がありますか？無料のオンラインコンバーターを使用してください。",
+            "cons": "インターネット接続が必要です。"
           }
-        }
+        },
+        "learnMore": "CSVファイルについてもっと理解したいですか？ガイドを読んでください：{link}"
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日：2025年1月20日",
+    "intro": "このプライバシーポリシーは、当社のCSVコンバーターウェブサイトを使用する際に、当社がお客様の情報を収集、使用、および保護する方法を説明しています。",
+    "sections": {
+      "dataCollection": {
+        "title": "収集する情報",
+        "content": "当社は、お客様がアップロードしたファイルをサーバーに収集または保存することはありません。すべてのファイル変換は、ブラウザ内でローカルに処理されます。"
+      },
+      "usage": {
+        "title": "情報の使用方法",
+        "content": "当社は、サイトの機能とユーザーエクスペリエンスを向上させるために、匿名化された使用統計（訪問回数など）を使用する場合があります。"
+      },
+      "cookies": {
+        "title": "クッキー",
+        "content": "当社は、お客様の体験を向上させるためにクッキーを使用します。ブラウザの設定でクッキーを制御できます。"
+      },
+      "thirdParty": {
+        "title": "サードパーティサービス",
+        "content": "当社は、分析（Google Analyticsなど）や広告のためにサードパーティのサービスを使用する場合があります。これらのサービスには独自のプライバシーポリシーがあります。"
       }
     }
   }

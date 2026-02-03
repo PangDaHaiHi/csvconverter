@@ -303,12 +303,12 @@ const clear = () => {
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <NuxtLink
-            :to="localePath('/excel-to-csv')"
+            :to="localePath('/xlsx-to-csv')"
             class="block p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
           >
-            <h3 class="font-bold text-lg text-blue-600 mb-2">Excel to CSV</h3>
+            <h3 class="font-bold text-lg text-blue-600 mb-2">XLSX to CSV</h3>
             <p class="text-sm text-gray-600">
-              {{ $t("home.tools.excelToCsv.desc") }}
+              {{ $t("home.tools.xlsxToCsv.desc") }}
             </p>
           </NuxtLink>
           <NuxtLink

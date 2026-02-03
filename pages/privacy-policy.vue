@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n();
+const { t, tm, rt } = useI18n();
 
 useSeoMeta({
   title: t("privacyPolicy.metaTitle"),
@@ -40,9 +40,14 @@ useSeoMeta({
         </h2>
         <p>{{ t("privacyPolicy.sections.dataCollection.content") }}</p>
         <ul class="list-disc pl-6 mb-4">
-          <li>{{ t("privacyPolicy.sections.dataCollection.items.0") }}</li>
-          <li>{{ t("privacyPolicy.sections.dataCollection.items.1") }}</li>
-          <li>{{ t("privacyPolicy.sections.dataCollection.items.2") }}</li>
+          <li
+            v-for="(item, index) in tm(
+              'privacyPolicy.sections.dataCollection.items',
+            )"
+            :key="index"
+          >
+            {{ rt(item) }}
+          </li>
         </ul>
       </section>
 

@@ -2,7 +2,7 @@
   "home": {
     "hero": {
       "title": "免费在线 CSV 转换器",
-      "subtitle": "将 JSON、Excel、TXT、XML 转换为 CSV。安全、快速、免费使用，无需注册。",
+      "subtitle": "将 JSON、XLSX、TXT、XML 转换为 CSV。安全、快速、免费使用，无需注册。",
       "cta": "开始转换"
     },
     "features": {
@@ -63,9 +63,9 @@
         "title": "CSV 转 Excel",
         "desc": "将 .csv 文件转换为 Excel (.xlsx)"
       },
-      "excelToCsv": {
-        "title": "Excel 转 CSV",
-        "desc": "将 Excel (.xlsx) 文件转换为 CSV"
+      "xlsxToCsv": {
+        "title": "XLSX 转 CSV",
+        "desc": "将 XLSX 文件转换为 CSV"
       },
       "txtToCsv": {
         "title": "TXT 转 CSV",
@@ -113,7 +113,7 @@
     "home": "首页",
     "jsonToCsv": "JSON 转 CSV",
     "txtToCsv": "TXT 转 CSV",
-    "excelToCsv": "Excel 转 CSV",
+    "xlsxToCsv": "XLSX 转 CSV",
     "xmlToCsv": "XML 转 CSV"
   },
   "tools": {
@@ -206,13 +206,13 @@
         "support": "支持 .csv 文件"
       }
     },
-    "excelToCsv": {
-      "title": "Excel 转 CSV 转换器",
-      "description": "免费在线将 Excel 转换为 CSV。",
-      "metaTitle": "Excel 转 CSV 转换器 — 免费在线 | CSV Converter",
-      "metaDescription": "立即在线将 Excel (.xlsx) 转换为 CSV。免费、安全且无上传限制。",
-      "h1": "Excel 转 CSV 转换器",
-      "subtitle": "在浏览器中立即将 Excel 文件转换为 CSV 格式。无需注册，快速、安全且易于使用。",
+    "xlsxToCsv": {
+      "title": "XLSX 转 CSV (Excel) 转换器",
+      "description": "立即将 Excel (XLSX) 文件转换为 CSV 格式",
+      "metaTitle": "XLSX 转 CSV 在线转换器 - 免费在线将 Excel 转换为 CSV",
+      "metaDescription": "免费在线工具，将 Excel 文件 (.xlsx, .xls) 转换为 CSV 格式。快速、安全且易于使用。无需上传。",
+      "h1": "XLSX (Excel) 转 CSV 转换器",
+      "subtitle": "在浏览器中立即将 Excel 文件 (.xlsx) 转换为 CSV 格式。无需注册，快速、安全且易于使用。",
       "upload": {
         "dropText": "将 Excel 文件拖放到此处",
         "browse": "或点击此处上传",
@@ -353,7 +353,7 @@
           },
           "usedFor": {
             "title": "CSV 文件有什么用？",
-            "content": "CSV 文件主要用于不同程序之间的<strong>数据交换</strong>。<br><br>常见用例：<br><ul><li>从智能手机导出联系人以导入 Google 通讯录。</li><li>将产品数据从电子商务平台传输到运输工具。</li><li>以任何文本编辑器都可以读取的格式保存电子表格数据。</li></ul><br><br>CSV 文件通常是通过将数据从其他格式（如 <a href='/zh/json-to-csv' class='text-blue-600 hover:underline'>JSON</a>、<a href='/zh/txt-to-csv' class='text-blue-600 hover:underline'>TXT</a>、<a href='/zh/excel-to-csv' class='text-blue-600 hover:underline'>Excel (XLSX)</a> 或 <a href='/zh/xml-to-csv' class='text-blue-600 hover:underline'>XML</a>）转换而创建的。"
+            "content": "CSV 文件主要用于不同程序之间的<strong>数据交换</strong>。<br><br>常见用例：<br><ul><li>从智能手机导出联系人以导入 Google 通讯录。</li><li>将产品数据从电子商务平台传输到运输工具。</li><li>以任何文本编辑器都可以读取的格式保存电子表格数据。</li></ul><br><br>CSV 文件通常是通过将数据从其他格式（如 <a href='/zh/json-to-csv' class='text-blue-600 hover:underline'>JSON</a>、<a href='/zh/txt-to-csv' class='text-blue-600 hover:underline'>TXT</a>、<a href='/zh/xlsx-to-csv' class='text-blue-600 hover:underline'>Excel (XLSX)</a> 或 <a href='/zh/xml-to-csv' class='text-blue-600 hover:underline'>XML</a>）转换而创建的。"
           },
           "example": {
             "title": "CSV 示例解释",
@@ -380,7 +380,7 @@
           "title": "免费 CSV 工具",
           "list": [
             { "text": "转换 JSON 为 CSV", "path": "/json-to-csv" },
-            { "text": "转换 Excel 为 CSV", "path": "/excel-to-csv" },
+            { "text": "转换 Excel 为 CSV", "path": "/xlsx-to-csv" },
             { "text": "如何打开 CSV 文件", "path": "/how-to-open-csv-file" }
           ]
         }
@@ -448,14 +448,6 @@
         "seoTitle": "如何在 Windows、Mac 和在线打开 CSV 文件",
         "seoDesc": "关于如何使用 Excel、Google Sheets、记事本和在线查看器打开 CSV 文件的分步指南。",
         "description": "CSV 文件是纯文本文件，这意味着它们可以被各种程序打开。以下是打开和查看 CSV 文件最常见的方法。",
-        "whyCantOpen": {
-          "title": "常见问题",
-          "reasons": {
-            "formatting": "<strong>格式问题：</strong> 有时数据没有正确分隔。",
-            "encoding": "<strong>编码错误：</strong> 如果未保存为 UTF-8，特殊字符可能会看起来很奇怪。",
-            "delimiter": "<strong>错误的分隔符：</strong> 某些地区使用分号 (;) 代替逗号。"
-          }
-        },
         "methods": {
           "title": "打开 CSV 文件的 5 种方法",
           "method1": {
@@ -472,9 +464,23 @@
           },
           "method3": {
             "title": "3. 文本编辑器（记事本/TextEdit）",
-            "desc": "查看原始数据结构。"
+            "desc": "查看原始数据结构。",
+            "steps": "右键点击文件 > 打开方式 > 记事本 (Windows) 或 TextEdit (Mac)。",
+            "cons": "难以阅读大型数据集。"
+          },
+          "method4": {
+            "title": "4. VS Code（开发者专用）",
+            "desc": "非常适合编辑带有扩展的大型 CSV 文件。",
+            "steps": "在 VS Code 中打开文件夹或文件。使用 'Rainbow CSV' 等扩展以获得更好的可读性。",
+            "cons": "界面更具技术性。"
+          },
+          "method5": {
+            "title": "5. 转换为 CSV（相关工具）",
+            "desc": "需要创建一个 CSV 文件？使用我们的免费在线转换工具。",
+            "cons": "需要互联网连接。"
           }
-        }
+        },
+        "learnMore": "想了解更多关于 CSV 文件的信息？阅读我们的指南：{link}"
       }
     }
   },
@@ -499,6 +505,14 @@
           "我们不会跟踪您的文件内容。",
           "我们使用 Google Analytics 进行网站使用统计（匿名）。"
         ]
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": "我们使用 cookies 来增强您的体验，分析网站使用情况，并协助我们的营销工作。您可以通过浏览器设置选择禁用 cookies。"
+      },
+      "contact": {
+        "title": "5. 联系我们",
+        "content": "如果您对本隐私政策有任何疑问，请联系我们："
       }
     }
   }

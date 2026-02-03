@@ -162,7 +162,7 @@
 
 ---
 
-## 4️⃣ /excel-to-csv/
+## 4️⃣ /xlsx-to-csv/
 
 ### 页面定位
 
@@ -373,7 +373,7 @@ Anchor：跳转到 Section 2（工具列表）
 
 JSON to CSV → /json-to-csv/
 
-Excel (XLSX) to CSV → /excel-to-csv/
+Excel (XLSX) to CSV → /xlsx-to-csv/
 
 TXT to CSV → /txt-to-csv/
 

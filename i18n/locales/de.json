@@ -1,463 +1,621 @@
 {
   "home": {
     "hero": {
-      "title": "HEIC Konverter: Kostenloses Online-Tool",
-      "subtitle": "Konvertieren Sie HEIC sofort in PNG, JPG oder PDF. Keine Upload-Limits. 100% browserbasiert."
+      "title": "Kostenloser Online-CSV-Konverter",
+      "subtitle": "Konvertieren Sie JSON, XLSX, TXT, XML in CSV. Sicher, schnell, kostenlos. Keine Anmeldung.",
+      "cta": "Konvertierung starten"
     },
     "features": {
       "noLimits": "Keine Upload-Limits",
       "free": "100% Kostenlos",
       "secure": "Sicher Client-seitig"
     },
+    "whyChoose": {
+      "title": "Warum unseren CSV-Konverter nutzen?",
+      "subtitle": "Wir bieten das beste Erlebnis für die Konvertierung Ihrer Dateien.",
+      "items": {
+        "privacy": {
+          "title": "100% Kostenlos & Online",
+          "desc": "Keine versteckten Gebühren, keine Abos. Nutzen Sie alle Tools komplett kostenlos direkt im Browser."
+        },
+        "speed": {
+          "title": "Schnelle & Sichere Verarbeitung",
+          "desc": "Ihre Daten verlassen nie Ihr Gerät. Alle Konvertierungen erfolgen lokal für maximale Sicherheit und Geschwindigkeit."
+        },
+        "simple": {
+          "title": "Keine Dateigrößen-Limits",
+          "desc": "Konvertieren Sie große Dateien ohne Einschränkungen. Wir beschränken weder Dateigröße noch tägliche Nutzung."
+        },
+        "device": {
+          "title": "Funktioniert auf jedem Gerät",
+          "desc": "Greifen Sie von Windows, Mac, Linux, iOS oder Android auf unsere Tools zu. Keine Software-Installation nötig."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "Wie man in CSV konvertiert",
+      "subtitle": "Folgen Sie diesen einfachen Schritten, um jede Datei in das CSV-Format zu konvertieren.",
+      "steps": {
+        "step1": {
+          "title": "Datei auswählen",
+          "desc": "Wählen Sie die Datei aus, die Sie konvertieren möchten (JSON, Excel, TXT, etc.)."
+        },
+        "step2": {
+          "title": "Hochladen & Verarbeiten",
+          "desc": "Ziehen Sie Ihre Datei hinein. Unser Tool verarbeitet sie automatisch sofort."
+        },
+        "step3": {
+          "title": "CSV herunterladen",
+          "desc": "Vorschau Ihrer Daten ansehen und die konvertierte CSV-Datei sofort herunterladen."
+        }
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Häufige Fragen zu unserem CSV-Konverter.",
+      "items": {
+        "q1": {
+          "question": "Was ist ein CSV-Konverter?",
+          "answer": "Ein CSV-Konverter ist ein Tool, das Daten aus verschiedenen Formaten (wie JSON, Excel, XML) in das Comma-Separated Values (CSV) Format umwandelt, damit es mit Tabellenkalkulationssoftware kompatibel ist."
+        },
+        "q2": {
+          "question": "Ist dieser CSV-Konverter kostenlos?",
+          "answer": "Ja, unser Tool ist zu 100% kostenlos. Es gibt keine versteckten Gebühren, Abonnements oder Limits für die Anzahl der Dateien, die Sie konvertieren können."
+        },
+        "q3": {
+          "question": "Kann ich Excel online in CSV konvertieren?",
+          "answer": "Absolut. Sie können Ihre Excel (.xlsx oder .xls) Dateien hochladen und sie sofort in das CSV-Format konvertieren, wobei Ihre Daten erhalten bleiben."
+        },
+        "q4": {
+          "question": "Sind meine Daten sicher?",
+          "answer": "Ja, Ihre Daten sind vollkommen sicher. Wir verwenden client-seitige Verarbeitung, was bedeutet, dass Ihre Dateien direkt in Ihrem Browser konvertiert werden und niemals auf unsere Server hochgeladen werden."
+        }
+      }
+    },
     "tools": {
-      "heicToPng": {
-        "title": "HEIC zu PNG",
-        "desc": "Konvertieren Sie .heic in PNG mit Transparenzunterstützung"
+      "csvToJson": {
+        "title": "CSV zu JSON",
+        "desc": "Konvertieren Sie .csv Dateien in das JSON-Format"
       },
-      "heicToWebp": {
-        "title": "HEIC zu WebP",
-        "desc": "Konvertieren Sie HEIC in WebP für bessere Web-Performance"
+      "jsonToCsv": {
+        "title": "JSON zu CSV",
+        "desc": "Konvertieren Sie .json Dateien in das CSV-Format"
       },
-      "heicToJpg": {
-        "title": "HEIC zu JPG",
-        "desc": "Konvertieren Sie HEIC-Fotos in das Standard-JPG-Format"
+      "csvToExcel": {
+        "title": "CSV zu Excel",
+        "desc": "Konvertieren Sie .csv Dateien in Excel (.xlsx)"
       },
-      "heicToPdf": {
-        "title": "HEIC zu PDF",
-        "desc": "Verwandeln Sie mehrere HEIC-Bilder in ein PDF-Dokument"
+      "xlsxToCsv": {
+        "title": "XLSX zu CSV",
+        "desc": "Konvertieren Sie XLSX Dateien in CSV"
+      },
+      "txtToCsv": {
+        "title": "TXT zu CSV",
+        "desc": "Konvertieren Sie TXT Dateien in CSV"
+      },
+      "xmlToCsv": {
+        "title": "XML zu CSV",
+        "desc": "Konvertieren Sie XML Dateien in CSV"
+      },
+      "pdfToCsv": {
+        "title": "PDF zu CSV",
+        "desc": "Konvertieren Sie PDF-Tabellen in CSV"
       }
     },
     "guides": {
-      "title": "HEIC Konvertierungs-Anleitungen",
-      "subtitle": "Alles, was Sie über HEIC-Dateien wissen müssen und wie Sie sie unter Windows, Mac und Android handhaben.",
-      "whatIsHeic": {
-        "title": "Was ist eine HEIC-Datei?",
-        "description": "Verstehen Sie, warum iPhones HEIC verwenden und dessen Vor-/Nachteile gegenüber JPG."
+      "title": "CSV-Dateien Meistern: Der Ultimative Leitfaden",
+      "subtitle": "Von grundlegenden Definitionen bis zu fortgeschrittener Formatierung und Nutzungstipps.",
+      "whatDoesCsvStandFor": {
+        "title": "Wofür steht CSV?",
+        "description": "Definition von Comma Separated Values."
       },
-      "openHeicOnWindows": {
-        "title": "Wie öffnet man HEIC-Dateien unter Windows?",
-        "description": "Windows unterstützt HEIC standardmäßig nicht. Erfahren Sie, wie Sie HEIC-Dateien unter Windows öffnen, ohne zusätzliche Software zu installieren."
+      "whatIsCsvFormat": {
+        "title": "Was ist das CSV-Format?",
+        "description": "Verstehen Sie die Struktur von CSV-Dateien."
       },
-      "heicToPng": {
-        "title": "Wie man HEIC in PNG konvertiert",
-        "description": "Wie man HEIC-Bilder in hochwertiges PNG-Format konvertiert."
+      "whatIsCsv": {
+        "title": "Was ist eine CSV-Datei?",
+        "description": "Ein umfassender Leitfaden zu CSV-Dateien."
       },
-      "heicToJpg": {
-        "title": "Wie man HEIC in JPG konvertiert",
-        "description": "Schritt-für-Schritt-Anleitung zum Ändern von HEIC-Fotos in das JPG-Format."
-      },
-      "heicToPdf": {
-        "title": "Wie man HEIC in PDF konvertiert",
-        "description": "Wie man mehrere HEIC-Bilder als ein einzelnes PDF-Dokument speichert."
-      },
-      "heicToWebp": {
-        "title": "Wie man HEIC in WebP konvertiert",
-        "description": "Anleitung zur Konvertierung von HEIC in WebP für Web-Optimierung."
+      "howToOpenCsv": {
+        "title": "Wie öffnet man CSV-Dateien",
+        "description": "Lernen Sie die besten Wege, CSV-Dateien auf jedem Gerät zu öffnen und zu bearbeiten."
       }
     }
   },
+  "cookie": {
+    "title": "Wir schätzen Ihre Privatsphäre",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unseren Datenverkehr zu analysieren. Durch Klicken auf \"Akzeptieren\" stimmen Sie unserer Verwendung von Cookies zu. Erfahren Sie mehr in unserer",
+    "policyLink": "Datenschutzerklärung",
+    "decline": "Ablehnen",
+    "accept": "Akzeptieren"
+  },
   "brand": {
-    "title": "HeicTools",
-    "description": "Kostenloser Online-HEIC-Konverter: HEIC zu JPG, HEIC zu PNG und HEIC zu PDF. Sichere client-seitige Verarbeitung.",
-    "logoAlt": "HeicTools Logo"
+    "title": "CSV Konverter",
+    "description": "Kostenloser Online-CSV-Konverter: CSV zu JSON, CSV zu Excel. Sichere client-seitige Verarbeitung.",
+    "logoAlt": "CSV Konverter Logo"
   },
   "nav": {
     "home": "Startseite",
-    "heicToJpg": "HEIC zu JPG",
-    "heicToPng": "HEIC zu PNG",
-    "heicToWebp": "HEIC zu WebP",
-    "heicToPdf": "HEIC zu PDF",
-    "whatIsHeic": "Was ist HEIC?"
+    "jsonToCsv": "JSON zu CSV",
+    "txtToCsv": "TXT zu CSV",
+    "xlsxToCsv": "XLSX zu CSV",
+    "xmlToCsv": "XML zu CSV"
   },
   "tools": {
     "common": {
+      "csvOutput": "CSV Ausgabe",
+      "whatIsCsvLink": {
+        "text": "Neu bei CSV-Dateien?",
+        "linkText": "Lernen Sie, was eine CSV-Datei ist"
+      },
       "errors": {
         "fileLimitExceeded": "Maximal {max} Dateien erlaubt."
       },
       "actions": {
         "downloadAll": "Alle herunterladen",
         "downloadZip": "Zip herunterladen",
-        "downloadPdf": "PDF herunterladen",
         "clearAll": "Alles löschen",
         "download": "Herunterladen",
         "remove": "Entfernen",
         "addMore": "Mehr hinzufügen",
-        "limitReached": "Limit erreicht"
+        "limitReached": "Limit erreicht",
+        "copy": "In Zwischenablage kopieren",
+        "copied": "Kopiert!",
+        "convertAnother": "Weiteres konvertieren"
       },
       "status": {
         "converting": "Konvertiere...",
         "ready": "Bereit",
         "failed": "Fehlgeschlagen",
         "waiting": "Warte..."
-      },
-      "whatIsHeicLink": {
-        "text": "Möchten Sie wissen, was HEIC ist? Lesen Sie:",
-        "linkText": "Was ist eine HEIC-Datei?"
       }
     },
-    "heicToJpg": {
-      "title": "HEIC/HEIF zu JPG Konverter",
-      "description": "Konvertieren Sie HEIC oder HEIF kostenlos online in JPG/JPEG.",
-      "metaTitle": "HEIC/HEIF zu JPG Konverter (In JPEG umwandeln) — Kostenlos Online | HeicTools",
-      "metaDescription": "Konvertieren Sie HEIC oder HEIF (.heic/.heif) sofort online in JPG. Kostenlos, sicher und ohne Upload-Limits. Funktioniert auf Windows, Mac und iPhone.",
-      "h1": "HEIC/HEIF zu JPG Konverter (In JPEG umwandeln)",
-      "subtitle": "Konvertieren Sie HEIC/HEIF (.heic/.heif) Fotos in das breit unterstützte JPG-Format. Perfekt zum Teilen und für Windows-Kompatibilität.",
-      "converting": "Konvertiere...",
-      "download": "JPG herunterladen",
-      "convertAnother": "Andere Datei konvertieren",
-      "errors": {
-        "invalidFormat": "Ungültiges Dateiformat. Bitte laden Sie eine .heic oder .heif Datei hoch.",
-        "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es mit einer anderen Datei."
+    "csvToJson": {
+      "title": "CSV zu JSON Konverter",
+      "description": "Konvertieren Sie CSV kostenlos online in JSON.",
+      "metaTitle": "CSV zu JSON Konverter — Kostenlos Online | CSV Konverter",
+      "metaDescription": "Konvertieren Sie CSV sofort online in JSON. Kostenlos, sicher und ohne Upload-Limits.",
+      "h1": "CSV zu JSON Konverter",
+      "subtitle": "Konvertieren Sie CSV-Dateien in Ihrem Browser in das JSON-Format — privat, schnell und kostenlos.",
+      "upload": {
+        "dropText": "CSV-Datei hier ablegen",
+        "browse": "Dateien durchsuchen",
+        "support": "Unterstützt .csv Dateien"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIF in JPG konvertieren",
-          "content": "Viele Benutzer haben Probleme, iPhone-Fotos unter Windows zu öffnen. Unser Tool ermöglicht es Ihnen, HEIC sofort in JPG zu ändern, ohne Software oder Plugins zu installieren."
+        "why": {
+          "title": "Warum CSV in JSON konvertieren?",
+          "content": "JSON ist das Standardformat für Web-APIs und moderne Anwendungen. Die Konvertierung von CSV in JSON ermöglicht es Ihnen, Tabellendaten einfach in JavaScript-Anwendungen, NoSQL-Datenbanken und Konfigurationsdateien zu verwenden."
         },
-        "section2": {
-          "title": "Warum JPG wählen?",
-          "content": "JPG ist das universellste Bildformat der Welt. Es öffnet sich auf jedem Gerät, jeder Website oder Software und hat normalerweise kleinere Dateigrößen als PNG, was es perfekt für Fotospeicherung und -freigabe macht."
-        },
-        "section3": {
-          "title": "Wie man konvertiert",
+        "how": {
+          "title": "Wie man CSV in JSON konvertiert",
           "steps": [
-            "Wählen Sie Ihre HEIC-Dateien aus oder ziehen Sie sie in den oberen Bereich",
-            "Warten Sie, bis die Konvertierung abgeschlossen ist (normalerweise sofort)",
-            "Klicken Sie auf den Download-Button, um Ihre JPG-Bilder zu speichern"
+            "Laden Sie Ihre CSV-Datei hoch.",
+            "Das Tool parst die Daten client-seitig.",
+            "Vorschau und JSON-Ausgabe kopieren.",
+            "Ergebnis als .json Datei herunterladen."
           ]
-        },
-        "guideLink": {
-          "text": "Benötigen Sie eine detailliertere Anleitung? Lesen Sie unser vollständiges Tutorial unter",
-          "linkText": "Wie man HEIC in JPG konvertiert"
         }
-      },
-      "upload": {
-        "dropText": "Dateien hierher ziehen",
-        "browse": "Dateien durchsuchen",
-        "support": "Unterstützt HEIC (.heic), kompatibel mit HEIF (.heif)"
       }
     },
-    "heicToPng": {
-      "title": "HEIC zu PNG Konverter",
-      "description": "Konvertieren Sie .heic-Dateien in hochwertige PNG-Bilder.",
-      "metaTitle": "HEIC/HEIF zu PNG Konverter — Kostenloses Online-Tool | HeicTools",
-      "metaDescription": "Konvertieren Sie HEIC oder HEIF (.heic/.heif) online in PNG. Verlustfreie Ausgabe zur Bearbeitung. 100% client-seitige Privatsphäre.",
-      "h1": "HEIC zu PNG Konverter",
-      "subtitle": "Konvertieren Sie HEIC/HEIF (.heic/.heif) in Ihrem Browser in PNG — privat, schnell und kostenlos.",
-      "converting": "Konvertiere...",
-      "download": "PNG herunterladen",
-      "convertAnother": "Andere Datei konvertieren",
-      "errors": {
-        "invalidFormat": "Ungültiges Dateiformat. Bitte laden Sie eine .heic oder .heif Datei hoch.",
-        "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es mit einer anderen Datei."
+    "jsonToCsv": {
+      "title": "JSON zu CSV Konverter – JSON-Dateien online in CSV umwandeln",
+      "description": "Konvertieren Sie JSON kostenlos online in CSV. Laden Sie Ihre JSON-Datei hoch und laden Sie sofort eine saubere CSV-Datei herunter. Keine Anmeldung, schnell und sicher.",
+      "metaTitle": "JSON zu CSV Konverter – JSON-Dateien online in CSV umwandeln",
+      "metaDescription": "Konvertieren Sie JSON kostenlos online in CSV. Laden Sie Ihre JSON-Datei hoch und laden Sie sofort eine saubere CSV-Datei herunter. Keine Anmeldung, schnell und sicher.",
+      "h1": "JSON zu CSV Konverter",
+      "subtitle": "Konvertieren Sie JSON-Dateien sofort in Ihrem Browser in das CSV-Format. Keine Anmeldung erforderlich. Schnell, sicher und einfach zu bedienen.",
+      "upload": {
+        "dropText": "JSON-Datei hier ablegen",
+        "browse": "Oder klicken zum Hochladen",
+        "support": "Unterstützt .json Dateien"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIF in PNG konvertieren",
-          "content": "Haben Sie ein .heic oder .heif Foto, das Sie bearbeiten müssen? Konvertieren Sie es in PNG, um Qualität zu erhalten und Transparenz zu unterstützen."
-        },
-        "section2": {
-          "title": "Warum PNG wählen?",
-          "content": "PNG ist ein verlustfreies Format, perfekt für hochwertige Bilder. Im Gegensatz zu JPG unterstützt PNG Transparenz und verliert keine Qualität, wenn es mehrfach gespeichert wird."
-        },
-        "section3": {
-          "title": "Wie man konvertiert",
+        "how": {
+          "title": "Wie man JSON in CSV konvertiert?",
           "steps": [
-            "Wählen Sie Ihre HEIC/HEIF-Dateien aus oder ziehen Sie sie hierher",
-            "Warten Sie, bis die Konvertierung abgeschlossen ist (normalerweise sofort)",
-            "Klicken Sie auf den Download-Button, um Ihr PNG zu speichern"
+            "Laden Sie Ihre JSON-Datei hoch oder fügen Sie JSON-Inhalt in den Konverter ein.",
+            "Klicken Sie auf den <strong>Konvertieren</strong> Button.",
+            "Laden Sie die konvertierte CSV-Datei sofort herunter."
           ]
         },
-        "guideLink": {
-          "text": "Benötigen Sie eine detailliertere Anleitung? Lesen Sie unser vollständiges Tutorial unter",
-          "linkText": "Wie man HEIC/HEIF in PNG konvertiert"
+        "guide": {
+          "title": "Was ist JSON zu CSV Konvertierung?",
+          "content": "JSON zu CSV Konvertierung ist der Prozess der Umwandlung von JSON-Daten in ein CSV-Format (Comma Separated Values). Dies ermöglicht es, JSON-Daten in Tabellenkalkulationstools wie Excel oder Google Sheets zu öffnen, zu bearbeiten und zu analysieren.",
+          "linkText": "Erfahren Sie hier mehr über CSV-Dateien: "
+        },
+        "example": {
+          "title": "JSON zu CSV Beispiel",
+          "intro": "Hier ist ein einfaches Beispiel für die Konvertierung von JSON in CSV.",
+          "jsonLabel": "JSON Eingabe:",
+          "csvLabel": "Konvertierte CSV Ausgabe:"
+        },
+        "moreTools": {
+          "title": "Mehr CSV Tools"
         }
-      },
-      "upload": {
-        "dropText": "Dateien hierher ziehen",
-        "browse": "Dateien durchsuchen",
-        "support": "Unterstützt HEIC (.heic), kompatibel mit HEIF (.heif)"
       }
     },
-    "heicToWebp": {
-      "title": "HEIC/HEIF zu WebP Konverter",
-      "description": "Konvertieren Sie HEIC- oder HEIF-Fotos in das WebP-Format.",
-      "metaTitle": "HEIC/HEIF zu WebP Konverter — Kostenloses Online-Tool | HeicTools",
-      "metaDescription": "Konvertieren Sie HEIC oder HEIF (.heic/.heif) online in WebP. Reduzieren Sie die Dateigröße bei gleichbleibender Qualität. 100% client-seitige Privatsphäre.",
-      "h1": "HEIC/HEIF zu WebP Konverter",
-      "subtitle": "Konvertieren Sie HEIC/HEIF (.heic/.heif) in WebP für kleinere Dateigrößen und schnelleres Laden im Web. Sicher und kostenlos.",
-      "converting": "Konvertiere...",
-      "download": "WebP herunterladen",
-      "convertAnother": "Andere Datei konvertieren",
-      "errors": {
-        "invalidFormat": "Ungültiges Dateiformat. Bitte laden Sie eine .heic oder .heif Datei hoch.",
-        "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es mit einer anderen Datei."
+    "csvToExcel": {
+      "title": "CSV zu Excel Konverter",
+      "description": "Konvertieren Sie CSV kostenlos online in Excel.",
+      "metaTitle": "CSV zu Excel Konverter — Kostenlos Online | CSV Konverter",
+      "metaDescription": "Konvertieren Sie CSV sofort online in Excel (.xlsx). Kostenlos, sicher und ohne Upload-Limits.",
+      "h1": "CSV zu Excel Konverter",
+      "subtitle": "Konvertieren Sie CSV-Dateien in Ihrem Browser in das Excel-Format — privat, schnell und kostenlos.",
+      "upload": {
+        "dropText": "CSV-Datei hier ablegen",
+        "browse": "Dateien durchsuchen",
+        "support": "Unterstützt .csv Dateien"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIF in WebP konvertieren",
-          "content": "WebP ist der moderne Standard für Webbilder. Die Konvertierung von HEIC in WebP stellt sicher, dass Ihre Bilder auf allen modernen Browsern schnell laden und die Dateigrößen klein bleiben."
+        "why": {
+          "title": "Warum CSV in Excel konvertieren?",
+          "content": "Obwohl Excel CSV-Dateien öffnet, kommt es oft zu Problemen mit der Codierung oder Formatierung. Die Konvertierung in natives Excel (.xlsx) stellt sicher, dass Ihre Datentypen, Sonderzeichen und Formatierungen korrekt erhalten bleiben."
         },
-        "section2": {
-          "title": "Warum WebP wählen?",
-          "content": "WebP bietet eine überlegene Komprimierung im Vergleich zu JPG und PNG. Es unterstützt sowohl verlustbehaftete als auch verlustfreie Komprimierung sowie Transparenz, was es zum vielseitigsten Format für das Web macht."
-        },
-        "section3": {
-          "title": "Wie man konvertiert",
+        "how": {
+          "title": "Wie man CSV in Excel konvertiert",
           "steps": [
-            "Wählen Sie Ihre HEIC-Dateien aus oder ziehen Sie sie hierher",
-            "Warten Sie, bis die Konvertierung abgeschlossen ist",
-            "Klicken Sie auf Herunterladen, um Ihre WebP-Dateien zu erhalten"
+            "Wählen Sie Ihre CSV-Datei aus.",
+            "Unser Tool verarbeitet die Konvertierung sofort.",
+            "Ihre Daten werden in eine Excel-Tabelle formatiert.",
+            "Laden Sie die .xlsx Datei gebrauchsfertig herunter."
           ]
-        },
-        "guideLink": {
-          "text": "Benötigen Sie eine detailliertere Anleitung? Lesen Sie unser vollständiges Tutorial unter",
-          "linkText": "Wie man HEIC in WebP konvertiert"
         }
-      },
-      "upload": {
-        "dropText": "Dateien hierher ziehen",
-        "browse": "Dateien durchsuchen",
-        "support": "Unterstützt HEIC (.heic), kompatibel mit HEIF (.heif)"
       }
     },
-    "heicToPdf": {
-      "title": "HEIC/HEIF zu PDF Konverter",
-      "description": "Verwandeln Sie Ihre HEIC- oder HEIF-Fotos in PDF-Dokumente.",
-      "metaTitle": "HEIC/HEIF zu PDF Konverter — Kostenloses Online-Tool | HeicTools",
-      "metaDescription": "Konvertieren Sie HEIC oder HEIF (.heic/.heif) in ein PDF-Dokument. Schneller, kostenloser und sicherer Online-Konverter mit client-seitiger Verarbeitung.",
-      "h1": "HEIC/HEIF zu PDF Konverter",
-      "subtitle": "Verwandeln Sie Ihre HEIC/HEIF (.heic/.heif) Bilder einfach in ein PDF-Dokument. Großartig zum Teilen als einzelne Datei.",
-      "converting": "Konvertiere...",
-      "download": "PDF herunterladen",
-      "convertAnother": "Andere Datei konvertieren",
-      "errors": {
-        "invalidFormat": "Ungültiges Dateiformat. Bitte laden Sie eine .heic oder .heif Datei hoch.",
-        "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es mit einer anderen Datei."
+    "xlsxToCsv": {
+      "title": "XLSX zu CSV Konverter",
+      "description": "Konvertieren Sie Excel (XLSX) Dateien sofort in CSV-Format",
+      "metaTitle": "XLSX zu CSV Konverter - Excel online in CSV umwandeln",
+      "metaDescription": "Kostenloses Online-Tool zum Konvertieren von Excel-Dateien (.xlsx, .xls) in das CSV-Format. Schnell, sicher und einfach zu bedienen. Kein Upload erforderlich.",
+      "h1": "Excel (XLSX) in CSV konvertieren",
+      "subtitle": "Konvertieren Sie Excel-Dateien (.xlsx) sofort in Ihrem Browser in das CSV-Format. Keine Anmeldung erforderlich. Schnell, sicher und einfach zu bedienen.",
+      "upload": {
+        "dropText": "Excel-Datei hier ablegen",
+        "browse": "Oder klicken zum Hochladen",
+        "support": "Unterstützt .xlsx, .xls Dateien"
       },
       "seo": {
-        "section1": {
-          "title": "HEIC/HEIF in PDF konvertieren",
-          "content": "Verwandeln Sie Ihre .heic oder .heif Fotos in ein einzelnes PDF-Dokument für einfaches Teilen und Drucken."
-        },
-        "section2": {
-          "title": "Warum PDF wählen?",
-          "content": "PDF ist der globale Standard für Dokumente. Es stellt sicher, dass Ihre Bilder auf jedem Gerät und Drucker genau gleich aussehen. Im Gegensatz zu Bildern können PDFs mehrere Seiten in einer Datei enthalten."
-        },
-        "section3": {
-          "title": "Wie man konvertiert",
+        "how": {
+          "title": "Wie man Excel in CSV konvertiert",
           "steps": [
-            "Wählen Sie Ihre HEIC-Dateien aus oder ziehen Sie sie hierher",
-            "Sortieren Sie die Bilder bei Bedarf neu",
-            "Klicken Sie auf 'Konvertieren', um Ihr PDF herunterzuladen"
+            "Laden Sie Ihre Excel (.xlsx oder .xls) Datei hoch.",
+            "Wir extrahieren die Daten des aktiven Blattes.",
+            "Die Daten werden in kommagetrennten Text konvertiert.",
+            "Laden Sie Ihre leichte CSV-Datei herunter."
           ]
         },
-        "guideLink": {
-          "text": "Benötigen Sie eine detailliertere Anleitung? Lesen Sie unser vollständiges Tutorial unter",
-          "linkText": "Wie man HEIC in PDF konvertiert"
+        "guide": {
+          "title": "Was ist Excel zu CSV Konvertierung?",
+          "content": "Excel zu CSV Konvertierung ist der Prozess des Exports komplexer Excel-Tabellen (.xlsx) in das einfache CSV-Format. Während Excel-Dateien Formatierungen, Formeln und mehrere Blätter enthalten, enthalten CSV-Dateien nur die Rohdaten, was sie perfekt für den Import in Datenbanken oder andere Software macht.",
+          "linkText": "Erfahren Sie hier mehr über CSV-Dateien: "
+        },
+        "example": {
+          "title": "Excel zu CSV Beispiel",
+          "intro": "Hier ist ein Beispiel für Excel-Tabellendaten, die in das CSV-Format konvertiert wurden.",
+          "excelLabel": "Excel Eingabe (Tabelle):",
+          "csvLabel": "Konvertierte CSV Ausgabe:"
+        },
+        "moreTools": {
+          "title": "Mehr CSV Tools"
+        }
+      }
+    },
+    "txtToCsv": {
+      "title": "TXT zu CSV Konverter",
+      "description": "Konvertieren Sie Textdateien kostenlos online in CSV.",
+      "metaTitle": "TXT zu CSV Konverter — Kostenlos Online | CSV Konverter",
+      "metaDescription": "Konvertieren Sie TXT sofort online in CSV. Unterstützt benutzerdefinierte Trennzeichen (Komma, Tab, Pipe). Kostenlos & sicher.",
+      "h1": "TXT zu CSV Konverter",
+      "subtitle": "Konvertieren Sie TXT-Dateien sofort in Ihrem Browser in das CSV-Format. Keine Anmeldung erforderlich. Schnell, sicher und einfach zu bedienen.",
+      "upload": {
+        "dropText": "TXT-Datei hier ablegen",
+        "browse": "Oder klicken zum Hochladen",
+        "support": "Unterstützt .txt Dateien"
+      },
+      "delimiter": {
+        "label": "Trennzeichen auswählen",
+        "hint": "Hinweis: Bitte verwenden Sie Symbole im englischen Modus",
+        "options": {
+          "comma": "Komma (,)",
+          "tab": "Tab (\\t)",
+          "pipe": "Pipe ({'|'})",
+          "semicolon": "Semikolon (;)",
+          "space": "Leerzeichen ( )"
         }
       },
+      "seo": {
+        "how": {
+          "title": "Wie man TXT in CSV konvertiert?",
+          "steps": [
+            "Laden Sie Ihre .txt Datei hoch oder fügen Sie Textinhalt ein.",
+            "Wählen Sie das <strong>Trennzeichen</strong>, das in Ihrer Textdatei verwendet wird (z.B. Komma, Tab, Pipe).",
+            "Klicken Sie auf <strong>Konvertieren</strong>, um die Datei zu verarbeiten.",
+            "Laden Sie die strukturierte CSV-Datei herunter."
+          ]
+        },
+        "guide": {
+          "title": "Was ist TXT zu CSV Konvertierung?",
+          "content": "TXT zu CSV Konvertierung ist der Prozess der Strukturierung von Rohtextdaten in ein Tabellenformat. Textdateien speichern Daten oft mit spezifischen Trennzeichen (wie Tabs oder Pipes). Die Konvertierung in CSV macht diese Daten in Tabellenkalkulationssoftware wie Excel nutzbar.",
+          "linkText": "Erfahren Sie hier mehr über CSV-Dateien: "
+        },
+        "example": {
+          "title": "TXT zu CSV Beispiel",
+          "intro": "Hier ist ein Beispiel für die Konvertierung einer kommagetrennten Textdatei in CSV.",
+          "txtLabel": "TXT Eingabe (Kommagetrennt):",
+          "csvLabel": "Konvertierte CSV Ausgabe:"
+        },
+        "moreTools": {
+          "title": "Mehr CSV Tools"
+        }
+      }
+    },
+    "xmlToCsv": {
+      "title": "XML zu CSV Konverter",
+      "description": "Konvertieren Sie XML-Dateien kostenlos online in CSV.",
+      "metaTitle": "XML zu CSV Konverter — Kostenlos Online | CSV Konverter",
+      "metaDescription": "Konvertieren Sie XML-Daten in CSV-Format. Flachen Sie verschachtelte XML-Strukturen automatisch ab.",
+      "h1": "XML zu CSV Konverter",
+      "subtitle": "Konvertieren Sie XML-Dateien sofort in Ihrem Browser in das CSV-Format. Keine Anmeldung erforderlich. Schnell, sicher und einfach zu bedienen.",
       "upload": {
-        "dropText": "Dateien hierher ziehen",
+        "dropText": "XML-Datei hier ablegen",
+        "browse": "Oder klicken zum Hochladen",
+        "support": "Unterstützt .xml Dateien"
+      },
+      "seo": {
+        "how": {
+          "title": "Wie man XML in CSV konvertiert",
+          "steps": [
+            "Laden Sie Ihre .xml Datei hoch.",
+            "Das Tool parst den XML-Baum.",
+            "Wir flachen die Struktur in Zeilen und Spalten ab.",
+            "Laden Sie Ihre saubere CSV-Datei herunter."
+          ]
+        },
+        "guide": {
+          "title": "Was ist XML zu CSV Konvertierung?",
+          "content": "XML zu CSV Konvertierung ist der Prozess der Transformation hierarchischer XML-Daten in ein flaches CSV (Comma Separated Values) Format. Dies ermöglicht es, XML-Daten in Tabellenkalkulationstools wie Excel oder Google Sheets zu öffnen, zu bearbeiten und zu analysieren.",
+          "linkText": "Erfahren Sie hier mehr über CSV-Dateien: "
+        },
+        "example": {
+          "title": "XML zu CSV Beispiel",
+          "intro": "Hier ist ein einfaches Beispiel für die Konvertierung von XML in CSV.",
+          "xmlLabel": "XML Eingabe:",
+          "csvLabel": "Konvertierte CSV Ausgabe:"
+        },
+        "moreTools": {
+          "title": "Mehr CSV Tools"
+        }
+      }
+    },
+    "pdfToCsv": {
+      "title": "PDF zu CSV Konverter",
+      "description": "Konvertieren Sie PDF-Tabellen online in CSV.",
+      "metaTitle": "PDF zu CSV Konverter — Tabellen aus PDF extrahieren",
+      "metaDescription": "Extrahieren Sie tabellarische Daten aus PDF-Dateien und konvertieren Sie sie in CSV. Kostenloses Online-Tool.",
+      "h1": "PDF zu CSV Konverter",
+      "subtitle": "Extrahieren Sie Tabellen aus PDF-Dateien in bearbeitbares CSV-Format.",
+      "upload": {
+        "dropText": "PDF-Datei hier ablegen",
         "browse": "Dateien durchsuchen",
-        "support": "Unterstützt HEIC (.heic), kompatibel mit HEIF (.heif)"
+        "support": "Unterstützt .pdf Dateien"
+      },
+      "seo": {
+        "why": {
+          "title": "Warum PDF in CSV konvertieren?",
+          "content": "PDFs sind zum Ansehen da, nicht zum Bearbeiten. Die Konvertierung von PDF-Tabellen in CSV schaltet die Daten für die Analyse in Excel oder Google Sheets frei."
+        },
+        "how": {
+          "title": "Wie man PDF in CSV konvertiert",
+          "steps": [
+            "Laden Sie Ihre PDF-Datei hoch.",
+            "Wir erkennen tabellarische Daten im Dokument.",
+            "Die Daten werden extrahiert und als CSV formatiert.",
+            "Laden Sie Ihre Datei herunter."
+          ]
+        }
       }
     }
   },
   "footer": {
     "rightsReserved": "Alle Rechte vorbehalten."
   },
-  "cookie": {
-    "title": "Wir schätzen Ihre Privatsphäre",
-    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unseren Datenverkehr zu analysieren. Durch Klicken auf \"Akzeptieren\" stimmen Sie unserer Verwendung von Cookies zu. Erfahren Sie mehr in unserer",
-    "policyLink": "Datenschutzrichtlinie",
-    "decline": "Ablehnen",
-    "accept": "Akzeptieren"
+  "pages": {
+    "guides": {
+      "whatIsCsv": {
+        "title": "Was ist eine CSV-Datei?",
+        "seoTitle": "Was ist eine CSV-Datei? Definition, Format & Beispiele",
+        "seoDesc": "Erfahren Sie, was eine CSV-Datei ist, wofür sie steht und wie man sie verwendet. Kompletter Leitfaden mit Beispielen und CSV vs Excel Vergleich.",
+        "intro": "Eine CSV (Comma Separated Values) Datei ist eine einfache Textdatei, die verwendet wird, um Daten in Zeilen und Spalten zu speichern, wobei jeder Wert durch ein Komma getrennt ist. Es ist eines der häufigsten Formate für den Datenaustausch zwischen verschiedenen Tools und Plattformen.",
+        "sections": {
+          "standFor": {
+            "title": "Wofür steht CSV?",
+            "content": "CSV steht für <strong>Comma Separated Values</strong> (Kommagetrennte Werte). Es ist ein Dateiformat zur Speicherung tabellarischer Daten, wie in einer Tabelle oder Datenbank. Wie der Name schon sagt, werden Werte in der Datei durch Kommas getrennt."
+          },
+          "format": {
+            "title": "Was ist das CSV-Format?",
+            "content": "Eine CSV-Datei ist eine Textdatei, die ein spezifisches Format hat, das es ermöglicht, Daten in einem tabellenstrukturierten Format zu speichern. <br><br>Hauptmerkmale sind:<br><ul><li>Jede Zeile der Datei ist ein Datensatz.</li><li>Jeder Datensatz besteht aus einem oder mehreren Feldern, getrennt durch Kommas.</li><li>Die Verwendung des Kommas als Feldtrennzeichen ist der Ursprung des Namens für dieses Dateiformat.</li></ul>"
+          },
+          "usedFor": {
+            "title": "Wofür wird eine CSV-Datei verwendet?",
+            "content": "CSV-Dateien werden hauptsächlich für den <strong>Datenaustausch</strong> zwischen verschiedenen Programmen verwendet. <br><br>Häufige Anwendungsfälle:<br><ul><li>Export von Kontakten aus Smartphones zum Import in Google Kontakte.</li><li>Übertragung von Produktdaten von einer E-Commerce-Plattform zu einem Versandtool.</li><li>Speichern von Tabellendaten in einem Format, das von jedem Texteditor gelesen werden kann.</li></ul><br><br>CSV-Dateien werden oft durch Konvertierung von Daten aus anderen Formaten wie <a href='/json-to-csv' class='text-blue-600 hover:underline'>JSON</a>, <a href='/txt-to-csv' class='text-blue-600 hover:underline'>TXT</a>, <a href='/xlsx-to-csv' class='text-blue-600 hover:underline'>Excel (XLSX)</a> oder <a href='/xml-to-csv' class='text-blue-600 hover:underline'>XML</a> erstellt."
+          },
+          "example": {
+            "title": "CSV Beispiel Erklärt",
+            "content": "So sieht eine CSV-Datei aus, wenn sie in einem Texteditor wie Notepad oder VS Code geöffnet wird:",
+            "code": "Name,Email,Telefonnummer\nMax Mustermann,max{'@'}beispiel.de,0123-456-7890\nErika Musterfrau,erika{'@'}beispiel.de,0123-456-7891\nHans Meier,hans{'@'}beispiel.de,0123-456-7892",
+            "explanation": "Die erste Zeile ist oft die Kopfzeile, die die Spaltennamen definiert. Jede folgende Zeile stellt eine Datenzeile dar."
+          },
+          "vsExcel": {
+            "title": "CSV vs Excel (XLSX)",
+            "content": "Obwohl sowohl CSV- als auch Excel-Dateien (XLSX) tabellarische Daten speichern, gibt es signifikante Unterschiede. Viele Benutzer suchen nach 'csv im excel format', aber es ist wichtig zu verstehen, dass sie nicht dasselbe sind.",
+            "table": {
+              "headers": ["Funktion", "CSV", "Excel (.xlsx)"],
+              "rows": [
+                ["Format", "Klartext", "Binär (Proprietär)"],
+                [
+                  "Formatierung",
+                  "Keine (Rohdaten)",
+                  "Reichhaltig (Schriftarten, Farben, Ränder)"
+                ],
+                ["Formeln", "Nicht unterstützt", "Unterstützt"],
+                ["Dateigröße", "Klein & Leichtgewichtig", "Größer"],
+                [
+                  "Kompatibilität",
+                  "Universell (Jeder Texteditor)",
+                  "Erfordert Excel oder kompatible App"
+                ]
+              ]
+            }
+          }
+        },
+        "internalLinks": {
+          "title": "Kostenlose CSV Tools",
+          "list": [
+            { "text": "JSON in CSV konvertieren", "path": "/json-to-csv" },
+            { "text": "Excel in CSV konvertieren", "path": "/xlsx-to-csv" },
+            {
+              "text": "Wie man CSV-Dateien öffnet",
+              "path": "/how-to-open-csv-file"
+            }
+          ]
+        }
+      },
+      "whatDoesCsvStandFor": {
+        "title": "Wofür steht CSV?",
+        "seoTitle": "Wofür steht CSV? Definition, Bedeutung & Verwendung erklärt",
+        "seoDesc": "CSV steht für Comma Separated Values. Entdecken Sie die vollständige Definition, warum es verwendet wird, wie es funktioniert und seine Geschichte in diesem umfassenden Leitfaden.",
+        "intro": "Das Akronym CSV ist allgegenwärtig in Data Science, Wirtschaft und Softwareentwicklung. Aber wofür genau steht es, und warum ist dieses einfache Format so mächtig?",
+        "sections": {
+          "meaning": {
+            "title": "Die direkte Antwort",
+            "content": "<strong>CSV</strong> steht für <strong>Comma Separated Values</strong> (Kommagetrennte Werte).<br><br>Es ist ein Dateiformat, das verwendet wird, um tabellarische Daten zu speichern, wie z.B. eine Tabelle oder Datenbank. Wie der Name schon sagt, werden die Werte in der Datei durch Kommas getrennt (begrenzt)."
+          },
+          "breakdown": {
+            "title": "Aufschlüsselung des Akronyms",
+            "content": "Um den Begriff vollständig zu verstehen, lassen Sie uns jede Komponente aufschlüsseln:<br><br><ul class='list-disc pl-6 space-y-2'><li><strong>Comma (Komma)</strong>: Das spezifische Zeichen (<code>,</code>), das verwendet wird, um einzelne Datenpunkte zu teilen. Während andere Zeichen (wie Semikolons) in ähnlichen Formaten verwendet werden können, ist das Komma der Standard.</li><li><strong>Separated (Getrennt)</strong>: Dies beschreibt die Organisationsmethode. Das Komma fungiert als Grenze oder Zaun zwischen verschiedenen Informationen und sagt dem Computer, wo ein Wert endet und der nächste beginnt.</li><li><strong>Values (Werte)</strong>: Dies sind die tatsächlichen Datenstücke, die gespeichert werden—Text, Zahlen, Daten oder Währung.</li></ul>"
+          },
+          "origin": {
+            "title": "Geschichte und Ursprung",
+            "content": "Das CSV-Format ist mehr als ein Jahrzehnt älter als die Ära der Personal Computer. Der IBM Fortran (Level H Extended) Compiler unter OS/360 unterstützte sie bereits 1967. Es wurde als einfacher Weg entworfen, Daten zwischen verschiedenen Programmen zu verschieben, die sonst nicht miteinander kommunizieren könnten. Da es Klartext ist, bleibt es eines der langlebigsten und universellsten Dateiformate, die es gibt."
+          },
+          "variations": {
+            "title": "Verwandte Akronyme und Variationen",
+            "content": "Während CSV der gebräuchlichste Begriff ist, können Sie in der Datenverarbeitung auf verwandte Formate stoßen:<br><br><ul class='list-disc pl-6 space-y-2'><li><strong>TSV (Tab Separated Values)</strong>: Verwendet ein Tabulatorzeichen anstelle eines Kommas. Oft sicherer, wenn Ihre Daten viele Kommas enthalten.</li><li><strong>DSV (Delimiter Separated Values)</strong>: Ein allgemeiner Begriff für jedes Format, das ein bestimmtes Zeichen verwendet, um Werte zu trennen.</li><li><strong>SSV (Semicolon Separated Values)</strong>: Üblich in europäischen Ländern, wo das Komma als Dezimaltrennzeichen verwendet wird.</li></ul>"
+          }
+        },
+        "internalLinks": {
+          "title": "Verwandte Leitfäden",
+          "list": [
+            { "text": "Was ist eine CSV-Datei?", "path": "/what-is-csv" },
+            { "text": "Was ist das CSV-Format?", "path": "/what-is-csv-format" }
+          ]
+        }
+      },
+      "whatIsCsvFormat": {
+        "title": "Was ist das CSV-Format?",
+        "seoTitle": "Was ist das CSV-Format? Struktur, Regeln & Trennzeichen",
+        "seoDesc": "Tiefer Einblick in die Struktur des CSV-Dateiformats, Regeln für Trennzeichen, Anführungszeichen und Zeichencodierung.",
+        "intro": "Obwohl CSV einfach erscheint, gibt es spezifische Regeln, die ein gültiges CSV-Format definieren. Das Verständnis dieser Regeln ist entscheidend, um Fehler beim Importieren oder Exportieren von Daten zu vermeiden.",
+        "sections": {
+          "structure": {
+            "title": "Grundstruktur",
+            "content": "Eine CSV-Datei ist eine begrenzte Textdatei, die ein Komma verwendet, um Werte zu trennen. Jede Zeile der Datei ist ein Datensatz. Jeder Datensatz besteht aus einem oder mehreren Feldern, getrennt durch das Trennzeichen."
+          },
+          "rules": {
+            "title": "Formatierungsregeln",
+            "content": "<ul><li><strong>Trennzeichen:</strong> Das Standard-Trennzeichen ist ein Komma, aber einige Regionen verwenden Semikolons.</li><li><strong>Anführungszeichen:</strong> Felder, die Kommas enthalten, müssen in doppelte Anführungszeichen gesetzt werden.</li><li><strong>Zeilenumbrüche:</strong> Jeder Datensatz muss in einer separaten Zeile stehen.</li></ul>"
+          },
+          "encoding": {
+            "title": "Zeichencodierung",
+            "content": "Die Standardcodierung für moderne CSV-Dateien ist <strong>UTF-8</strong>. Dies stellt sicher, dass Sonderzeichen, Emojis und nicht-lateinische Schriften auf verschiedenen Betriebssystemen korrekt angezeigt werden."
+          }
+        },
+        "internalLinks": {
+          "title": "Verwandte Leitfäden",
+          "list": [
+            {
+              "text": "Wofür steht CSV?",
+              "path": "/what-does-csv-stand-for"
+            },
+            {
+              "text": "Wie man CSV-Dateien öffnet",
+              "path": "/how-to-open-csv-file"
+            }
+          ]
+        }
+      },
+      "howToOpenCsv": {
+        "title": "Wie öffnet man CSV-Dateien",
+        "seoTitle": "Wie man CSV-Dateien unter Windows, Mac & Online öffnet",
+        "seoDesc": "Schritt-für-Schritt-Anleitung zum Öffnen von CSV-Dateien mit Excel, Google Sheets, Notepad und Online-Viewern.",
+        "description": "CSV-Dateien sind reine Textdateien, was bedeutet, dass sie von einer Vielzahl von Programmen geöffnet werden können. Hier sind die häufigsten Wege, CSV-Dateien zu öffnen und anzuzeigen.",
+        "methods": {
+          "title": "5 Wege, CSV-Dateien zu öffnen",
+          "method1": {
+            "title": "1. Microsoft Excel (Empfohlen)",
+            "desc": "Excel ist das beliebteste Tool zum Anzeigen und Bearbeiten von CSV-Dateien.",
+            "steps": "Doppelklicken Sie auf die Datei oder öffnen Sie Excel und gehen Sie zu Datei > Öffnen.",
+            "cons": "Erfordert eine Microsoft Office-Lizenz."
+          },
+          "method2": {
+            "title": "2. Google Sheets (Kostenlos Online)",
+            "desc": "Eine großartige kostenlose Alternative, die in Ihrem Browser läuft.",
+            "steps": "Gehen Sie zu Google Sheets, erstellen Sie eine neue Tabelle und wählen Sie Datei > Importieren > Hochladen.",
+            "cons": "Erfordert Google-Konto."
+          },
+          "method3": {
+            "title": "3. Text-Editor (Notepad/TextEdit)",
+            "desc": "Sehen Sie sich die Rohdatenstruktur an.",
+            "steps": "Rechtsklick auf die Datei > Öffnen mit > Notepad (Windows) or TextEdit (Mac).",
+            "cons": "Schwer lesbar bei großen Datensätzen."
+          },
+          "method4": {
+            "title": "4. VS Code (Für Entwickler)",
+            "desc": "Hervorragend zum Bearbeiten großer CSV-Dateien mit Erweiterungen.",
+            "steps": "Öffnen Sie den Ordner oder die Datei in VS Code. Verwenden Sie Erweiterungen wie 'Rainbow CSV' für bessere Lesbarkeit.",
+            "cons": "Technischere Oberfläche."
+          },
+          "method5": {
+            "title": "5. In CSV konvertieren (Verwandte Tools)",
+            "desc": "Müssen Sie stattdessen eine CSV-Datei erstellen? Nutzen Sie unsere kostenlosen Online-Konverter.",
+            "cons": "Erfordert Internetverbindung."
+          }
+        },
+        "learnMore": "Möchten Sie mehr über CSV-Dateien verstehen? Lesen Sie unseren Leitfaden: {link}"
+      }
+    }
   },
   "privacyPolicy": {
-    "metaTitle": "Datenschutzrichtlinie - HeicTools",
-    "metaDescription": "Datenschutzrichtlinie für HeicTools. Erfahren Sie, wie wir Ihre Privatsphäre mit client-seitiger Verarbeitung schützen.",
-    "title": "Datenschutzrichtlinie",
+    "metaTitle": "Datenschutzerklärung - CSV Konverter",
+    "metaDescription": "Datenschutzerklärung für CSV Konverter. Erfahren Sie, wie wir Ihre Privatsphäre mit client-seitiger Verarbeitung schützen.",
+    "title": "Datenschutzerklärung",
     "lastUpdated": "Zuletzt aktualisiert:",
     "sections": {
       "intro": {
         "title": "1. Einführung",
-        "content": "Willkommen bei HeicTools. Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen. Diese Datenschutzrichtlinie informiert Sie darüber, wie wir Ihre persönlichen Daten behandeln, wenn Sie unsere Website besuchen, und klärt Sie über Ihre Datenschutzrechte und den gesetzlichen Schutz auf."
+        "content": "Willkommen bei CSV Konverter. Wir respektieren Ihre Privatsphäre und verpflichten uns zum Schutz Ihrer persönlichen Daten."
       },
       "clientSide": {
-        "title": "2. Client-seitige Verarbeitung",
-        "content": "HeicTools wurde mit Privatsphäre als Priorität entwickelt. <strong>Wir laden Ihre Dateien nicht auf unsere Server hoch.</strong> Alle Dateikonvertierungen (HEIC zu JPG, PNG, PDF) finden vollständig in Ihrem Webbrowser statt (Client-seitig). Ihre Fotos verlassen nie Ihr Gerät, was vollständige Privatsphäre und Sicherheit für Ihre persönlichen Daten gewährleistet."
+        "title": "2. Client-Seitige Verarbeitung",
+        "content": "CSV Konverter wurde mit Privatsphäre als Priorität entwickelt. <strong>Wir laden Ihre Dateien nicht auf unsere Server hoch.</strong> Alle Dateikonvertierungen finden vollständig in Ihrem Webbrowser statt (Client-Side)."
       },
       "dataCollection": {
         "title": "3. Datenerfassung",
-        "content": "Da wir keine Dateien auf unseren Servern verarbeiten, sammeln, speichern oder teilen wir keine Inhalte, die Sie konvertieren. Wir können jedoch nicht-persönliche Informationen über Ihren Besuch sammeln, um unseren Service zu verbessern:",
+        "content": "Da wir Ihre Dateien nicht hochladen, sammeln, speichern oder teilen wir Ihre persönlichen Daten nicht. Wir können lokalen Speicher verwenden, um Ihre Einstellungen zu speichern.",
         "items": [
-          "Nutzungsdaten (besuchte Seiten, verbrachte Zeit usw.) über Google Analytics",
-          "Geräte- und Browserinformationen (zur Gewährleistung der Kompatibilität)",
-          "Sprachpräferenzen"
+          "Wir verfolgen Ihren Dateiinhalt nicht.",
+          "Wir verwenden Google Analytics für Statistiken zur Seitennutzung (anonymisiert)."
         ]
       },
       "cookies": {
         "title": "4. Cookies",
-        "content": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern und unseren Datenverkehr zu analysieren. Sie können Cookies über unser Cookie-Einwilligungsbanner akzeptieren oder ablehnen. Wir verwenden hauptsächlich Google Analytics-Cookies, um zu verstehen, wie Benutzer mit unserer Website interagieren."
+        "content": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, die Seitennutzung zu analysieren und unsere Marketingbemühungen zu unterstützen. Sie können Cookies über Ihre Browsereinstellungen deaktivieren."
       },
       "contact": {
         "title": "5. Kontaktieren Sie uns",
-        "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder unseren Datenschutzpraktiken haben, kontaktieren Sie uns bitte unter:"
-      }
-    }
-  },
-  "pages": {
-    "guides": {
-      "common": {
-        "readyTitle": "Bereit zum Konvertieren?",
-        "convertNow": "HEIC in {format} konvertieren",
-        "method": "Methode {number}: {title}",
-        "steps": "Schritt-für-Schritt-Anleitung",
-        "whyChoose": "Warum {format} wählen?",
-        "howToConvert": "Wie man online konvertiert"
-      },
-      "heicToPng": {
-        "seoTitle": "Wie man HEIC in PNG konvertiert (Hohe Qualität)",
-        "seoDesc": "Anleitung zur Konvertierung von HEIC-Bildern in das PNG-Format. Am besten zur Erhaltung der Bildqualität und für transparente Hintergründe.",
-        "title": "Wie man HEIC in PNG konvertiert",
-        "intro": "HEIC ist großartig für Fotos, aber manchmal benötigen Sie PNG wegen seiner verlustfreien Qualität oder Kompatibilität mit Webdesign-Tools.",
-        "learnMore": "Bevor Sie sie bearbeiten, wenn Sie mehr über das Quellformat erfahren möchten, lesen Sie unsere Anleitung: {link}.",
-        "whyChoose": {
-          "title": "Warum PNG statt JPG wählen?",
-          "reasons": {
-            "lossless": "<strong>Verlustfreie Komprimierung:</strong> Kein Qualitätsverlust beim Speichern.",
-            "transparency": "<strong>Transparenz:</strong> Unterstützt transparente Hintergründe (wenn Ihre Quelle diese hat).",
-            "standard": "<strong>Web-Standard:</strong> Weit verbreitet in allen Browsern und Editoren."
-          }
-        },
-        "method1": {
-          "title": " Online-Konverter (Empfohlen)",
-          "desc": "Der schnellste Weg, HEIC in PNG zu konvertieren, ohne Software zu installieren.",
-          "step1": "Gehen Sie zum {link}.",
-          "step2": "Laden Sie Ihre HEIC-Dateien hoch.",
-          "step3": "Warten Sie, bis die Konvertierung abgeschlossen ist.",
-          "step4": "Laden Sie Ihre hochwertigen PNG-Dateien herunter.",
-          "cta": "Konvertieren Sie Ihre Dateien jetzt:",
-          "buttonJpg": "In JPG konvertieren",
-          "buttonPng": "HEIC in PNG konvertieren",
-          "buttonWebp": "In WebP konvertieren",
-          "buttonPdf": "In PDF konvertieren"
-        },
-        "cta": {
-          "title": "Bereit anzufangen?",
-          "desc": "Erhalten Sie hochwertige PNGs aus Ihren HEIC-Fotos in Sekunden.",
-          "button": "HEIC in PNG konvertieren"
-        }
-      },
-      "heicToJpg": {
-        "seoTitle": "Wie man HEIC in JPG unter Windows & Mac konvertiert (Kostenlos)",
-        "seoDesc": "Schritt-für-Schritt-Anleitung zur Konvertierung von HEIC in JPG. Erfahren Sie, wie Sie HEIC-Dateien mit kostenlosen Online-Tools oder integrierten System-Apps in JPG ändern.",
-        "title": "Wie man HEIC in JPG konvertiert",
-        "intro": "HEIC-Dateien sind großartig, um Platz auf Ihrem iPhone zu sparen, können aber mühsam zu teilen oder auf anderen Geräten zu öffnen sein. Hier erfahren Sie, wie Sie HEIC einfach in JPG ändern können.",
-        "learnMore": "Bevor Sie sie ansehen, wenn Sie verstehen möchten, warum Apple dieses Format verwendet, schauen Sie sich unsere Anleitung an: {link}.",
-        "whyChoose": {
-          "title": "Warum HEIC in JPG konvertieren?",
-          "reasons": {
-            "compatibility": "<strong>Universelle Kompatibilität:</strong> JPG öffnet sich auf jedem Gerät, von alten Windows-PCs bis zu Android-Handys.",
-            "sharing": "<strong>Einfaches Teilen:</strong> Social-Media-Apps und Websites akzeptieren immer JPG-Dateien.",
-            "software": "<strong>Software-Unterstützung:</strong> Keine Notwendigkeit für spezielle Plugins oder kostenpflichtige Erweiterungen."
-          }
-        },
-        "method1": {
-          "title": "Kostenlosen Online-Konverter verwenden (Empfohlen)",
-          "desc": "Der schnellste Weg, HEIC in JPG zu konvertieren, ohne Software zu installieren, ist die Verwendung eines browserbasierten Tools.",
-          "step1": "Gehen Sie zum {link}.",
-          "step2": "Ziehen Sie Ihre .heic-Dateien in den Upload-Bereich.",
-          "step3": "Warten Sie, bis die Konvertierung abgeschlossen ist (dauert normalerweise Sekunden).",
-          "step4": "Laden Sie Ihre neuen JPG-Fotos herunter.",
-          "cta": "Konvertieren Sie Ihre Dateien jetzt:",
-          "buttonJpg": "HEIC in JPG konvertieren",
-          "buttonPng": "In PNG konvertieren",
-          "buttonWebp": "In WebP konvertieren",
-          "buttonPdf": "In PDF konvertieren"
-        },
-        "cta": {
-          "title": "Bereit zum Konvertieren?",
-          "desc": "Testen Sie jetzt unseren schnellen, sicheren und kostenlosen Online-Konverter.",
-          "button": "HEIC in JPG jetzt konvertieren"
-        }
-      },
-      "heicToWebp": {
-        "seoTitle": "Wie man HEIC in WebP konvertiert (Beste Komprimierung)",
-        "seoDesc": "Anleitung zur Konvertierung von HEIC-Bildern in das WebP-Format. Erfahren Sie, wie Sie die Dateigröße reduzieren und gleichzeitig eine hohe Qualität für das Web beibehalten.",
-        "title": "Wie man HEIC in WebP konvertiert",
-        "intro": "WebP ist ein modernes Bildformat, das überlegene verlustfreie und verlustbehaftete Komprimierung für Bilder im Web bietet. Hier erfahren Sie, wie Sie Ihre HEIC-Fotos in WebP konvertieren.",
-        "learnMore": "Um die Effizienz des Quellformats vor der Optimierung zu verstehen, schauen Sie sich unsere Anleitung an: {link}.",
-        "whyChoose": {
-          "title": "Warum WebP wählen?",
-          "reasons": {
-            "compression": "<strong>Überlegene Komprimierung:</strong> WebP-Bilder sind 26% kleiner als PNGs.",
-            "loading": "<strong>Schnelleres Laden:</strong> Kleinere Dateigrößen bedeuten schnellere Ladezeiten der Website.",
-            "transparency": "<strong>Transparenz:</strong> Wie PNG unterstützt auch WebP Transparenz."
-          }
-        },
-        "method1": {
-          "title": "Online-Konverter (Empfohlen)",
-          "desc": "Optimieren Sie Ihre Bilder sofort für das Web mit unserem kostenlosen Tool.",
-          "step1": "Gehen Sie zum {link}.",
-          "step2": "Laden Sie Ihre HEIC-Dateien hoch.",
-          "step3": "Warten Sie, bis die Konvertierung abgeschlossen ist.",
-          "step4": "Laden Sie Ihre optimierten WebP-Dateien herunter.",
-          "cta": "Optimierung starten:",
-          "buttonJpg": "In JPG konvertieren",
-          "buttonPng": "In PNG konvertieren",
-          "buttonWebp": "HEIC in WebP konvertieren",
-          "buttonPdf": "In PDF konvertieren"
-        },
-        "cta": {
-          "title": "Bereit zum Optimieren?",
-          "desc": "Konvertieren Sie Ihre HEIC-Fotos sofort in das effiziente WebP-Format.",
-          "button": "HEIC in WebP konvertieren"
-        }
-      },
-      "heicToPdf": {
-        "seoTitle": "Wie man HEIC in PDF konvertiert (Fotos kombinieren)",
-        "seoDesc": "Erfahren Sie, wie Sie mehrere HEIC-Fotos online in ein einziges PDF-Dokument konvertieren. Perfekt zum Teilen von Dokumenten oder Quittungen.",
-        "title": "Wie man HEIC in PDF konvertiert",
-        "intro": "Müssen Sie mehrere iPhone-Fotos als ein einziges Dokument senden? HEIC in PDF zu konvertieren ist die beste Lösung.",
-        "learnMore": "Wenn Sie mehr über das Bildformat wissen möchten, das vom iPhone vor der Archivierung verwendet wird, siehe: {link}.",
-        "whyChoose": {
-          "title": "Warum HEIC in PDF konvertieren?",
-          "reasons": {
-            "compatibility": "<strong>Universelle Kompatibilität:</strong> PDF funktioniert auf allen Geräten.",
-            "singleFile": "<strong>Einzelne Datei:</strong> Kombinieren Sie mehr als 10 Fotos in einer einfach zu teilenden Datei.",
-            "security": "<strong>Sicherheit:</strong> PDF ist schwieriger zu bearbeiten als Bilder."
-          }
-        },
-        "method1": {
-          "title": "Online-Konverter (Empfohlen)",
-          "desc": "Kombinieren Sie einfach mehrere HEIC-Bilder in einem PDF-Dokument.",
-          "step1": "Öffnen Sie {link}.",
-          "step2": "Wählen Sie Ihre HEIC-Bilder aus.",
-          "step3": "(Optional) Sortieren Sie die Bilder bei Bedarf neu.",
-          "step4": "Klicken Sie auf <strong>Konvertieren</strong>, um Ihr PDF zu generieren.",
-          "cta": "Erstellen Sie Ihr PDF:",
-          "buttonJpg": "Zu JPG",
-          "buttonPng": "Zu PNG",
-          "buttonWebp": "Zu WebP",
-          "buttonPdf": "HEIC zu PDF"
-        },
-        "cta": {
-          "title": "Konvertierung starten",
-          "desc": "Konvertieren Sie Ihre HEIC-Fotos jetzt in ein professionelles PDF-Dokument.",
-          "button": "HEIC in PDF konvertieren"
-        }
-      },
-      "whatIsHeic": {
-        "seoTitle": "Was ist eine HEIC-Datei? Ursprung, Merkmale und Vergleich",
-        "seoDesc": "Vollständiger Leitfaden zum HEIC-Format. Erfahren Sie mehr über seine Geschichte, Merkmale und wie es im Vergleich zu JPG, PNG, WebP und PDF abschneidet.",
-        "title": "Was ist eine HEIC-Datei?",
-        "intro": "HEIC-Dateien sind ein Bildformat, das von Apple-Geräten wie iPhones und iPads verwendet wird, um Fotos effizienter zu speichern als herkömmliche Formate wie JPG. HEIC steht für High Efficiency Image Container, basierend auf dem HEIF-Standard (High Efficiency Image File Format). Einfach ausgedrückt ist eine HEIC-Datei eine neue Art von Bildformat, das Ihr iPhone verwendet, um Fotos mit höherer Qualität zu speichern, während es weniger Platz als ein JPG beansprucht.",
-        "origins": {
-          "title": "Ursprünge und Entwicklung",
-          "content": "HEIC ist die Dateierweiterung für den **HEIF**-Standard (High Efficiency Image File Format). Er wurde von der **MPEG** (Moving Picture Experts Group) entwickelt — demselben Team hinter dem AAC-Audioformat, das in iTunes verwendet wird.\n\nObwohl der Standard 2015 fertiggestellt wurde, erlangte er erst **2017** allgemeine Aufmerksamkeit, als Apple ihn als Standardbildformat in iOS 11 übernahm. Dieser Wechsel ersetzte das alternde JPEG-Format auf iPhones und ermöglichte es Benutzern, hochwertige Fotos mit der Hälfte der Dateigröße zu speichern."
-        }
+        "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:"
       }
     }
   }
