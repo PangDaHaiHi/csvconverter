@@ -3,7 +3,7 @@ const i18nHead = useLocaleHead({
   addSeoAttributes: true,
 });
 
-useHead({
+useHead(() => ({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} | CSV Converter` : "CSV Converter";
   },
@@ -30,7 +30,7 @@ useHead({
       }),
     },
   ],
-});
+}));
 </script>
 
 <template>
