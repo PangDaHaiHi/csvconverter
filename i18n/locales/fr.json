@@ -96,10 +96,6 @@
       "xmlToCsv": {
         "title": "XML vers CSV",
         "desc": "Convertir des fichiers XML en CSV"
-      },
-      "pdfToCsv": {
-        "title": "PDF vers CSV",
-        "desc": "Convertir des tableaux PDF en CSV"
       }
     },
     "guides": {
@@ -420,6 +416,10 @@
   },
   "footer": {
     "rightsReserved": "Tous droits réservés."
+  },
+  "error": {
+    "pageNotFound": "Page introuvable",
+    "goHome": "Retour à l'accueil"
   },
   "pages": {
     "guides": {

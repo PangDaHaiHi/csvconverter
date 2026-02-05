@@ -1,11 +1,20 @@
 <script setup>
+const { t } = useI18n();
 const i18nHead = useLocaleHead({
   addSeoAttributes: true,
 });
 
 useHead(() => ({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | CSV Converter` : "CSV Converter";
+    const brand = t("brand.title");
+    if (!titleChunk) return brand;
+    if (
+      titleChunk.includes(brand) ||
+      titleChunk.toLowerCase().includes("csv converter")
+    ) {
+      return titleChunk;
+    }
+    return `${titleChunk} | ${brand}`;
   },
   htmlAttrs: {
     lang: i18nHead.value.htmlAttrs.lang,

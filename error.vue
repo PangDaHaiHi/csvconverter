@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import type { NuxtError } from '#app'
+import type { NuxtError } from "#app";
 
 const props = defineProps({
-  error: Object as () => NuxtError
-})
+  error: Object as () => NuxtError,
+});
 
-const handleError = () => clearError({ redirect: '/' })
+const { t } = useI18n();
+
+useSeoMeta(() => ({
+  title: `${props.error?.statusCode || 404} - ${t("error.pageNotFound")}`,
+  robots: "noindex",
+}));
+
+const handleError = () => clearError({ redirect: "/" });
 </script>
 
 <template>

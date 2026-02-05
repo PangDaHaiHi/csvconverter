@@ -22,7 +22,6 @@ useSeoMeta({
 });
 
 useHead({
-  titleTemplate: "%s",
   script: [
     {
       type: "application/ld+json",

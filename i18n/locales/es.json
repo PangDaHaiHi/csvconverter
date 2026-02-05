@@ -417,6 +417,10 @@
   "footer": {
     "rightsReserved": "Todos los derechos reservados."
   },
+  "error": {
+    "pageNotFound": "Página no encontrada",
+    "goHome": "Volver al inicio"
+  },
   "pages": {
     "guides": {
       "whatIsCsv": {

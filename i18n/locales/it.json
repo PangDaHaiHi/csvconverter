@@ -136,9 +136,7 @@
     "jsonToCsv": "JSON in CSV",
     "xlsxToCsv": "XLSX in CSV",
     "txtToCsv": "TXT in CSV",
-    "xmlToCsv": "XML in CSV",
-    "csvToJson": "CSV in JSON",
-    "whatIsCsv": "Cos'è CSV?"
+    "xmlToCsv": "XML in CSV"
   },
   "tools": {
     "common": {
@@ -148,8 +146,7 @@
         "linkText": "Cos'è un file CSV?"
       },
       "errors": {
-        "fileLimitExceeded": "Massimo {max} file consentiti.",
-        "fileTooLarge": "Il file è troppo grande. Max {size}MB."
+        "fileLimitExceeded": "Massimo {max} file consentiti."
       },
       "actions": {
         "downloadAll": "Scarica Tutto",

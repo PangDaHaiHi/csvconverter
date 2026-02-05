@@ -417,6 +417,10 @@
   "footer": {
     "rightsReserved": "Todos os direitos reservados."
   },
+  "error": {
+    "pageNotFound": "Página não encontrada",
+    "goHome": "Voltar para o início"
+  },
   "pages": {
     "guides": {
       "whatIsCsv": {
@@ -454,6 +458,13 @@
                   "Formatação",
                   "Nenhuma (Dados Brutos)",
                   "Rica (Fontes, Cores, Bordas)"
+                ],
+                ["Fórmulas", "Não suportado", "Suportado"],
+                ["Tamanho do arquivo", "Pequeno e leve", "Maior"],
+                [
+                  "Compatibilidade",
+                  "Universal (Qualquer editor de texto)",
+                  "Requer Excel ou app compatível"
                 ]
               ]
             }
@@ -577,25 +588,34 @@
     }
   },
   "privacyPolicy": {
+    "metaTitle": "Política de Privacidade - Conversor CSV",
+    "metaDescription": "Política de Privacidade do Conversor CSV. Saiba como protegemos sua privacidade com processamento no lado do cliente.",
     "title": "Política de Privacidade",
-    "lastUpdated": "Última atualização: 20 de janeiro de 2025",
-    "intro": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações quando você usa nosso site Conversor CSV.",
+    "lastUpdated": "Última atualização:",
     "sections": {
-      "dataCollection": {
-        "title": "Informações que Coletamos",
-        "content": "Não coletamos ou armazenamos nenhum arquivo que você envia em nossos servidores. Todas as conversões de arquivos são processadas localmente no seu navegador."
+      "intro": {
+        "title": "1. Introdução",
+        "content": "Bem-vindo ao Conversor CSV. Respeitamos sua privacidade e estamos comprometidos em proteger seus dados pessoais."
       },
-      "usage": {
-        "title": "Como Usamos as Informações",
-        "content": "Podemos usar estatísticas de uso anonimizadas (como contagem de visitas) para melhorar a funcionalidade do nosso site e a experiência do usuário."
+      "clientSide": {
+        "title": "2. Processamento no Lado do Cliente",
+        "content": "O Conversor CSV foi projetado com a privacidade como prioridade. <strong>Nós não enviamos seus arquivos para nossos servidores.</strong> Todas as conversões acontecem inteiramente no seu navegador (Lado do Cliente)."
+      },
+      "dataCollection": {
+        "title": "3. Coleta de Dados",
+        "content": "Como não enviamos seus arquivos, não coletamos, armazenamos ou compartilhamos seus dados pessoais. Podemos usar armazenamento local para salvar suas preferências.",
+        "items": [
+          "Não rastreamos o conteúdo do seu arquivo.",
+          "Usamos Google Analytics para estatísticas de uso do site (anonimizadas)."
+        ]
       },
       "cookies": {
-        "title": "Cookies",
-        "content": "Usamos cookies para melhorar sua experiência. Você pode controlar cookies através das configurações do seu navegador."
+        "title": "4. Cookies",
+        "content": "Usamos cookies para melhorar sua experiência, analisar o uso do site e ajudar em nossos esforços de marketing. Você pode desativar cookies nas configurações do seu navegador."
       },
-      "thirdParty": {
-        "title": "Serviços de Terceiros",
-        "content": "Podemos usar serviços de terceiros para análise (como Google Analytics) ou publicidade. Esses serviços têm suas próprias políticas de privacidade."
+      "contact": {
+        "title": "5. Contato",
+        "content": "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em:"
       }
     }
   }

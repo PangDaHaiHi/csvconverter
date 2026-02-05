@@ -96,10 +96,6 @@
       "xmlToCsv": {
         "title": "XML zu CSV",
         "desc": "Konvertieren Sie XML Dateien in CSV"
-      },
-      "pdfToCsv": {
-        "title": "PDF zu CSV",
-        "desc": "Konvertieren Sie PDF-Tabellen in CSV"
       }
     },
     "guides": {
@@ -421,6 +417,10 @@
   "footer": {
     "rightsReserved": "Alle Rechte vorbehalten."
   },
+  "error": {
+    "pageNotFound": "Seite nicht gefunden",
+    "goHome": "Zur Startseite"
+  },
   "pages": {
     "guides": {
       "whatIsCsv": {
@@ -568,7 +568,7 @@
           "method3": {
             "title": "3. Text-Editor (Notepad/TextEdit)",
             "desc": "Sehen Sie sich die Rohdatenstruktur an.",
-            "steps": "Rechtsklick auf die Datei > Öffnen mit > Notepad (Windows) or TextEdit (Mac).",
+            "steps": "Rechtsklick auf die Datei > Öffnen mit > Notepad (Windows) oder TextEdit (Mac).",
             "cons": "Schwer lesbar bei großen Datensätzen."
           },
           "method4": {
