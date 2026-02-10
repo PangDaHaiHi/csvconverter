@@ -10,10 +10,10 @@ const { locale, locales, setLocale } = useI18n();
 const localePath = useLocalePath();
 
 const navItems = [
-  { path: "/json-to-csv", icon: FileJson, label: "nav.jsonToCsv" },
-  { path: "/txt-to-csv", icon: FileText, label: "nav.txtToCsv" },
-  { path: "/xlsx-to-csv", icon: FileSpreadsheet, label: "nav.xlsxToCsv" },
-  { path: "/xml-to-csv", icon: Code, label: "nav.xmlToCsv" },
+  { path: "/json-to-csv/", icon: FileJson, label: "nav.jsonToCsv" },
+  { path: "/txt-to-csv/", icon: FileText, label: "nav.txtToCsv" },
+  { path: "/xlsx-to-csv/", icon: FileSpreadsheet, label: "nav.xlsxToCsv" },
+  { path: "/xml-to-csv/", icon: Code, label: "nav.xmlToCsv" },
 ];
 </script>
 
