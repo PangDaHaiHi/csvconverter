@@ -1,3 +1,28 @@
+const locales = ["en", "zh", "es", "de", "fr", "ja", "pt", "ru", "ko", "it"];
+
+const pages = [
+  "/",
+  "/txt-to-csv",
+  "/json-to-csv",
+  "/xlsx-to-csv",
+  "/xml-to-csv",
+  "/what-is-csv",
+  "/how-to-open-csv-file",
+];
+function generateRoutes() {
+  const prerenderRoutes: string[] = [];
+  for (const locale of locales) {
+    for (const page of pages) {
+      // en 是默认语言，不加前缀 (strategy: 'prefix_except_default')
+      const prefix = locale === "en" ? "" : `/${locale}`;
+      // 处理根路径的情况，避免出现 //
+      let path = page === "/" ? prefix || "/" : `${prefix}${page}`;
+      prerenderRoutes.push(path);
+    }
+  }
+  return prerenderRoutes;
+}
+
 export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
@@ -47,11 +72,7 @@ export default defineNuxtConfig({
       { code: "it", iso: "it-IT", file: "it.json", name: "Italiano" },
     ],
     defaultLocale: "en",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      redirectOn: "root",
-    },
+    detectBrowserLanguage: false,
     compilation: {
       strictMessage: false,
     },
@@ -74,8 +95,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: "cloudflare-pages",
     prerender: {
-      crawlLinks: true,
-      routes: ["/"],
+      crawlLinks: false,
+      routes: generateRoutes(),
     },
   },
 
