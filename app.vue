@@ -21,9 +21,9 @@ useHead(() => ({
   },
   link: [
     ...(i18nHead.value.link || []).map((link) => {
-      // Force trailing slash for homepage canonical if missing
+      // Force trailing slash for homepage canonical and alternate links if missing
       if (
-        link.rel === "canonical" &&
+        (link.rel === "canonical" || link.rel === "alternate") &&
         link.href === "https://csvconverter.online"
       ) {
         return { ...link, href: "https://csvconverter.online/" };
