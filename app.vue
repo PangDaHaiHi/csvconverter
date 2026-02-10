@@ -37,7 +37,16 @@ useHead(() => ({
       property: "og:image",
       content: "https://csvconverter.online/csv-converter-logo.png",
     },
-    ...(i18nHead.value.meta || []),
+    ...(i18nHead.value.meta || []).map((meta) => {
+      // Force trailing slash for homepage og:url if missing
+      if (
+        meta.property === "og:url" &&
+        meta.content === "https://csvconverter.online"
+      ) {
+        return { ...meta, content: "https://csvconverter.online/" };
+      }
+      return meta;
+    }),
   ],
   script: [
     {
