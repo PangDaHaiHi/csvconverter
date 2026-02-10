@@ -38,6 +38,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     exclude: ["/privacy-policy", "/**/privacy-policy"],
+    urls: ["/"],
   },
   site: {
     url: "https://csvconverter.online",

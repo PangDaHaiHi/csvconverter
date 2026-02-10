@@ -19,7 +19,18 @@ useHead(() => ({
   htmlAttrs: {
     lang: i18nHead.value.htmlAttrs.lang,
   },
-  link: [...(i18nHead.value.link || [])],
+  link: [
+    ...(i18nHead.value.link || []).map((link) => {
+      // Force trailing slash for homepage canonical if missing
+      if (
+        link.rel === "canonical" &&
+        link.href === "https://csvconverter.online"
+      ) {
+        return { ...link, href: "https://csvconverter.online/" };
+      }
+      return link;
+    }),
+  ],
   meta: [
     { property: "og:site_name", content: "CSV Converter" },
     {
