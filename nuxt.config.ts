@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: "https://csvconverter.online",
+    trailingSlash: true,
     name: "CSV Converter",
     description:
       "Free online CSV converter: Convert JSON, Excel (XLSX), TXT, XML to CSV. Safe, client-side, and fast.",
@@ -30,6 +31,7 @@ export default defineNuxtConfig({
 
   i18n: {
     baseUrl: "https://csvconverter.online",
+    trailingSlash: true,
     langDir: "locales",
     strategy: "prefix_except_default",
     locales: [
