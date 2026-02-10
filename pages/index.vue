@@ -44,7 +44,7 @@ useHead({
 
 const tools = [
   {
-    path: "/json-to-csv",
+    path: "/json-to-csv/",
     icon: FileJson,
     title: "home.tools.jsonToCsv.title",
     desc: "home.tools.jsonToCsv.desc",
@@ -52,7 +52,7 @@ const tools = [
     bg: "bg-green-50",
   },
   {
-    path: "/txt-to-csv",
+    path: "/txt-to-csv/",
     icon: FileText,
     title: "home.tools.txtToCsv.title",
     desc: "home.tools.txtToCsv.desc",
@@ -60,7 +60,7 @@ const tools = [
     bg: "bg-slate-50",
   },
   {
-    path: "/xlsx-to-csv",
+    path: "/xlsx-to-csv/",
     icon: FileSpreadsheet,
     title: "home.tools.xlsxToCsv.title",
     desc: "home.tools.xlsxToCsv.desc",
@@ -68,7 +68,7 @@ const tools = [
     bg: "bg-red-50",
   },
   {
-    path: "/xml-to-csv",
+    path: "/xml-to-csv/",
     icon: Code,
     title: "home.tools.xmlToCsv.title",
     desc: "home.tools.xmlToCsv.desc",
